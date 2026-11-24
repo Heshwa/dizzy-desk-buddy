@@ -1,0 +1,18 @@
+Dizzy Desk Buddy is licensed per component. Copyright (c) 2026 Heshwa B.
+
+Full license texts are in the LICENSES/ directory. Third-party notices are in
+NOTICE and THIRD_PARTY_LICENSES.txt.
+
+| What | License | SPDX identifier |
+|---|---|---|
+| Python app, tools, tests, scripts, controllers and launch scripts (all *.py, *.sh, *.command, *.js, *.cjs) | GNU GPL v3 or later | GPL-3.0-or-later |
+| Firmware source (C, C++, CMake, Arduino/Wokwi sketches, sdkconfig) | Apache License 2.0 | Apache-2.0 |
+| Hardware designs (CAD sources and outputs, 3D assets, Webots worlds and protos, SPICE models, bill of materials) | CERN-OHL-P v2 (permissive) | CERN-OHL-P-2.0 |
+| Documentation and reports (Markdown, images made for docs) | Creative Commons Attribution 4.0 | CC-BY-4.0 |
+
+Files made by other people keep their own license. See THIRD_PARTY.md. Where a
+file carries its own license header or sits next to its own LICENSE file, that
+license applies to it.
+
+This is an early prototype. Physical safety has not been tested on hardware.
+The motors are disabled by default.
