@@ -1,5 +1,5 @@
 import pytest
-from dizzy.quick_actions import route, IDENTITY
+from dizzy.quick_actions import route, IDENTITY, CREATOR
 from dizzy.tools import SYSTEM
 from dizzy.server import Hub
 
@@ -16,7 +16,7 @@ def test_negated_conditional_compound_and_scheduled_requests_use_model(text):
 
 def test_creator_identity_matches_system_message():
     assert route('Who developed you?')==(None,{},IDENTITY)
-    assert 'Heshwa' in SYSTEM and 'Yoga' in SYSTEM
+    assert CREATOR in SYSTEM and CREATOR in IDENTITY
 
 
 @pytest.mark.asyncio
@@ -35,3 +35,4 @@ async def test_local_command_works_when_cloud_is_unavailable_and_confirms_only_s
     hub.command=failed
     result=await hub.chat('dizzy-a','pause music',speak=False)
     assert not result['ok'] and 'disconnected' in result['error'] and 'reply' not in result
+

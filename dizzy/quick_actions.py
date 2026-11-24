@@ -1,7 +1,13 @@
 """Conservative, single-command shortcuts using the same verified action tools."""
 import re
 
-IDENTITY = "I'm Dizzy, your pet buddy, created and developed by Heshwa for Yoga."
+import os
+
+# Creator and companion names are configuration, not source. Set DIZZY_CREATOR and
+# DIZZY_COMPANION in the environment to personalise the pet.
+CREATOR = os.environ.get('DIZZY_CREATOR', '').strip() or 'its maker'
+COMPANION = os.environ.get('DIZZY_COMPANION', '').strip()
+IDENTITY = "I'm Dizzy, your pet buddy, created and developed by " + CREATOR + (' for ' + COMPANION if COMPANION else '') + '.'
 
 
 def route(text):
@@ -24,3 +30,4 @@ def route(text):
     if text in poses:
         return ('arms_pose', {'pose':poses[text]}, 'Moving my hands.' if poses[text]!='rest' else 'Lowering my hands.')
     return None
+

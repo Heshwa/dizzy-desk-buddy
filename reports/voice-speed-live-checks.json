@@ -4,7 +4,7 @@
       "prompt": "Who developed you?",
       "elapsed_ms": 6236,
       "ok": true,
-      "reply": "I'm Dizzy, your pet buddy, created and developed by Heshwa for Yoga.",
+      "reply": "I'm Dizzy, your pet buddy, created and developed by <creator> for <companion>.",
       "route": "local",
       "timings": {
         "reply_ms": 308,
@@ -46,10 +46,10 @@
       "measured_head_degrees": 35.0
     },
     {
-      "prompt": "Tell Yoga one cheerful thought for the day.",
+      "prompt": "Tell <companion> one cheerful thought for the day.",
       "elapsed_ms": 15106,
       "ok": true,
-      "reply": "Yoga, every small step you take today brings something wonderful closer to you!",
+      "reply": "<companion>, every small step you take today brings something wonderful closer to you!",
       "route": "model",
       "timings": {
         "reply_ms": 9197,

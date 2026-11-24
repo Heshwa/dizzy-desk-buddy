@@ -36,7 +36,7 @@
     "check": "Camera captures a real simulation image",
     "status": "PASS",
     "details": {
-      "file": "/Users/heshwa/Chatgpt chats/Desk buddy/runtime/dizzy-a-photo.png",
+      "file": "<project>/runtime/dizzy-a-photo.png",
       "bytes": 1920
     }
   },

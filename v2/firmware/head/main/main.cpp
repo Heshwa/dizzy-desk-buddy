@@ -2,6 +2,7 @@
 #include "calendar.hpp"
 #include "face.h"
 #include "motion.h"
+#include "safety.hpp"
 #include <algorithm>
 #include <array>
 #include <cmath>
@@ -125,6 +126,15 @@ void react(PetEvent event){
     int choice=event_turn[event]++%count;
     for(int i=0;i<24;++i)if((bits>>i)&1u && choice--==0){show_reaction(i);return;}
 }
+// Clears a latched motor fault only when the robot is read as upright (same limit as local_arm),
+// the stop switch is released, the I/O expander is ready and the battery is healthy.
+// A failed or implausible IMU read keeps the fault latched.
+bool clear_fault_if_safe(){
+    std::lock_guard<std::recursive_mutex> guard(lock);
+    if(!dizzy_safety::can_clear_fault(ready_io,cut_switch,battery_voltage,[](float &tilt){return board_imu(tilt);}))return false;
+    motor_fault=false;
+    return true;
+}
 void latch_stop() {
     std::lock_guard<std::recursive_mutex> guard(lock);
     armed=false;floor_mode=false;motor_fault=true;stop_motion();
@@ -133,9 +143,9 @@ void latch_stop() {
 bool local_arm(){
 #if CONFIG_DIZZY_ALLOW_FLOOR
     std::lock_guard<std::recursive_mutex> guard(lock);
-    float tilt=0;
-    if(!ready_io||cut_switch||ringing||settings.quiet||battery_voltage<6.8f||!board_imu(tilt)||tilt>12||
-       (board_buttons() & (LeftFoot | RightFoot)) != (LeftFoot | RightFoot))return false;
+    if(!dizzy_safety::can_floor_arm(ready_io,cut_switch,ringing,settings.quiet,battery_voltage,
+       (board_buttons() & (LeftFoot | RightFoot)) == (LeftFoot | RightFoot),
+       [](float &tilt){return board_imu(tilt);}))return false;
     floor_mode=true;armed=true;motor_fault=false;
     return true;
 #else
@@ -253,7 +263,7 @@ cJSON *execute(const char *action,const cJSON *args){
         settings.volume=lround(level*100);save_settings();
     }else if(same(action,"head_turn")||same(action,"head_pitch")||same(action,"arm_lift")||same(action,"arms_pose")||same(action,"motion_play")){
 #if CONFIG_DIZZY_ALLOW_MOTORS
-        if(!ready_io||motor_fault||cut_switch||battery_voltage<6.8f||settings.quiet||ringing)
+        if(!dizzy_safety::motion_allowed(ready_io,motor_fault,cut_switch,battery_voltage,settings.quiet,ringing))
             return reply(false,"Motion is locked. Check power and the local controls.");
         if(same(action,"head_turn")||same(action,"head_pitch")){
             const bool yaw=same(action,"head_turn");
@@ -365,8 +375,10 @@ extern "C" void app_main(){
             if(rise&Talk)toggle_record();
             if(rise&ArmKey) {
                 if(floor_mode){armed=false;floor_mode=false;}
-                else if(!local_arm() && !cut_switch && ready_io && battery_voltage>=6.8f)
-                    motor_fault=false; // physical key can clear a stop for guarded upper-body use.
+                else if(!local_arm() && clear_fault_if_safe()) {
+                    // Physical key can clear a stop for guarded upper-body use, but only
+                    // after a fresh upright IMU reading and a healthy battery (see clear_fault_if_safe).
+                }
             }
             if(rise&StopKey)latch_stop();
             if(rise&(LeftPad|RightPad)){
@@ -387,7 +399,8 @@ extern "C" void app_main(){
             read_at=t; battery_voltage=board_battery();
             if(armed){
                 float tilt=0;
-                if(!board_imu(tilt)||tilt>38||battery_voltage<6.8f)latch_stop();
+                const bool imu_ok=board_imu(tilt);
+                if(dizzy_safety::should_latch_stop(imu_ok,tilt,battery_voltage))latch_stop();
             }
         }
         const auto now=time(nullptr);
@@ -402,7 +415,7 @@ extern "C" void app_main(){
             if(motion!=DIZZY_REST)dizzy_pose(motion,(t-launch_at)/1000.0,settings.tempo,target.data());
             for(int axis=0;axis<8;++axis)angles[axis]+=std::clamp(target[axis]-angles[axis],-1.8f,1.8f);
 #if CONFIG_DIZZY_ALLOW_MOTORS
-            board_servo(ready_io&&!cut_switch&&!motor_fault&&battery_voltage>=6.8f,angles.data());
+            board_servo(dizzy_safety::servo_power_allowed(ready_io,cut_switch,motor_fault,battery_voltage),angles.data());
 #else
             board_servo(false,nullptr);
 #endif

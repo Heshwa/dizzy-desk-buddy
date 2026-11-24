@@ -4,7 +4,7 @@
       "prompt": "Who developed you?",
       "elapsed_ms": 6389,
       "ok": true,
-      "reply": "I'm Dizzy, your pet buddy, created and developed by Heshwa for Yoga.",
+      "reply": "I'm Dizzy, your pet buddy, created and developed by <creator> for <companion>.",
       "route": "local",
       "timings": {
         "reply_ms": 392,
@@ -46,7 +46,7 @@
       "measured_head_degrees": 35.0
     },
     {
-      "prompt": "Tell Yoga one cheerful thought for the day.",
+      "prompt": "Tell <companion> one cheerful thought for the day.",
       "elapsed_ms": 12573,
       "ok": false,
       "error": "400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Manually set deadline 8s is too short. Minimum allowed deadline is 10s.', 'status': 'INVALID_ARGUMENT'}}",

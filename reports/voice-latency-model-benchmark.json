@@ -4,7 +4,7 @@
     "tuned": false,
     "seconds": 1.29,
     "ok": true,
-    "text": "I was developed by Heshwa for Yoga.",
+    "text": "I was developed by <creator> for <companion>.",
     "calls": 0
   },
   {
@@ -21,7 +21,7 @@
     "tuned": true,
     "seconds": 7.86,
     "ok": true,
-    "text": "I was developed by Heshwa for Yoga!",
+    "text": "I was developed by <creator> for <companion>!",
     "calls": 0
   },
   {

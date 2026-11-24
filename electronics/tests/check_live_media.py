@@ -1,5 +1,5 @@
 """Check Webots snapshot and typed-request Piper playback; no microphone/webcam capture."""
-import asyncio,base64,json,sys,time,wave,shutil
+import asyncio,base64,json,os,sys,time,wave,shutil
 from pathlib import Path
 import aiohttp,numpy as np
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
@@ -17,7 +17,7 @@ async def main():
   started=time.time()
   async with s.post('http://127.0.0.1:8765/api/chat',json={'text':'Who developed you?','speak':True}) as r:voice=await r.json()
   assert voice.get('ok') and voice.get('spoken'),voice
-  assert 'Heshwa' in voice['reply'] and 'Yoga' in voice['reply'],voice
+  assert (os.environ.get('DIZZY_CREATOR','').strip() or 'its maker') in voice['reply'],voice
   paths=[p for p in (ROOT/'runtime').glob('reply-*.wav') if p.stat().st_mtime>=started]
   assert paths,'No new synthesized audio file'
   audio=max(paths,key=lambda p:p.stat().st_mtime)
@@ -27,3 +27,4 @@ async def main():
   result={'camera':{'status':'PASS','source':'Webots camera; no Mac camera used','size':list(im.size),'bytes':len(image)},'speech':{'status':'PASS','source':'Piper output through Mac speakers; not simulated I2S amplifier','reply':voice['reply'],'duration_seconds':round(duration,2),'sample_rate':rate,'route':voice.get('route'),'playback_completed':voice.get('spoken')}}
   (folder/'media-checks-2026-11-19.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
 asyncio.run(main())
+

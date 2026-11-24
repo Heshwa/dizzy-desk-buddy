@@ -2,7 +2,7 @@
 
 ## Current voice latency and identity update —18 November2026
 
-The pet/system identity is now Dizzy, created and developed by Heshwa for Yoga. Explicit local head/hand/music commands avoid the cloud, while general requests use a persistent Gemini client with a bounded3.5 Flash-Lite fallback and primary cooldown. Piper stays loaded, and recognized text/reply previews appear before playback ends.
+The pet/system identity is now Dizzy, created and developed by <creator> for <companion>. Explicit local head/hand/music commands avoid the cloud, while general requests use a persistent Gemini client with a bounded3.5 Flash-Lite fallback and primary cooldown. Piper stays loaded, and recognized text/reply previews appear before playback ends.
 
 130 automated tests pass. Live identity, head movement and cloud-conversation checks all produced spoken output. Head-command preparation was194ms plus80ms speech synthesis; re-transcription measured725ms separately. The cloud run encountered a real503 on3.1, successfully switched to3.5, and prepared audio in9.44s. Google overload can still slow general conversation; local commands remain independent. Full evidence and the retained first-run deadline failure are in VOICE_LATENCY.md and voice-speed-live-checks.json. Older sections below describe the previous retry design.
 
@@ -200,3 +200,4 @@ This revision supersedes the earlier oval face and arm-free shape. The selected 
 Evidence: `enclosure-checks.json`, `enclosure-detail.png`, `enclosure-yaw--45.png`, `enclosure-yaw-45.png`, `dizzy-a-display.png`, `display-states.png`, and `simulation.png`. The camera test target is hidden only from the main presentation viewpoint; robot cameras continue to see it. Display sourcing and the distinction between published measurements and provisional component envelopes are documented in `COMPONENT_FIT.md`.
 
 No display or other hardware was purchased. The model is a simulation fit study; mounting posts, actual module depth, fasteners, tolerances, cable bends and electrical performance have not been physically validated.
+

@@ -24,7 +24,7 @@
     "speech": {
       "status": "PASS",
       "source": "Piper output through Mac speakers; not simulated I2S amplifier",
-      "reply": "I'm Dizzy, your pet buddy, created and developed by Heshwa for Yoga.",
+      "reply": "I'm Dizzy, your pet buddy, created and developed by <creator> for <companion>.",
       "duration_seconds": 4.47,
       "sample_rate": 22050,
       "route": "local",
@@ -80,3 +80,4 @@
   ],
   "physical_hardware_tests": "NOT RUN"
 }
+

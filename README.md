@@ -1,5 +1,7 @@
 # Dizzy desk pet project
 
+> **Project status: early prototype.** Nothing here has been tested on physical hardware. The firmware compiles in CI, and the safety logic has host-side unit tests, but motion has never been run on a real device. Motor output (`CONFIG_DIZZY_ALLOW_MOTORS`) and floor arming (`CONFIG_DIZZY_ALLOW_FLOOR`) are off by default; do not enable them on real hardware without your own safety review. Licenses are set per part (see the table below and [LICENSE](LICENSE)). Outside components and their licenses are listed in [THIRD_PARTY.md](THIRD_PARTY.md). The V2 firmware also needs the Bosch BMI270 driver fetched into `v2/.work/bmi270` (see that file).
+
 This repository contains the original V1 simulation and the newer V2 full-motion prototype. For the current design and implementation, start with [Dizzy V2](v2/README.md). New contributors and agents should follow the [handover guide](HANDOVER.md) and use the [V2 test report](v2/reports/TEST-REPORT.md) to distinguish simulation results from hardware checks. The sections below document V1.
 
 Dizzy is a seated mini humanoid in Webots with two lifting mitten hands, a rotating head, animated 240×240 face on a recessed 1.28-inch round GC9A01 LCD, two touch zones, camera, speaker, clock, alarms, music controls, and a paired pet. The desktop voice service supports push-to-talk speech and typed requests using Gemini tools.
@@ -108,6 +110,19 @@ Selected parts and purchase links: [hardware/SHOPPING_LIST.md](hardware/SHOPPING
 
 The Talk panel shows “Heard:” after transcription, then the reply or failure. Its provider line shows whether sound is on, muted by quiet mode, or set to zero volume. Quiet mode suppresses speech; turn it off for spoken replies. Temporary Gemini server errors can switch once to the fallback model before tools execute. The primary model then has a60s cooldown. Explicit head/hand/music commands and creator questions run locally. Speech stays loaded, and text previews appear before audio finishes. The last voice-output repair was verified with an actual user microphone request; see reports/voice-repair-checks.json.
 
-Dizzy’s pet identity is “created and developed by Heshwa for Yoga.” See reports/VOICE_LATENCY.md for measured delays, Google outage traces and safe fallback behavior. The last full voice-speed run passed along with130 automated checks.
+Dizzy’s creator and companion names are configurable with DIZZY_CREATOR and DIZZY_COMPANION. See reports/VOICE_LATENCY.md for measured delays, Google outage traces and safe fallback behavior. The last full voice-speed run passed along with130 automated checks.
 
 Electronics simulation: [lab and launch guide](electronics/README.md), [connection diagram](electronics/wiring.svg), [test results](electronics/reports/TEST_REPORT.md). The lab runs ESP32 bring-up firmware in Wokwi and assumed power loads in ngspice, separately from the Webots pet simulation.
+
+## License
+
+Copyright (c) 2026 Heshwa B. Each part has its own license. Full texts are in `LICENSES/`.
+
+| Part | License |
+|---|---|
+| Python app, tools, tests, scripts and launch scripts | GPL-3.0-or-later |
+| Firmware source (C, C++, CMake, sketches, sdkconfig) | Apache-2.0 |
+| Hardware designs (CAD, 3D assets, Webots worlds, SPICE, BOM) | CERN-OHL-P-2.0 |
+| Documentation | CC-BY-4.0 |
+
+Third-party notices: [NOTICE](NOTICE), [THIRD_PARTY.md](THIRD_PARTY.md), [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt).

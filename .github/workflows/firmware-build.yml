@@ -1,0 +1,69 @@
+name: firmware-build
+on:
+  pull_request:
+    paths:
+      - 'v2/firmware/**'
+      - '.github/workflows/*firmware-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  head-build:
+    runs-on: ubuntu-latest
+    container: espressif/idf:release-v5.5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Bosch BMI270 driver (BSD-3-Clause, not vendored in this repo)
+        run: |
+          # Pinned to the revision that built successfully in CI (BSD-3-Clause, Copyright Bosch Sensortec GmbH)
+          BMI270_REV=41129fcfe39c583ee5462d79195741945d51c1fe
+          git init -q /tmp/bmi270src
+          git -C /tmp/bmi270src fetch -q --depth 1 https://github.com/boschsensortec/BMI270_SensorAPI.git "$BMI270_REV"
+          git -C /tmp/bmi270src checkout -q FETCH_HEAD
+          mkdir -p v2/.work/bmi270
+          cp /tmp/bmi270src/*.c /tmp/bmi270src/*.h v2/.work/bmi270/
+          git -C /tmp/bmi270src rev-parse HEAD
+          ls v2/.work/bmi270
+      - name: IDF version
+        run: |
+          . $IDF_PATH/export.sh >/dev/null 2>&1; idf.py --version; git -C $IDF_PATH describe --tags 2>/dev/null || true
+      - name: Build head firmware (esp32s3, motors disabled by default)
+        run: |
+          . $IDF_PATH/export.sh >/dev/null 2>&1
+          cd v2/firmware/head
+          idf.py set-target esp32s3
+          idf.py build > /tmp/build.log 2>&1 || { tail -n 80 /tmp/build.log; exit 1; }
+          tail -n 15 /tmp/build.log
+      - name: Assert motor and floor options are explicitly off in the generated sdkconfig
+        run: |
+          cd v2/firmware/head
+          {
+            echo "### Generated sdkconfig, DIZZY_ALLOW options"
+            grep -n 'DIZZY_ALLOW' sdkconfig || echo "no DIZZY_ALLOW line found"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+          # Motors must be explicitly recorded as off. A missing line is not proof.
+          grep -qx '# CONFIG_DIZZY_ALLOW_MOTORS is not set' sdkconfig || { echo "motors option not explicitly off"; exit 1; }
+          # Floor depends on motors in Kconfig, so with motors off it is hidden (no line) or explicitly off. It must never be =y.
+          if grep -E '^CONFIG_DIZZY_ALLOW_FLOOR=y' sdkconfig; then echo "floor option enabled"; exit 1; fi
+          if grep -q 'DIZZY_ALLOW_FLOOR' sdkconfig; then
+            grep -qx '# CONFIG_DIZZY_ALLOW_FLOOR is not set' sdkconfig || { echo "floor option present but not explicitly off"; exit 1; }
+            echo "floor: explicitly not set"
+          else
+            echo "floor: hidden because it depends on motors, which are off"
+          fi
+      - name: Verify the committed dependency lock was honoured (build must not change it)
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          grep -n -i 'dependencies lock' /tmp/build.log || true
+          if ! git diff --exit-code -- v2/firmware/head/dependencies.lock; then
+            echo "Build changed or rewrote the committed dependencies.lock"; exit 1
+          fi
+          echo "dependencies.lock unchanged by the build"
+      - name: Upload generated lock and build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: head-build-lock
+          path: |
+            v2/firmware/head/dependencies.lock
+            /tmp/build.log

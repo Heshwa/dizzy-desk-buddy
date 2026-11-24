@@ -19,7 +19,7 @@ Live Webots checks exercised petting, partner delivery, head limits, moving-targ
 
 Camera tracking uses Webots object recognition for the test face target. It does not validate a real computer-vision face detector or an OV2640 sensor. The saved 160×120 image shows the simulated desk and small test target; this is not a physical camera quality assessment.
 
-The spoken reply was: “I'm Dizzy, your pet buddy, created and developed by Heshwa for Yoga.” The generated file contains nonzero audio and playback exited successfully. Human listening quality and the MAX98357A/INMP441 I²S hardware chain are not measured.
+The spoken reply was: “I'm Dizzy, your pet buddy, created and developed by <creator> for <companion>.” The generated file contains nonzero audio and playback exited successfully. Human listening quality and the MAX98357A/INMP441 I²S hardware chain are not measured.
 
 ## Power-margin finding — needs attention
 
@@ -66,3 +66,4 @@ Run the live checks sequentially against the running Webots/Mac service. They te
 ## Not run: physical hardware
 
 Actual USB-PD negotiation/temperature/current delivery, servo torque/stall, LCD electrical behaviour, capacitive touch through the shell, real Bluetooth pairing, I²S timing/audio fidelity, physical camera quality and RTC backup switchover remain hardware checks. Wokwi's audio and camera blocks remain wiring-only. No physical result has been marked passed.
+
