@@ -27,6 +27,8 @@ FreeType License (FTL), espressif/freetype 2.15.0:
   Portions of this software are copyright (c) The FreeType Project
   (www.freetype.org). All rights reserved.
 
+BSD-3-Clause: Bosch Sensortec BMI270 SensorAPI (compiled into the head firmware). newlib (ESP-IDF C library, BSD-style and other permissive licenses). Full texts for both are in THIRD_PARTY_LICENSES.txt.
+
 libpng (PNG Reference Library License v2) and zlib license: text in
 THIRD_PARTY_LICENSES.txt.
 
