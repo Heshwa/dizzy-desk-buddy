@@ -1,4 +1,6 @@
-# Dizzy desk pet simulation
+# Dizzy desk pet project
+
+This repository contains the original V1 simulation and the newer V2 full-motion prototype. For the current design and implementation, start with [Dizzy V2](v2/README.md). New contributors and agents should follow the [handover guide](HANDOVER.md) and use the [V2 test report](v2/reports/TEST-REPORT.md) to distinguish simulation results from hardware checks. The sections below document V1.
 
 Dizzy is a seated mini humanoid in Webots with two lifting mitten hands, a rotating head, animated 240×240 face on a recessed 1.28-inch round GC9A01 LCD, two touch zones, camera, speaker, clock, alarms, music controls, and a paired pet. The desktop voice service supports push-to-talk speech and typed requests using Gemini tools.
 
@@ -28,7 +30,7 @@ This Mac has Webots installed at `/Applications/Webots.app`. It uses the officia
 
 Install Homebrew and Python 3.13, install the Webots build above, then run `./scripts/setup.sh`. It creates a Python environment, installs the local Mosquitto broker and whisper.cpp, downloads the English base transcription model and the Piper English voice, generates original sample audio, and sets Webots' Python path. Run setup again after moving this project to a different folder.
 
-Copy `.env.example` to `.env`, then add your Gemini API key. The current local `.env` already contains the key authorized during setup. It is excluded from version control and must stay local. Use a Gemini API project on the free tier. The selected model is configurable through `DIZZY_GEMINI_MODEL`. Model availability was verified with real generation requests. `DIZZY_GEMINI_FALLBACK_MODEL` selects the fallback model; its default is gemini-3.5-flash-lite. Free-tier availability and quotas are account-dependent.
+Copy `.env.example` to `.env`, then add your Gemini API key. Keep your API key only in your local `.env`; that file is excluded from version control and must stay local. Use a Gemini API project on the free tier. The selected model is configurable through `DIZZY_GEMINI_MODEL`. Model availability was verified with real generation requests. `DIZZY_GEMINI_FALLBACK_MODEL` selects the fallback model; its default is gemini-3.5-flash-lite. Free-tier availability and quotas are account-dependent.
 
 ## Controls
 
