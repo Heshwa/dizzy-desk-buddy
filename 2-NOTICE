@@ -1,0 +1,42 @@
+Dizzy Desk Buddy
+Copyright (c) 2026 Heshwa B
+
+Portions of the commit history were authored under the GitHub account
+zumizumistay-eng, which belongs to the same person (Heshwa B).
+
+This repository's earlier commits contain firmware images (v2/firmware/images)
+built from the ESP-IDF toolchain and the components below. The files were
+removed from the current tree but remain in earlier commits. Their notices are
+reproduced here and in THIRD_PARTY_LICENSES.txt so that anyone who retrieves
+those commits has them.
+
+Apache-2.0 components (license text: LICENSES/Apache-2.0.txt):
+  ESP-IDF 5.5.x and its bundled components (Espressif Systems)
+  espressif/button, espressif/knob, espressif/cmake_utilities,
+  espressif/esp_codec_dev, espressif/esp_io_expander,
+  espressif/esp_io_expander_tca9554, espressif/esp_lcd_co5300,
+  espressif/esp_lcd_panel_io_additions, espressif/esp_lcd_touch,
+  espressif/esp_lv_decoder, espressif/esp_lv_fs, espressif/esp_lvgl_adapter,
+  espressif/esp_mmap_assets
+  waveshare/esp32_s3_touch_amoled_1_75, waveshare/esp_lcd_touch_cst9217
+
+MIT components (text: THIRD_PARTY_LICENSES.txt):
+  lvgl/lvgl 9.6.0, espressif/esp_new_jpeg, espressif/qoi
+
+FreeType License (FTL), espressif/freetype 2.15.0:
+  Portions of this software are copyright (c) The FreeType Project
+  (www.freetype.org). All rights reserved.
+
+libpng (PNG Reference Library License v2) and zlib license: text in
+THIRD_PARTY_LICENSES.txt.
+
+Other third-party material that is still in the tree (Adafruit 5807 CAD model,
+Piper voice tooling, and others) is listed in THIRD_PARTY.md with its license.
+
+Wokwi chip API: the three Wokwi custom chips in v2/hardware/wokwi are this
+project's own source (*.chip.c). They include Wokwi's wokwi-api.h at build
+time, which is not distributed here. Earlier commits contain compiled .wasm
+builds of them that include small inline fragments of that header. The header
+copy that built them is not recorded. The only public copy with a license is in
+https://github.com/wokwi/inverter-chip (MIT). The header Wokwi serves today has
+no license notice in the file and differs from that copy.
