@@ -1,0 +1,14 @@
+{
+  "test": "PASS",
+  "fixture": "Chrome fake microphone",
+  "reply": "You: Look left.\nDizzy: Turning my head to the left.",
+  "checked": [
+    "reactions",
+    "local floor arming",
+    "music controls",
+    "start/stop recording",
+    "Whisper+Piper",
+    "three offline games",
+    "mobile overflow"
+  ]
+}

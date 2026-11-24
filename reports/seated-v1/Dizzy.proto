@@ -1,0 +1,189 @@
+#VRML_SIM R2025a utf8
+# Component-fitted GC9A01 240x240 round display prototype; dimensions pending physical sample.
+PROTO Dizzy [
+  field SFVec3f translation 0 0 0
+  field SFString name "dizzy-a"
+  field SFColor color 0.66 0.32 0.22
+  field MFString controllerArgs []
+  field SFFloat shellTransparency 0
+] {
+Robot {
+  translation IS translation
+  name IS name
+  controller "dizzy"
+  controllerArgs IS controllerArgs
+  supervisor TRUE
+  children [
+    Transform { translation 0 0 0.001 scale 0.022 0.022 0.001 children [ Shape { appearance PBRAppearance { baseColor 0.13 0.12 0.11 roughness 1 metalness 0 } geometry Cylinder { radius 1 height 2 subdivision 32 } } ] }
+    Transform { translation -0.032 -0.066 0.001 scale 0.008 0.01 0.001 children [ Shape { appearance PBRAppearance { baseColor 0.13 0.12 0.11 roughness 1 metalness 0 } geometry Cylinder { radius 1 height 2 subdivision 32 } } ] }
+    Transform { translation 0.032 -0.066 0.001 scale 0.008 0.01 0.001 children [ Shape { appearance PBRAppearance { baseColor 0.13 0.12 0.11 roughness 1 metalness 0 } geometry Cylinder { radius 1 height 2 subdivision 32 } } ] }
+    Pose { translation 0 0 0.032 children [ Shape {
+      appearance DEF SHELL PBRAppearance { baseColor 0.94 0.91 0.85 roughness 0.48 metalness 0 transparency IS shellTransparency }
+      geometry Mesh { url [ "../assets/dizzy-hips.obj" ] }
+    } ] }
+    Pose { translation 0 0 0.072 children [ Shape { appearance DEF ACCENT PBRAppearance { baseColor IS color roughness 0.6 metalness 0 transparency IS shellTransparency }
+      geometry Mesh { url [ "../assets/dizzy-waist.obj" ] } } ] }
+    Shape { appearance PBRAppearance { baseColor 0.98 0.94 0.87 roughness 0.5 metalness 0 transparency IS shellTransparency } geometry Mesh { url [ "../assets/dizzy-chest.obj" ] } }
+    Pose { translation 0 0 0.072 children [ Shape { appearance USE SHELL geometry Mesh { url [ "../assets/dizzy-body.obj" ] } } ] }
+    Pose { translation 0 0 0.1235 children [ Shape { appearance USE ACCENT geometry Cylinder { radius 0.014 height 0.012 } } ] }
+    Pose { translation -0.032 -0.066 0.034 children [
+      Shape { appearance USE SHELL geometry Mesh { url [ "../assets/dizzy-foot.obj" ] } }
+      Shape { appearance PBRAppearance { baseColor 0.66 0.55 0.45 roughness 0.85 metalness 0 transparency IS shellTransparency } geometry Mesh { url [ "../assets/dizzy-sole.obj" ] } }
+    ] }
+    Transform { translation -0.057 0 0.075 scale 0.014 0.011 0.010 children [ Shape { appearance USE ACCENT geometry Sphere { radius 1 subdivision 3 } } ] }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis -1 0 0 anchor -0.049 0 0.075 }
+      device [ RotationalMotor { name "left_shoulder" minPosition 0 maxPosition 2.094395 maxVelocity 1.2 maxTorque 0.12 } PositionSensor { name "left_shoulder_position" } ]
+      endPoint Solid { translation -0.079 0 0.060 name "left mitten"
+        children [
+          Transform { translation 0 0 0.006 scale 0.012 0.014 0.020 children [ Shape { appearance USE SHELL geometry Sphere { radius 1 subdivision 4 } } ] }
+          Transform { translation 0 -0.001 -0.010 scale 0.013 0.015 0.008 children [ Shape { appearance USE ACCENT geometry Sphere { radius 1 subdivision 4 } } ] }
+          Transform { translation 0 -0.002 -0.021 scale 0.012 0.013 0.013 children [ Shape { appearance USE SHELL geometry Sphere { radius 1 subdivision 4 } } ] }
+          Transform { translation 0.009 -0.010 -0.018 scale 0.005 0.007 0.008 children [ Shape { appearance USE SHELL geometry Sphere { radius 1 subdivision 3 } } ] }
+        ]
+        boundingObject Pose { translation 0 0 0 children [ Box { size 0.028 0.032 0.068 } ] }
+        physics Physics { density -1 mass 0.025 }
+      }
+    }
+    Pose { translation 0.032 -0.066 0.034 children [
+      Shape { appearance USE SHELL geometry Mesh { url [ "../assets/dizzy-foot.obj" ] } }
+      Shape { appearance PBRAppearance { baseColor 0.66 0.55 0.45 roughness 0.85 metalness 0 transparency IS shellTransparency } geometry Mesh { url [ "../assets/dizzy-sole.obj" ] } }
+    ] }
+    Transform { translation 0.057 0 0.075 scale 0.014 0.011 0.010 children [ Shape { appearance USE ACCENT geometry Sphere { radius 1 subdivision 3 } } ] }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis -1 0 0 anchor 0.049 0 0.075 }
+      device [ RotationalMotor { name "right_shoulder" minPosition 0 maxPosition 2.094395 maxVelocity 1.2 maxTorque 0.12 } PositionSensor { name "right_shoulder_position" } ]
+      endPoint Solid { translation 0.079 0 0.060 name "right mitten"
+        children [
+          Transform { translation 0 0 0.006 scale 0.012 0.014 0.020 children [ Shape { appearance USE SHELL geometry Sphere { radius 1 subdivision 4 } } ] }
+          Transform { translation 0 -0.001 -0.010 scale 0.013 0.015 0.008 children [ Shape { appearance USE ACCENT geometry Sphere { radius 1 subdivision 4 } } ] }
+          Transform { translation 0 -0.002 -0.021 scale 0.012 0.013 0.013 children [ Shape { appearance USE SHELL geometry Sphere { radius 1 subdivision 4 } } ] }
+          Transform { translation -0.009 -0.010 -0.018 scale 0.005 0.007 0.008 children [ Shape { appearance USE SHELL geometry Sphere { radius 1 subdivision 3 } } ] }
+        ]
+        boundingObject Pose { translation 0 0 0 children [ Box { size 0.028 0.032 0.068 } ] }
+        physics Physics { density -1 mass 0.025 }
+      }
+    }
+    TouchSensor { name "talk" translation 0 -0.04196168713020997 0.092 boundingObject Box { size 0.019 0.0001 0.006 } }
+    Shape { appearance PBRAppearance { baseColor 0.65 0.52 0.41 roughness 0.7 metalness 0 } geometry Mesh { url [ "../assets/dizzy-talk.obj" ] } }
+    Shape { appearance PBRAppearance { baseColor 0.94 0.91 0.85 roughness 0.6 metalness 0 } geometry Mesh { url [ "../assets/dizzy-control-symbols.obj" ] } }
+    Shape { appearance PBRAppearance { baseColor 0.055 0.045 0.04 roughness 0.9 metalness 0 } geometry Mesh { url [ "../assets/dizzy-audio-ports.obj" ] } }
+    Shape { appearance PBRAppearance { baseColor 0.02 0.02 0.02 metalness 0 } geometry Mesh { url [ "../assets/dizzy-usbc-port.obj" ] } }
+Pose { translation 0.0 0.025 0.064 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.03 0.012 0.058 } } ] } # esp32_board
+Pose { translation 0.0 -0.003 0.1 children [ Shape { appearance PBRAppearance { baseColor 0.3 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.034 0.014 0.034 } } ] } # neck_servo
+Pose { translation -0.023 0.0 0.075 children [ Shape { appearance PBRAppearance { baseColor 0.48 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.034 0.034 0.014 } } ] } # left_shoulder_servo_reserved
+Pose { translation 0.023 0.0 0.075 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.034 0.034 0.014 } } ] } # right_shoulder_servo_reserved
+Pose { translation 0.0 -0.014 0.05 children [ Shape { appearance PBRAppearance { baseColor 0.3 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.064 0.014 0.026 } } ] } # pca9685_driver
+Pose { translation 0.0 0.005 0.045 children [ Shape { appearance PBRAppearance { baseColor 0.48 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.028 0.018 0.007 } } ] } # power_distribution
+Pose { translation 0.0 -0.033 0.088 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.008 0.008 0.008 } } ] } # talk_switch
+Pose { translation 0.0 0.013 0.025 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.042 0.026 0.018 } } ] } # clock_board_and_cell
+Pose { translation -0.034 -0.008 0.028 children [ Shape { appearance PBRAppearance { baseColor 0.3 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.022 0.021 0.01 } } ] } # amplifier
+Pose { translation 0.031 -0.008 0.027 children [ Shape { appearance PBRAppearance { baseColor 0.48 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.018 0.015 0.007 } } ] } # microphone_board
+Pose { translation 0.0 -0.023 0.029 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.036 0.036 0.013 } } ] } # speaker
+Pose { translation -0.035 0.018 0.029 children [ Shape { appearance PBRAppearance { baseColor 0.3 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.01 0.02 0.014 } } ] } # servo_capacitor
+Pose { translation 0.032 0.017 0.029 children [ Shape { appearance PBRAppearance { baseColor 0.48 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.01 0.01 0.014 } } ] } # audio_capacitor
+Pose { translation 0.0 0.0445 0.032 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.028 0.026 0.014 } } ] } # usb_c_pd_board
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 0.1245 }
+      device [
+        RotationalMotor {
+          name "neck"
+          minPosition -0.7853981633974483
+          maxPosition 0.7853981633974483
+          maxVelocity 1.05
+          maxTorque 1
+        }
+        PositionSensor { name "neck_position" }
+      ]
+      endPoint Solid {
+        translation 0 0 0.175
+        children [
+Pose { translation 0.0 -0.0155 0.0 children [ Shape { appearance PBRAppearance { baseColor 0.12 0.4 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.046 0.014 0.052 } } ] } # display_pocket
+Pose { translation 0.0 0.005 0.01 children [ Shape { appearance PBRAppearance { baseColor 0.3 0.55 0.28 roughness 0.8 metalness 0 } geometry Box { size 0.03 0.016 0.044 } } ] } # camera_board
+          Shape { appearance USE SHELL geometry Mesh { url [ "../assets/dizzy-head-shell.obj" ] } }
+          Pose {
+            translation 0 0 0
+            children [ Shape {
+              appearance USE ACCENT
+              geometry Mesh { url [ "../assets/dizzy-bezel.obj" ] }
+            } ]
+          }
+          Pose { translation 0 0 0 children [ Shape { appearance DEF BLACK PBRAppearance { baseColor 0.009 0.016 0.022 roughness 0.35 metalness 0 } geometry Mesh { url [ "../assets/dizzy-face-glass.obj" ] } } ] }
+          Pose {
+            translation 0 -0.0247 0
+            children [ Shape { appearance USE BLACK geometry Box { size 0.048 0.0004 0.048 } } ]
+          }
+          Display {
+            name "face"
+            width 240
+            height 240
+            translation 0 -0.0258 0
+            rotation 1 0 0 1.570796
+            children [ Shape {
+              appearance Appearance {
+                material Material { diffuseColor 0 0 0 emissiveColor 1 1 1 }
+                texture ImageTexture { filtering 0 }
+              }
+              geometry Mesh { url [ "../assets/dizzy-round-display.obj" ] }
+            } ]
+          }
+          Camera {
+            name "camera"
+            translation 0 -0.0259 0.025
+            rotation 0 0 1 -1.570796
+            width 160
+            height 120
+            fieldOfView 2.094395
+            recognition Recognition { maxRange 4 }
+            children [ Pose {
+              translation -0.0002 0 0
+              rotation 0 1 0 1.570796
+              children [ Shape { appearance USE BLACK geometry Cylinder { radius 0.0028 height 0.00015 subdivision 32 } } ]
+            } ]
+          }
+          LED {
+            name "camera_light"
+            translation 0.010 -0.0258 0.025
+            color [ 0.1 0.9 0.4 ]
+            children [ Pose {
+              rotation 1 0 0 1.570796
+              children [ Shape {
+                appearance PBRAppearance { baseColor 0.04 0.16 0.10 roughness 0.45 metalness 0 }
+                geometry Cylinder { radius 0.001 height 0.0001 subdivision 24 }
+              } ]
+            } ]
+          }
+          # Flush coloured inlays mark the two crown electrodes.
+          # Detection volumes sit above the shell and electrode positions.
+          Shape { appearance USE ACCENT geometry Mesh { url [ "../assets/dizzy-crown-marks.obj" ] } }
+          TouchSensor {
+            name "pet_left"
+            translation -0.010 0 0.0498
+            rotation 0 1 0 -0.18
+            boundingObject Box { size 0.020 0.026 0.0001 }
+          }
+          TouchSensor {
+            name "pet_right"
+            translation 0.010 0 0.0498
+            rotation 0 1 0 0.18
+            boundingObject Box { size 0.020 0.026 0.0001 }
+          }
+          Pose { translation -0.046 0 0 children [ Shape { appearance PBRAppearance { baseColor 0.2 0.5 0.3 roughness 0.8 metalness 0 } geometry Box { size 0.008 0.008 0.008 } } ] }
+          TouchSensor { name "volume_down" translation -0.055 0 0 rotation 0 1 0 -1.570796
+            children [ Shape { appearance USE ACCENT geometry Cylinder { radius 0.014 height 0.004 subdivision 48 } } ]
+            boundingObject Pose { translation 0 0 0.0021 children [ Cylinder { radius 0.012 height 0.0001 } ] }
+          }
+          Pose { translation 0.046 0 0 children [ Shape { appearance PBRAppearance { baseColor 0.2 0.5 0.3 roughness 0.8 metalness 0 } geometry Box { size 0.008 0.008 0.008 } } ] }
+          TouchSensor { name "volume_up" translation 0.055 0 0 rotation 0 1 0 1.570796
+            children [ Shape { appearance USE ACCENT geometry Cylinder { radius 0.014 height 0.004 subdivision 48 } } ]
+            boundingObject Pose { translation 0 0 0.0021 children [ Cylinder { radius 0.012 height 0.0001 } ] }
+          }
+          Speaker { name "speaker" }
+        ]
+        boundingObject Box { size 0.058 0.044 0.062 }
+      }
+    }
+  ]
+  boundingObject Pose { translation 0 0 0.020 children [ Box { size 0.05 0.05 0.035 } ] }
+}
+}

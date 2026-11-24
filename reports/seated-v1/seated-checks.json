@@ -1,0 +1,114 @@
+{
+  "revision": "Seated Companion",
+  "checks": [
+    {
+      "name": "Circular screen and no resting button contacts",
+      "result": "PASS",
+      "pixels": [
+        240,
+        240
+      ],
+      "sensors": {
+        "pet_left": 0.0,
+        "pet_right": 0.0,
+        "talk": 0.0,
+        "volume_down": 0.0,
+        "volume_up": 0.0
+      }
+    },
+    {
+      "name": "Measured wave and automatic return",
+      "result": "PASS",
+      "peak_degrees": {
+        "left": -0.0,
+        "right": 106.5
+      },
+      "final": {
+        "left": 0.0,
+        "right": 0.29
+      }
+    },
+    {
+      "name": "Measured hello and automatic return",
+      "result": "PASS",
+      "peak_degrees": {
+        "left": 98.56,
+        "right": 98.56
+      },
+      "final": {
+        "left": 0.07,
+        "right": 0.07
+      }
+    },
+    {
+      "name": "Measured lift and automatic return",
+      "result": "PASS",
+      "peak_degrees": {
+        "left": 100.0,
+        "right": 100.0
+      },
+      "final": {
+        "left": 0.45,
+        "right": 0.45
+      }
+    },
+    {
+      "name": "Quiet petting keeps expression and suppresses autonomous arms",
+      "result": "PASS"
+    },
+    {
+      "name": "MQTT wave reaches partner with acknowledgement and hand motion",
+      "result": "PASS",
+      "delivery": "delivered",
+      "partner_arm": {
+        "left": -0.0,
+        "right": 22.65
+      }
+    },
+    {
+      "name": "Component inspection opens and closes shell",
+      "result": "PASS"
+    },
+    {
+      "name": "Head limits and clear side/crown/chest controls",
+      "result": "PASS"
+    },
+    {
+      "name": "Camera and display capture after helmet redesign",
+      "result": "PASS"
+    },
+    {
+      "name": "Typed Gemini hand command",
+      "result": "PASS",
+      "reply": "Wave! \ud83d\udc4b",
+      "tool_events": [
+        {
+          "event": "action",
+          "device": "dizzy-a",
+          "action": "arms_pose",
+          "ok": true
+        },
+        {
+          "event": "action",
+          "device": "dizzy-a",
+          "action": "arms_pose",
+          "ok": true
+        },
+        {
+          "event": "action",
+          "device": "dizzy-a",
+          "action": "arms_pose",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "hardware_dependent": [
+    "Measured PCB outlines, mounting posts, connector access and cable bends",
+    "Servo shaft coupling, load, stall current and mechanical stops",
+    "USB-C 5V/5A negotiation and temperature",
+    "Acoustics, electrode sensitivity and physical stability",
+    "ESP32 firmware, actual phone Bluetooth and real camera performance"
+  ],
+  "voice_scope": "Existing microphone pipeline retained; this revision tests typed Gemini arm control."
+}

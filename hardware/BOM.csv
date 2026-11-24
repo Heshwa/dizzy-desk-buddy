@@ -1,0 +1,28 @@
+ID,Quantity,Selected component,Role,Cost basis,Link
+MCU,1,ESP32-DevKitC V4 ESP32-WROOM-32E original ESP32,Main controller and A2DP Wi-Fi touch,Listed 1129 INR for official board; recheck seller quote,https://robu.in/product/espressif-esp32-devkitc-esp32-wroom-3-2e-development-board/
+LCD,1,Techtonics TECH2512 GC9A01 7P 1.28 inch 240x240 round IPS SPI,Animated face and clock,Previously listed 449 INR,https://techtonics.in/product/1-28-inch-round-display-module-gc9a01-7p-240x240-spi/
+CAM,1,ESP32-CAM OV2640 PSRAM board,Camera Wi-Fi frames,Listed 775 INR including GST,https://techtonics.in/product/esp32-cam-wifi-bluetooth-development-board-with-ov2640-camera-module-2mp/
+FLEX,1,ESP32-CAM compatible OV2640 24pin 75mm FPC camera assembly; 120 degree supplier variant,Lens at upper front port; calibrate actual horizontal FOV,Allowance 150-300 INR if bundle lacks suitable flex,https://probots.co.in/ov2640-120-degree-wide-angle-lens-2mp-camera-module-24pin-75mm.html
+SERVO,3,TowerPro SG90 positional 180 degree not continuous rotation,1 neck plus 2 reserved shoulder servos,Supplier lists 89 INR each; qualify authenticity and torque,https://techtonics.in/product/towerpro-sg90-9g-micro-servo-motor-180-degree-rotation/
+AMP,1,MAX98357A I2S mono amplifier breakout,Music alarms and voice,Listed 130 INR including GST,https://techtonics.in/product/max98357-i2s-3w-class-d-amplifier-interface-audio-decoder-module-filterless-board/
+SPK,1,PUI Audio AS02804PR-N50-R 28mm 4 ohm 3W nominal 7.5mm deep,Audio output,Listed 724.78 INR before any checkout tax and delivery,https://in.element14.com/pui-audio/as02804pr-n50-r/speaker-250hz-20khz-4-ohm-76-5dba/dp/4411358
+MIC,1,INMP441 3.3V I2S microphone breakout,Push-to-talk,Listed 140 INR including GST; I2S despite seller title saying I2C,https://techtonics.in/product/inmp441-mems-omnidirectional-microphone-module-high-precision-snr-low-power-i2c-interface-supports-esp32/
+RTC,1,DS3231 TECH module with backup holder; inspect charging path before CR2032 use,Offline timekeeping,Listed 235 INR including supplied battery; verify type,https://techtonics.in/product/ds3231-real-time-clock-module-3-3v-5v-precise-with-battery/
+CELL,1,CR2032 cell and noncharging holder matched to RTC,Use supplied compatible RTC cell or verified replacement; no extra main battery,25-60 INR allowance only if replacement is needed,https://techtonics.in/shop/
+TOUCH,2,18x15mm copper electrode and insulated lead,Head petting,Included in assembly allowance,https://techtonics.in/product/conductive-copper-foil-tape-roll-10mm-x-10mtr/
+SW,3,TECH1779 6x6x5mm momentary tactile switch; use three from minimum pack,Talk and volume,Included in controls allowance,https://techtonics.in/product/tactile-push-button-switch-4-pin-6x6x5-pack-of-10/
+PULLUP,4,10k ohm resistor,Three buttons plus PCA9685 OE disable at boot,Included in controls allowance,https://techtonics.in/shop/
+LED,1,3mm green LED plus 330 ohm series resistor,Camera activity indication,Included in controls allowance,https://techtonics.in/shop/
+PSU,1,Official Raspberry Pi 27W USB-C power supply IN plug 5.1V 5A profile captive cable,Desk power,Listed 1275 INR including GST,https://hubtronics.in/rpi-foundation/raspberry-pi-5-c-supply-27w
+POWER,1,Master switch and power-distribution perfboard,5V distribution after USB-C PD board,Included in assembly allowance,https://techtonics.in/shop/
+CAP1,3,470uF 10V electrolytic capacitor,Two on servo branch plus one on amplifier,Included in assembly allowance,https://techtonics.in/shop/
+CAP2,1,100uF 10V electrolytic capacitor,Controller supply decoupling,Included in assembly allowance,https://techtonics.in/shop/
+CAP3,6,100nF ceramic capacitor,Local decoupling,Included in assembly allowance,https://techtonics.in/shop/
+WIRE,1 set,Insulated power and signal wire locking connectors strain relief,Internal connections,Assembly allowance 200-400 INR including passives and power inlet,https://techtonics.in/shop/
+MECH,1 set,Servo horn bracket low-friction neck support M2 M3 fasteners standoffs,Mechanics,Allowance 150-300 INR,https://techtonics.in/shop/
+CASE,1 set,Head body base articulated arms camera shutter and rubber feet,Enclosure,Quote after fit prototype,Custom project / existing equipment; no purchase link
+PROGRAM,1 shared,ESP32-CAM-MB USB programmer and USB data cable,Setup only outside enclosure,Allowance 100-200 INR,https://techtonics.in/product/esp32-cam-mb-micro-usb-download-module-for-esp32-cam-development-board/
+HOST,1 existing,Mac with Whisper Piper Gemini or Ollama and MQTT,Voice and tracking,Existing equipment,Custom project / existing equipment; no purchase link
+PD,1,Adafruit 5807 HUSB238 USB-C PD breakout,5V PDO only; negotiate and verify 5A before motion,DigiKey lists 565.90 INR before checkout tax and delivery,https://www.digikey.in/en/products/detail/adafruit-industries-llc/5807/21839778
+PCA,1,PCA9685 TECH1049 16-channel I2C servo driver,Neck CH0 and left CH1 right CH2 shoulder servos,Listed 249 INR including GST,https://techtonics.in/product/pca9685-16-channel-12-bit-pwm-servo-driver-i2c-interface/
+I2C_PULLUP,2 if needed,4.7k ohm resistor,One effective SDA/SCL pull-up pair to 3.3V; inspect existing breakout pull-ups first,Included in controls allowance,https://techtonics.in/shop/

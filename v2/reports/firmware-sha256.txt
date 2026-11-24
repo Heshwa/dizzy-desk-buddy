@@ -1,0 +1,2 @@
+7a8925146fdfbae21c87f5805dc102daa58bd156e46c02b876782e28a3096451  v2/firmware/images/dizzy-v2-audio.bin
+37f68c0aab98791bf6c1142bf3494daf277021086fb9fa71af3d5138ceab456e  v2/firmware/images/dizzy-v2-head.bin

@@ -1,0 +1,15 @@
+{
+  "name": "MAX98357A wiring only",
+  "author": "Dizzy project",
+  "pins": [
+    "VIN",
+    "GND",
+    "BCLK",
+    "LRC",
+    "DIN",
+    "GAIN",
+    "SD",
+    "SPK+",
+    "SPK-"
+  ]
+}

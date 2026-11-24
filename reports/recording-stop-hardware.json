@@ -1,0 +1,20 @@
+[
+  {
+    "cycle": 1,
+    "stop_seconds": 0.011,
+    "frames": 4800,
+    "microphone_released": true
+  },
+  {
+    "cycle": 2,
+    "stop_seconds": 0.005,
+    "frames": 4800,
+    "microphone_released": true
+  },
+  {
+    "cycle": 3,
+    "stop_seconds": 0.005,
+    "frames": 4800,
+    "microphone_released": true
+  }
+]

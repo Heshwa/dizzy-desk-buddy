@@ -1,0 +1,31 @@
+from pathlib import Path
+import html
+root=Path(__file__).parent
+out=['<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1280" viewBox="0 0 1200 1280"><rect width="1200" height="1280" fill="#0c1525"/><style>text{font-family:Arial,sans-serif;fill:#e8f1ff}.muted{fill:#a1b2c9}.wire{fill:none;stroke-width:3}</style>']
+def text(x,y,s,size=15,color=None):out.append(f'<text x="{x}" y="{y}" font-size="{size}"'+(f' style="fill:{color}"' if color else '')+'>'+html.escape(s)+'</text>')
+def box(x,y,w,h,title,lines,color='#40d9ba'):
+ out.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="#17253a" stroke="{color}"/>');text(x+18,y+29,title,18,color)
+ for i,s in enumerate(lines):text(x+18,y+56+22*i,s,14)
+def path(d,col):out.append(f'<path d="{d}" class="wire" stroke="{col}"/>')
+text(45,53,'DIZZY / electronics connection plan',30);text(45,82,'USB-C desk power · original ESP32-WROOM-32E · seated pet with three servo axes',16)
+box(45,115,300,115,'USB-C input / HUSB238',['Pi 27 W supply: 5.1 V / 5 A PDO','5 V selection only · I²C address 0x08','V+ → master switch → 5 V star rail'])
+box(440,115,320,115,'Main ESP32 DevKitC V4',['5V input → onboard 3.3V regulator','GPIO logic / pull-ups: 3.3 V only','One common ground across all modules'])
+box(855,115,300,115,'5 V high-current branches',['PCA V+ → 3 × SG90 servos','MAX98357A + ESP32-CAM','Return high currents to the star ground'])
+path('M345 170H440','#ff926d');path('M760 170H855','#ff926d')
+text(45,270,'SIGNALS / exact ESP32 GPIO assignments',20)
+box(45,295,345,155,'Round face · GC9A01 · 240×240',['3.3V → VCC · GND → GND','18 → SCK · 23 → SDA/MOSI','19 → CS · 27 → DC · 4 → RST','7-pin module: verify its printed pinout'])
+box(425,295,350,155,'Shared I²C bus',['21 → SDA · 22 → SCL','DS3231 0x68 · PCA9685 0x40','HUSB238 0x08 · common ground','One effective 4.7k pull-up pair → 3.3V'])
+box(810,295,345,155,'Servo driver · PCA9685',['VCC → 3.3V · V+ → switched 5V','16 → OE · 10k pull-up → 3.3V','CH0 neck · CH1 left · CH2 right','OE HIGH disables outputs at startup'])
+box(45,480,345,155,'Talk + volume buttons',['GPIO34 → talk · GPIO35 → volume −','GPIO39 (VN) → volume +','Each GPIO: external 10k → 3.3V','Each switch: GPIO → GND when pressed'])
+box(425,480,350,155,'Crown touch / camera light',['13 → left copper crown electrode','14 → right copper crown electrode','17 → 330Ω → LED anode (+)','LED cathode (−) → GND'])
+box(810,480,345,155,'Microphone · INMP441',['VDD → 3.3V · GND / L/R → GND','26 → SCK/BCLK · 25 → WS','SD → GPIO33','Do not power microphone from 5V'])
+box(45,665,345,155,'Speaker / MAX98357A',['VIN → 5V · GND → common GND','26 → BCLK · 25 → LRC · 32 → DIN','SPK+ / SPK− → 4Ω 3W speaker','Neither speaker lead connects to GND'])
+box(425,665,350,155,'Camera + clock backup',['ESP32-CAM 5V → 5V · GND → GND','Camera → Mac over Wi-Fi, separate MCU','RTC VCC → 3.3V · CR2032 backup','Noncharging holder / verify module path'])
+box(810,665,345,155,'Local decoupling / mechanics',['Servo branch: 2 × 470µF / 10V','Amplifier: 470µF · MCU: 100µF','100nF near each board · polarity checked','Neck ±45° · hands 0–118° in demo'])
+text(45,867,'WHAT EACH SIMULATOR VERIFIES',20)
+box(45,890,535,152,'Wokwi · firmware + register-level models',['ESP32 runs compiled Arduino code and reads the switches.','Custom GC9A01 / DS3231 / PCA9685 / HUSB238 models.','Servo pulses, round pixels, I²C reads and OE power interlock.','Mic, amplifier and camera symbols are wiring-only.'])
+box(615,890,540,152,'ngspice · assumed power network',['4.25 A planned load: 3 servos + MCU + camera + audio.','Cable/branch resistance, current limit and capacitor ESR.','5 A case: 4.77 V servo rail · 3 A case: 3.15 V.','These are calculated assumptions; measure the real supply.'])
+text(45,1084,'BENCH CHECKS BEFORE ASSEMBLY',20)
+for i,s in enumerate(['Confirm the actual USB-PD contract and loaded rail voltage before enabling all three motors.','Calibrate each servo’s pulse limits and linkage stops; 500–2500µs is a simulation range only.','Use separate high-current power wiring; never supply motors through the ESP32 regulator.','Verify LCD voltage/pin order, RTC battery charging path, microphone clocks and real touch sensitivity.','Use one power source while programming, or add verified USB backfeed isolation.']):text(45,1116+26*i,s,16)
+text(45,1260,'Connection plan, not a PCB fabrication schematic • functional models are not vendor-certified',14,'#a1b2c9')
+out.append('</svg>');(root/'wiring.svg').write_text(''.join(out))

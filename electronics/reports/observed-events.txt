@@ -1,0 +1,33 @@
+DIZZY ELECTRONICS DEMO: digital/register models, not electrical qualification
+I2C 0x08 ACK
+I2C 0x40 ACK
+I2C 0x68 ACK
+POWER_OK: model reports 5V/5A; OE enabled
+READY: click the five buttons; use Serial commands for motor/alarm tests
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+VOLUME=55 (audio path wiring only)
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+ALARM_TEST: five seconds
+STATUS power=1 OE=0 neck=45 left=104 right=104 volume=55 alarm=0
+STATUS power=1 OE=0 neck=45 left=76 right=76 volume=55 alarm=0
+ALARM_RINGING: visual only; touch snoozes
+STATUS power=1 OE=0 neck=45 left=16 right=16 volume=55 alarm=1
+STATUS power=1 OE=0 neck=45 left=0 right=0 volume=55 alarm=1
+VOLUME=50 (audio path wiring only)
+GOODNIGHT: network delivery remains in Webots/Mac
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+ALARM_SNOOZED: 5 minutes
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+PTT_START: microphone/LLM uses the Mac service
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+PET_TAP: happy blink (local)
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+POWER_BLOCKED: outputs disabled (OE HIGH)
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+POWER_OK: model reports 5V/5A; OE enabled
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+PTT_STOP
+STATUS power=1 OE=0 neck=0 left=2 right=2 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=118 right=118 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=112 right=112 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0

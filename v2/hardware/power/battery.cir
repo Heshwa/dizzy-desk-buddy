@@ -1,0 +1,27 @@
+* Dizzy V2 rail and pack envelope. Idealized regulators with dropout and dynamic source impedance.
+.param P=7.4 RPACK=.09 RMOTOR=.030 RLOGIC=.045 LIM=5
+Vpack pcm 0 {P}
+Rpack pcm batt {RPACK}
+Cpack batt 0 100u
+* Coupled input demand, conservative 82 percent conversion at the near-empty condition.
+Binput batt 0 I=(max(0, I(VsenseM))*5+max(0,I(VsenseL))*5)/(max(V(batt),1)*.82)+.030
+Blogic srcL 0 V=min(5.02,max(0,V(batt)-.75))
+Rlogic srcL logic {RLOGIC}
+Clogic logic 0 470u
+VsenseL logic electronics 0
+Ilogic electronics 0 PWL(0 .42 .1 .42 .1001 1.45 .8 1.45 .801 .70 1 .7)
+Vcut cut 0 PWL(0 1 .880 1 .8801 0 1 0)
+Bmotor srcM 0 V=V(cut)*min(5.00,max(0,V(batt)-1))
+Rmotor srcM rail {RMOTOR}
+Cmotor rail 0 1000u
+VsenseM rail motors 0
+Vrequest demand 0 PWL(0 .12 .06 .12 .0601 1.5 .12 1.5 .1201 3.18 .18 3.18
++ .1801 1.5 .3 1.5 .3001 4.8 .316 4.8 .3161 2.6 .60 2.6 .6001 .45 .95 .45)
+Bload motors 0 I=V(cut)*min(V(demand), LIM)
+.tran .0002 1
+.meas tran board_min MIN V(electronics) FROM=.01 TO=.85
+.meas tran motor_min MIN V(motors) FROM=.01 TO=.85
+.meas tran battery_min MIN V(batt) FROM=.01 TO=.85
+.meas tran input_max MIN I(Vpack) FROM=.01 TO=.85
+.meas tran after_cut MAX V(motors) FROM=.89 TO=1
+.end

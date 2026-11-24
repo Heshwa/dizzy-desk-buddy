@@ -1,0 +1,429 @@
+#VRML_SIM R2025a utf8
+WorldInfo { title "Dizzy CAD joint and exterior review" basicTimeStep 32 }
+
+Viewpoint {
+  fieldOfView 0.66
+  position 0.058 -0.40 0.21
+  orientation 0.987 0.023 0.159 1.309
+}
+Background { skyColor [ 0.27 0.32 0.31 ] }
+DirectionalLight { direction 0.3 1 -2 intensity 2 }
+DirectionalLight { direction -1 1 -0.5 intensity 0.7 }
+Solid {
+  translation 0 0 -0.004
+  children [ Shape {
+    appearance PBRAppearance { baseColor 0.43 0.37 0.30 roughness 0.8 metalness 0 }
+    geometry Box { size 0.65 0.65 0.008 }
+  } ]
+}
+Group {
+ children [
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Bottom_cover.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_amplifier.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_audio_capacitor.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_clock_board_and_cell.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_controller_100uF.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_esp32_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_left_shoulder_servo.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_master_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_microphone_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_neck_servo.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_pca9685_driver.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_power_distribution.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_right_shoulder_servo.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_servo_470uF_1.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_servo_470uF_2.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_speaker.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_talk_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_usb_c_pd_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Chest_inset.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Clip_audio_capacitor.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Clip_controller_100uF.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Clip_servo_470uF_1.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Clip_servo_470uF_2.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Foot_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Foot_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Foot_pad_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Foot_pad_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Harness_clip_hips.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Harness_clip_neck.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Hip_front.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Hip_rear.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Neck_bearing_seat.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Passive_strip.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Record_button.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_amplifier.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_audio_capacitor.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_clock_board_and_cell.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_controller_100uF.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_esp32_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_left_shoulder_servo.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_master_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_microphone_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_neck_servo.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_pca9685_driver.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_power_distribution.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_right_shoulder_servo.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_servo_470uF_1.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_servo_470uF_2.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_talk_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_usb_c_pd_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Shoulder_bearing_seat_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Shoulder_bearing_seat_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Shoulder_housing_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Shoulder_housing_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Sole_insert_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Sole_insert_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.035 0.054 0.06 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Speaker_gasket.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Torso_front.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Torso_rear.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/USB_cable_saddle.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Waist_band.obj" ] }
+  }
+ ]
+}
+DEF HEAD Pose {
+  translation 0.0 0.0 0.1177125
+  children [
+    Pose {
+      translation -0.0 -0.0 -0.1177125
+      children [
+  Shape {
+    appearance PBRAppearance { baseColor 0.035 0.054 0.06 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Camera_shutter.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_camera_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_display_pocket.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_minus_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Carrier_plus_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Crown_inlay_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Crown_inlay_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Face_bezel.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.035 0.054 0.06 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Face_insert.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Harness_clip_head.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Helmet_front.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Helmet_rear.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/LED_holder.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Lens_flex_support.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Neck_hollow_hub.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Neck_retaining_ring.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_camera_board.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_display_pocket.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_minus_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Retainer_plus_switch.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Shutter_rails.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Volume_cap_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Volume_cap_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.03 0.055 0.065 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/LCD_visible.obj" ] }
+  }
+      ]
+    }
+  ]
+}
+DEF LEFT Pose {
+  translation -0.0602 0.0 0.10105
+  children [
+    Pose {
+      translation 0.0602 -0.0 -0.10105
+      children [
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Cuff_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Forearm_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Horn_adapter_L.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Palm_L.obj" ] }
+  }
+      ]
+    }
+  ]
+}
+DEF RIGHT Pose {
+  translation 0.0602 0.0 0.10105
+  children [
+    Pose {
+      translation -0.0602 -0.0 -0.10105
+      children [
+  Shape {
+    appearance PBRAppearance { baseColor 0.68 0.34 0.23 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Cuff_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Forearm_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.27 0.5 0.48 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Horn_adapter_R.obj" ] }
+  }
+  Shape {
+    appearance PBRAppearance { baseColor 0.95 0.915 0.85 roughness 0.57 metalness 0 }
+    geometry Mesh { url [ "../../output/webots/Palm_R.obj" ] }
+  }
+      ]
+    }
+  ]
+}
+Robot {
+  name "CAD articulation review"
+  controller "cad_pose_review"
+  supervisor TRUE
+}

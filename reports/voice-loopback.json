@@ -1,0 +1,5 @@
+{
+  "check": "Automatic Mac speaker to Mac microphone loopback",
+  "status": "FAIL",
+  "details": "No speech detected in the automatic speaker loopback recording. The subsequent user-spoken microphone test passed."
+}

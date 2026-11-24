@@ -1,0 +1,9 @@
+matplotlib
+networkx
+numpy
+pillow
+python-fcl
+rtree
+scipy
+trimesh
+fast-simplification

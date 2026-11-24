@@ -1,0 +1,17 @@
+{
+  "name": "GC9A01 round 1.28in",
+  "author": "Dizzy project",
+  "pins": [
+    "VCC",
+    "GND",
+    "SCK",
+    "SDA",
+    "RST",
+    "DC",
+    "CS"
+  ],
+  "display": {
+    "width": 264,
+    "height": 264
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "external_connector": "USB-C, power only",
+  "supply": "Official Raspberry Pi 27W USB-C, captive cable, Indian plug",
+  "selected_voltage": 5.1,
+  "required_negotiated_current": 5.0,
+  "pd_controller": "Adafruit 5807 HUSB238, request 5V PDO over I2C",
+  "main_battery": false,
+  "rtc_cell": "Timekeeping only; never supplies motors/audio",
+  "physical_negotiation_verified": false,
+  "current_allowances_amps": {"main_radio": 0.5, "camera": 0.5, "neck_servo": 0.8, "left_servo": 0.8, "right_servo": 0.8, "audio": 0.7, "display_other": 0.15},
+  "servo_enable_condition": "5V PDO negotiated at >=5A; GPIO16 pulls PCA9685 OE low only after verification",
+  "fallback": "Outputs disabled and insufficient-power status if contract cannot be confirmed",
+  "prototype_checks": ["actual PD current contract", "connector and wire ratings", "voltage droop with three motors", "jam current and timeout", "temperature", "no back-feed from programming USB"]
+}

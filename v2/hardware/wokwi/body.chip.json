@@ -1,0 +1,17 @@
+{
+  "name": "Dizzy body I\u00b2C sensor surrogate",
+  "author": "Dizzy V2",
+  "pins": [
+    "VCC",
+    "GND",
+    "SDA",
+    "SCL",
+    "TALK",
+    "CROWN_L",
+    "CROWN_R",
+    "ARM",
+    "STOP",
+    "LOW_BAT",
+    "TILT"
+  ]
+}

@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as App
+source = Path(__file__).resolve().parent / "build.py"
+exec(compile(source.read_text(), str(source), "exec"), {"__name__": "__main__", "__file__": str(source)})
+if App.GuiUp:
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()

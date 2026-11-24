@@ -1,0 +1,32 @@
+[
+  {
+    "event": "action",
+    "device": "dizzy-a",
+    "action": "display_capture",
+    "ok": true
+  },
+  {
+    "event": "action",
+    "device": "dizzy-a",
+    "action": "voice_state",
+    "ok": true
+  },
+  {
+    "event": "action",
+    "device": "dizzy-a",
+    "action": "arms_pose",
+    "ok": true
+  },
+  {
+    "event": "reply",
+    "device": "dizzy-a",
+    "text": "Use your arms_pose tool to wave your right hand now.",
+    "reply": "Wave! \ud83d\udc4b"
+  },
+  {
+    "event": "action",
+    "device": "dizzy-a",
+    "action": "voice_state",
+    "ok": true
+  }
+]

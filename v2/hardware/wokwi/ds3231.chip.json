@@ -1,0 +1,10 @@
+{
+  "name": "DS3231 time-register model",
+  "author": "Dizzy project",
+  "pins": [
+    "VCC",
+    "GND",
+    "SDA",
+    "SCL"
+  ]
+}

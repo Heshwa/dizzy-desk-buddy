@@ -1,0 +1,23 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+runtime/
+models/
+*.pyc
+
+electronics/toolchain/firmware/
+electronics/power/*.dat
+# Local credentials, OS files, and downloaded/generated workspaces
+.DS_Store
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+*.log
+.DS_Store?
+*.FCBak
+*.FCStd1
+*.FCStd2

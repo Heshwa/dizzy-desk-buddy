@@ -1,0 +1,1 @@
+CAD_POSES_OK 6

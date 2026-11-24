@@ -1,0 +1,7 @@
+{
+  "tracked_degrees": 12.62,
+  "recognized_targets": 1,
+  "stopped": true,
+  "target_x": 0.04,
+  "retest": "Target stays inside the relocated camera field of view"
+}

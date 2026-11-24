@@ -1,0 +1,145 @@
+#VRML_SIM R2025a utf8
+WorldInfo {
+  title "Dizzy V2 floor gait"
+  basicTimeStep 8
+  contactProperties [ ContactProperties { material1 "default" material2 "default" coulombFriction [ 0.78 ] bounce 0 softCFM 0.0002 } ]
+}
+Viewpoint { orientation -0.239 -0.354 -0.904 2.10 position 0.57 0.43 0.29 fieldOfView 0.78 }
+Background { skyColor [ 0.09 0.14 0.18 ] }
+DirectionalLight { direction -0.7 -0.8 -1 intensity 1.6 }
+DirectionalLight { direction -0.4 1 -1 intensity 0.7 }
+Solid {
+  translation 0 0 -0.012
+  children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.28 0.34 0.35 roughness 0.67 metalness 0 }
+      geometry Box { size 1.4 1.4 .024 } } ] } ]
+  boundingObject Box { size 1.4 1.4 .024 }
+}
+Robot {
+  translation 0 0 .081
+  name "Dizzy V2 motion rig"
+  supervisor TRUE
+  controller "dizzy_v2"
+  selfCollision TRUE
+  children [ Transform { translation 0 0 0.010 scale .041 .048 .052 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0.039 0 .012 scale .007 .031 .030 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0.046 0 0.019 scale .004 .009 .009 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.13 0.15 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 .059 minStop -0.7853982 maxStop 0.7853982 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "yaw" maxVelocity 4 maxTorque 0.11
+          minPosition -0.7853982 maxPosition 0.7853982 acceleration 15 }
+        PositionSensor { name "yaw_angle" }
+      ]
+      endPoint Solid { name "yaw carriage" translation 0 0 .059 children [ Transform { translation 0 0 0 scale .021 .024 .012 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } HingeJoint {
+      jointParameters HingeJointParameters { axis 0 -1 0 anchor 0 0 .009 minStop -0.3490659 maxStop 0.4363323 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "pitch" maxVelocity 4 maxTorque 0.11
+          minPosition -0.3490659 maxPosition 0.4363323 acceleration 15 }
+        PositionSensor { name "pitch_angle" }
+      ]
+      endPoint Solid { name "tilting helmet" translation 0 0 .009 children [ Transform { translation 0 0 0.031 scale .039 .050 .035 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Pose { translation 0.033 0 0.029 rotation 0 1 0 1.5707963
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Cylinder { radius .031 height .005 subdivision 48 } } ] } Pose { translation 0.036 0 0.029 rotation 0 1 0 1.5707963
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.13 0.15 roughness 0.67 metalness 0 }
+      geometry Cylinder { radius .027 height .004 subdivision 48 } } ] } Transform { translation 0.039 -0.009 .032 scale .0016 .0048 .0065 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.32 0.81 0.71 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0.039 0.009 .032 scale .0016 .0048 .0065 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.32 0.81 0.71 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } ]
+     boundingObject Pose { translation 0 0 0.034 children [ Sphere { radius .031 } ] } physics Physics { density -1 mass 0.052 } }
+    } ]
+     boundingObject Cylinder { radius .019 height .01 } physics Physics { density -1 mass 0.009 } }
+    } HingeJoint {
+      jointParameters HingeJointParameters { axis 0 -1 0 anchor 0 0.069 0.029 minStop 0 maxStop 1.5707963 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "left_arm" maxVelocity 4 maxTorque 0.1
+          minPosition 0 maxPosition 1.5707963 acceleration 15 }
+        PositionSensor { name "left_arm_angle" }
+      ]
+      endPoint Solid { name "left arm" translation 0 0.069 0.029 children [ Transform { translation 0.003 0 -0.067 scale .022 .015 .018 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0 0 -0.034 scale .020 .018 .029 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0.016 0 -0.054 scale .009 .008 .012 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } ]
+     boundingObject Pose { translation .003 0 -.044 children [ Box { size .034 .026 .074 } ] } physics Physics { density -1 mass 0.016 } }
+    } HingeJoint {
+      jointParameters HingeJointParameters { axis 0 -1 0 anchor 0 -0.069 0.029 minStop 0 maxStop 1.5707963 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "right_arm" maxVelocity 4 maxTorque 0.1
+          minPosition 0 maxPosition 1.5707963 acceleration 15 }
+        PositionSensor { name "right_arm_angle" }
+      ]
+      endPoint Solid { name "right arm" translation 0 -0.069 0.029 children [ Transform { translation 0.003 0 -0.067 scale .022 .015 .018 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0 0 -0.034 scale .020 .018 .029 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Transform { translation 0.016 0 -0.054 scale .009 .008 .012 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } ]
+     boundingObject Pose { translation .003 0 -.044 children [ Box { size .034 .026 .074 } ] } physics Physics { density -1 mass 0.016 } }
+    } HingeJoint {
+      jointParameters HingeJointParameters { axis 0 -1 0 anchor 0 0.032 -0.028 minStop -0.53 maxStop 0.53 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "left_hip" maxVelocity 4 maxTorque 0.12
+          minPosition -0.53 maxPosition 0.53 acceleration 15 }
+        PositionSensor { name "left_hip_angle" }
+      ]
+      endPoint Solid { name "left hip" translation 0 0.032 -0.028 children [ Transform { translation 0 0 -0.015 scale .020 .021 .024 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } HingeJoint {
+      jointParameters HingeJointParameters { axis 1 0 0 anchor 0 0 -0.032 minStop -0.44 maxStop 0.44 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "left_ankle" maxVelocity 4 maxTorque 0.12
+          minPosition -0.44 maxPosition 0.44 acceleration 15 }
+        PositionSensor { name "left_ankle_angle" }
+      ]
+      endPoint Solid { name "left foot" translation 0 0 -0.032 children [ Transform { translation 0.009 0 -0.009 scale .037 .026 .013 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Pose { translation 0.009 0 -0.017 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.13 0.15 roughness 0.67 metalness 0 }
+      geometry Box { size .072 .051 .007 } } ] } Transform { translation 0.027 0 -0.005 scale .022 .017 .009 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } ]
+     boundingObject Pose { translation 0.009 0 -0.012 children [ Box { size .072 .051 .017 } ] } physics Physics { density -1 mass 0.033 } }
+    } ]
+     boundingObject Pose { translation 0 0 -0.012 children [ Box { size .027 .032 .025 } ] } physics Physics { density -1 mass 0.036 } }
+    } HingeJoint {
+      jointParameters HingeJointParameters { axis 0 -1 0 anchor 0 -0.032 -0.028 minStop -0.53 maxStop 0.53 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "right_hip" maxVelocity 4 maxTorque 0.12
+          minPosition -0.53 maxPosition 0.53 acceleration 15 }
+        PositionSensor { name "right_hip_angle" }
+      ]
+      endPoint Solid { name "right hip" translation 0 -0.032 -0.028 children [ Transform { translation 0 0 -0.015 scale .020 .021 .024 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } HingeJoint {
+      jointParameters HingeJointParameters { axis 1 0 0 anchor 0 0 -0.032 minStop -0.44 maxStop 0.44 dampingConstant 0.012 }
+      device [
+        RotationalMotor { name "right_ankle" maxVelocity 4 maxTorque 0.12
+          minPosition -0.44 maxPosition 0.44 acceleration 15 }
+        PositionSensor { name "right_ankle_angle" }
+      ]
+      endPoint Solid { name "right foot" translation 0 0 -0.032 children [ Transform { translation 0.009 0 -0.009 scale .037 .026 .013 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.86 0.82 0.72 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } Pose { translation 0.009 0 -0.017 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.13 0.15 roughness 0.67 metalness 0 }
+      geometry Box { size .072 .051 .007 } } ] } Transform { translation 0.027 0 -0.005 scale .022 .017 .009 children [ Pose { translation 0 0 0 rotation 0 0 1 0
+      children [ Shape { appearance PBRAppearance { baseColor 0.69 0.30 0.21 roughness 0.67 metalness 0 }
+      geometry Sphere { radius 1 subdivision 3 } } ] } ] } ]
+     boundingObject Pose { translation 0.009 0 -0.012 children [ Box { size .072 .051 .017 } ] } physics Physics { density -1 mass 0.033 } }
+    } ]
+     boundingObject Pose { translation 0 0 -0.012 children [ Box { size .027 .032 .025 } ] } physics Physics { density -1 mass 0.036 } }
+    } ]
+  boundingObject Pose { translation 0 0 .017 children [ Box { size .065 .075 .072 } ] }
+  physics Physics { density -1 mass .157 centerOfMass [ 0 0 -0.014 ] }
+}

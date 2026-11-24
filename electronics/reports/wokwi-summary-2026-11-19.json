@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-19",
+  "simulator": "Wokwi browser, compiled original ESP32 firmware",
+  "fixed_fault": "Volume-up GPIO39 must use the VN board terminal; esp:39 does not exist",
+  "startup_volume_stable_after_fix": true,
+  "firmware_changes": "none",
+  "diagram_changes": [
+    "esp:39 replaced with esp:VN",
+    "Keyboard shortcuts T/J/K/P/O for connected buttons"
+  ],
+  "passed": [
+    "I2C devices acknowledged",
+    "round display and advancing clock",
+    "talk start/stop inputs",
+    "volume 50 to 55 to 50",
+    "neck -45/+45/center",
+    "both shoulders reach 118 and return",
+    "visual alarm and touch snooze",
+    "crown single tap",
+    "crown hold",
+    "reported-current motor inhibit and recovery"
+  ],
+  "not_verified_in_live_ui": [
+    "tightly timed double-tap (deterministic sketch tests pass)"
+  ],
+  "wiring_only": [
+    "MAX98357A amplifier",
+    "INMP441 microphone",
+    "ESP32-CAM"
+  ],
+  "not_electrically_simulated": [
+    "USB-PD CC negotiation",
+    "loaded supply voltage/current",
+    "physical capacitance",
+    "servo torque/stall"
+  ]
+}

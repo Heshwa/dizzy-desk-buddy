@@ -1,0 +1,172 @@
+{
+  "revision": "Compact Seated Companion",
+  "checks": [
+    {
+      "name": "Live hand roots match compact prototype",
+      "result": "PASS",
+      "joints": [
+        {
+          "name": "left mitten",
+          "translation": [
+            -0.06599999991759598,
+            2.3116971878400783e-11,
+            0.07899960754506408
+          ],
+          "position": [
+            -0.16099999991759598,
+            2.3116971878400783e-11,
+            0.8189996075450641
+          ],
+          "rotation": [
+            0.2701107629884364,
+            -0.9628292557446542,
+            9.241946413317602e-09,
+            5.705684368252317e-09
+          ],
+          "anchor": [
+            -0.056,
+            0.0,
+            0.094
+          ]
+        },
+        {
+          "name": "right mitten",
+          "translation": [
+            0.065999999917596,
+            2.311695973533645e-11,
+            0.07899960754506408
+          ],
+          "position": [
+            -0.029000000082404,
+            2.311695973533645e-11,
+            0.8189996075450641
+          ],
+          "rotation": [
+            0.27011066634893477,
+            0.9628292828557585,
+            9.807692100357973e-09,
+            5.705684171858244e-09
+          ],
+          "anchor": [
+            0.056,
+            0.0,
+            0.094
+          ]
+        },
+        {
+          "name": "solid",
+          "translation": [
+            0.0,
+            0.0,
+            0.157
+          ],
+          "position": [
+            -0.095,
+            0.0,
+            0.897
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "anchor": [
+            0.0,
+            0.0,
+            0.1095
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Circular screen and no resting button contacts",
+      "result": "PASS",
+      "pixels": [
+        240,
+        240
+      ],
+      "sensors": {
+        "pet_left": 0.0,
+        "pet_right": 0.0,
+        "talk": 0.0,
+        "volume_down": 0.0,
+        "volume_up": 0.0
+      }
+    },
+    {
+      "name": "Measured wave and automatic return",
+      "result": "PASS",
+      "peak_degrees": {
+        "left": 0.0,
+        "right": 117.96
+      },
+      "final": {
+        "left": -0.0,
+        "right": 0.06
+      }
+    },
+    {
+      "name": "Measured hello and automatic return",
+      "result": "PASS",
+      "peak_degrees": {
+        "left": 117.98,
+        "right": 117.98
+      },
+      "final": {
+        "left": 0.27,
+        "right": 0.27
+      }
+    },
+    {
+      "name": "Measured lift and automatic return",
+      "result": "PASS",
+      "peak_degrees": {
+        "left": 118.0,
+        "right": 118.0
+      },
+      "final": {
+        "left": 0.02,
+        "right": 0.02
+      }
+    },
+    {
+      "name": "Quiet petting keeps expression and suppresses autonomous arms",
+      "result": "PASS"
+    },
+    {
+      "name": "MQTT wave reaches partner with acknowledgement and hand motion",
+      "result": "PASS",
+      "delivery": "delivered",
+      "partner_arm": {
+        "left": 0.0,
+        "right": 26.79
+      }
+    },
+    {
+      "name": "Component inspection opens and closes shell",
+      "result": "PASS"
+    },
+    {
+      "name": "Head limits and clear side/crown/chest controls",
+      "result": "PASS"
+    },
+    {
+      "name": "Camera and display capture after helmet redesign",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini and real voice",
+      "result": "NOT RERUN",
+      "reason": "Unchanged voice interface; this run validates compact geometry and measured gestures."
+    }
+  ],
+  "hardware_dependent": [
+    "Measured PCB outlines, mounting posts, connector access and cable bends",
+    "Servo shaft coupling, load, stall current and mechanical stops",
+    "USB-C 5V/5A negotiation and temperature",
+    "Acoustics, electrode sensitivity and physical stability",
+    "ESP32 firmware, actual phone Bluetooth and real camera performance"
+  ],
+  "voice_scope": "Existing microphone and Gemini interfaces retained. Optional model check can be skipped for geometry-only revisions."
+}

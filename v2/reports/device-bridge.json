@@ -1,0 +1,10 @@
+{
+  "test": "PASS",
+  "hardware": "HTTP firmware stand-in",
+  "checks": [
+    "auth",
+    "local arm rejection",
+    "command acknowledgment",
+    "both directions through MQTT"
+  ]
+}

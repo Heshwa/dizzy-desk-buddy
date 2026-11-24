@@ -1,0 +1,54 @@
+[
+  {
+    "check": "24-rendered-reactions and multi-selection",
+    "test": "PASS",
+    "data": {
+      "reactions": 24,
+      "pet_rotation": [
+        2,
+        8,
+        17
+      ]
+    }
+  },
+  {
+    "check": "Local alarm, touch snooze and timer",
+    "test": "PASS",
+    "data": "Alarm and timer rang without a provider call; touch snoozed."
+  },
+  {
+    "check": "MQTT partner wave and good night",
+    "test": "PASS",
+    "data": "Both events acknowledged through local Mosquitto."
+  },
+  {
+    "check": "Motion arming and fault lockout",
+    "test": "PASS",
+    "data": "Local arm, physical fall fixture, lockout, and joint limits exercised."
+  },
+  {
+    "check": "Simulated phone and music ducking",
+    "test": "PASS",
+    "data": {
+      "ducked": 0.0975,
+      "restored": 0.65
+    }
+  },
+  {
+    "check": "Whisper speech input and verified action with Piper reply",
+    "test": "PASS",
+    "data": {
+      "whisper": "Look left.",
+      "reply": "Turning my head to the left.",
+      "fixture": "Piper audio fed to real Whisper; no microphone"
+    }
+  },
+  {
+    "check": "Live model conversation and tool call",
+    "test": "PASS",
+    "data": {
+      "answer": "Did you know the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters every year? It's like it's drifting away on a very slow journey!",
+      "tool_reply": "I've turned my head 24 degrees to the right for you!"
+    }
+  }
+]

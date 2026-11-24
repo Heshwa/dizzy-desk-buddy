@@ -1,0 +1,9 @@
+"""Rebuild Dizzy's CAD from this project's source and parameters."""
+from pathlib import Path
+import runpy
+
+cad_root = Path(__file__).resolve().parent
+runpy.run_path(str(cad_root / 'source' / 'build.py'), run_name='__main__')
+if Gui.activeDocument():
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()

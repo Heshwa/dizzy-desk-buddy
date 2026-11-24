@@ -1,0 +1,35 @@
+[
+  {
+    "scale": 1,
+    "conflicts": [
+      "display_pocket",
+      "esp32_board",
+      "left_shoulder_servo",
+      "master_switch",
+      "power_distribution",
+      "right_shoulder_servo",
+      "talk_switch",
+      "usb_c_pd_board"
+    ]
+  },
+  {
+    "scale": 1.025,
+    "conflicts": [
+      "left_shoulder_servo",
+      "right_shoulder_servo",
+      "talk_switch",
+      "usb_c_pd_board"
+    ]
+  },
+  {
+    "scale": 1.05,
+    "conflicts": [
+      "left_shoulder_servo",
+      "right_shoulder_servo"
+    ]
+  },
+  {
+    "scale": 1.075,
+    "conflicts": []
+  }
+]

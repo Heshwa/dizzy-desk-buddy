@@ -1,0 +1,12 @@
+{
+  "name": "INMP441 wiring only",
+  "author": "Dizzy project",
+  "pins": [
+    "VDD",
+    "GND",
+    "SCK",
+    "WS",
+    "SD",
+    "L/R"
+  ]
+}

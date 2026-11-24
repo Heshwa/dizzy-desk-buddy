@@ -1,0 +1,8 @@
+{
+  "name": "4 ohm 3W speaker \u2014 wiring only",
+  "author": "Dizzy project",
+  "pins": [
+    "PLUS",
+    "MINUS"
+  ]
+}

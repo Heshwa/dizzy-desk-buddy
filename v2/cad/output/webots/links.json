@@ -1,0 +1,276 @@
+{
+  "pitch": [
+    {
+      "file": "Helmet_front.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Helmet_rear.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Face_bezel.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Left_crown_cap.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Right_crown_cap.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    }
+  ],
+  "body": [
+    {
+      "file": "Torso_front.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Torso_back.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Chest_grille.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Talk_guide.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Talk_button.obj",
+      "color": [
+        0.09,
+        0.16,
+        0.18
+      ]
+    },
+    {
+      "file": "Expansion_blank.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Rear_controls.obj",
+      "color": [
+        0.09,
+        0.16,
+        0.18
+      ]
+    },
+    {
+      "file": "Battery_door.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Left_shoulder_support.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Right_shoulder_support.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    }
+  ],
+  "yaw": [
+    {
+      "file": "Neck_yaw_support.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    }
+  ],
+  "left_arm": [
+    {
+      "file": "Left_sleeve.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Left_sleeve_rear.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Left_mitten.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Left_shoulder_cap.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    }
+  ],
+  "left_hip": [
+    {
+      "file": "Left_calf_cover.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Left_calf_rear.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    }
+  ],
+  "left_ankle": [
+    {
+      "file": "Left_foot.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Left_sole.obj",
+      "color": [
+        0.09,
+        0.16,
+        0.18
+      ]
+    }
+  ],
+  "right_arm": [
+    {
+      "file": "Right_sleeve.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Right_sleeve_rear.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Right_mitten.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Right_shoulder_cap.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    }
+  ],
+  "right_hip": [
+    {
+      "file": "Right_calf_cover.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    },
+    {
+      "file": "Right_calf_rear.obj",
+      "color": [
+        0.71,
+        0.32,
+        0.23
+      ]
+    }
+  ],
+  "right_ankle": [
+    {
+      "file": "Right_foot.obj",
+      "color": [
+        0.88,
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "file": "Right_sole.obj",
+      "color": [
+        0.09,
+        0.16,
+        0.18
+      ]
+    }
+  ]
+}

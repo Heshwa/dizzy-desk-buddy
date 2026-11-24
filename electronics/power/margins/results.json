@@ -1,0 +1,51 @@
+{
+  "model_only": true,
+  "planning_target_V": 4.75,
+  "cases": [
+    {
+      "case": "baseline",
+      "source_V": 5.1,
+      "cable_path_ohms": 0.04,
+      "servo_allowance_A": 2.4,
+      "requested_load_A": 4.25,
+      "loaded_servo_V": 4.773,
+      "meets_planning_target_4_75V": true
+    },
+    {
+      "case": "double_cable_resistance",
+      "source_V": 5.1,
+      "cable_path_ohms": 0.08,
+      "servo_allowance_A": 2.4,
+      "requested_load_A": 4.25,
+      "loaded_servo_V": 4.603,
+      "meets_planning_target_4_75V": false
+    },
+    {
+      "case": "three_times_cable_resistance",
+      "source_V": 5.1,
+      "cable_path_ohms": 0.12,
+      "servo_allowance_A": 2.4,
+      "requested_load_A": 4.25,
+      "loaded_servo_V": 4.4386,
+      "meets_planning_target_4_75V": false
+    },
+    {
+      "case": "higher_servo_allowance",
+      "source_V": 5.1,
+      "cable_path_ohms": 0.04,
+      "servo_allowance_A": 3.6,
+      "requested_load_A": 5.45,
+      "loaded_servo_V": 4.0951,
+      "meets_planning_target_4_75V": false
+    },
+    {
+      "case": "five_volt_source",
+      "source_V": 5.0,
+      "cable_path_ohms": 0.04,
+      "servo_allowance_A": 2.4,
+      "requested_load_A": 4.25,
+      "loaded_servo_V": 4.673,
+      "meets_planning_target_4_75V": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+menu "Dizzy V2"
+config DIZZY_WIFI_SSID
+  string "Local network SSID"
+  default ""
+config DIZZY_WIFI_PASSWORD
+  string "Local network password"
+  default ""
+config DIZZY_BRIDGE
+  string "Mac bridge URL including port"
+  default ""
+config DIZZY_DEVICE_TOKEN
+  string "Mac bridge device token"
+  default ""
+config DIZZY_ALLOW_MOTORS
+  bool "Enable motor outputs after bench validation"
+  default n
+config DIZZY_ALLOW_FLOOR
+  bool "Enable floor arming after the gait trial"
+  depends on DIZZY_ALLOW_MOTORS
+  default n
+endmenu

@@ -1,0 +1,19 @@
+"""Open the assembled prototype with its production colours and review groups."""
+from pathlib import Path
+import json
+cad_root = Path(__file__).resolve().parent
+doc = App.openDocument(str(cad_root/'output'/'Dizzy.FCStd'))
+metadata = json.loads((cad_root/'preview-data.json').read_text())
+for part in metadata['parts']:
+    obj = doc.getObject(part['id'])
+    if obj:
+        obj.ViewObject.ShapeColor = tuple(part['color'])
+        obj.ViewObject.Visibility = not part['hardware']
+        if part['hardware']:
+            obj.ViewObject.Transparency = 65
+for obj in doc.Calibration.Group:
+    obj.ViewObject.Visibility = False
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+doc.recompute()
+doc.save()

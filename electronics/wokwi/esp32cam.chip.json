@@ -1,0 +1,8 @@
+{
+  "name": "ESP32-CAM Wi-Fi link (not emulated)",
+  "author": "Dizzy project",
+  "pins": [
+    "5V",
+    "GND"
+  ]
+}

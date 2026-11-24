@@ -1,0 +1,113 @@
+{
+  "board": "ESP32-DevKitC V4 with ESP32-WROOM-32E (original ESP32, not S3/C3/WROVER)",
+  "logic_voltage": 3.3,
+  "pins": {
+    "lcd_sck": {
+      "gpio": 18,
+      "direction": "output"
+    },
+    "lcd_mosi": {
+      "gpio": 23,
+      "direction": "output"
+    },
+    "lcd_cs": {
+      "gpio": 19,
+      "direction": "output"
+    },
+    "lcd_dc": {
+      "gpio": 27,
+      "direction": "output"
+    },
+    "lcd_reset": {
+      "gpio": 4,
+      "direction": "output"
+    },
+    "rtc_sda": {
+      "gpio": 21,
+      "direction": "bidirectional"
+    },
+    "rtc_scl": {
+      "gpio": 22,
+      "direction": "output"
+    },
+    "audio_bclk": {
+      "gpio": 26,
+      "direction": "output"
+    },
+    "audio_lrclk": {
+      "gpio": 25,
+      "direction": "output"
+    },
+    "amplifier_din": {
+      "gpio": 32,
+      "direction": "output"
+    },
+    "microphone_sd": {
+      "gpio": 33,
+      "direction": "input"
+    },
+    "pet_left": {
+      "gpio": 13,
+      "direction": "touch"
+    },
+    "pet_right": {
+      "gpio": 14,
+      "direction": "touch"
+    },
+    "camera_activity_led": {
+      "gpio": 17,
+      "direction": "output"
+    },
+    "talk_button": {
+      "gpio": 34,
+      "direction": "input",
+      "pullup_ohms": 10000
+    },
+    "volume_down": {
+      "gpio": 35,
+      "direction": "input",
+      "pullup_ohms": 10000
+    },
+    "volume_up": {
+      "gpio": 39,
+      "direction": "input",
+      "pullup_ohms": 10000
+    },
+    "servo_outputs_enable": {
+      "gpio": 16,
+      "direction": "output",
+      "pullup_ohms": 10000,
+      "active_low": true
+    }
+  },
+  "camera_connection": "Separate ESP32-CAM over local Wi-Fi; no shared camera GPIO or SD slot on main board",
+  "audio_clock": "Mic and amplifier share BCLK/WS. Prototype voice mode uses matching clock rates; Mac resamples audio. Stop/duck A2DP before voice clock changes.",
+  "notes": [
+    "GPIO34/35/39 have no internal pull-ups; use the specified external resistors to 3.3V.",
+    "GPIO16/17 allocation requires WROOM, not WROVER with reserved PSRAM pins.",
+    "Avoid flash pins 6-11 and boot strapping pins 0,2,5,12,15.",
+    "7-pin LCD has no assumed separate backlight input; verify purchased pinout and supply before wiring.",
+    "RTC SDA/SCL pull-ups must go to 3.3V, not 5V.",
+    "GPIO16 now drives PCA9685 OE, with 10k pull-up to 3.3V: disabled until power is confirmed. Neck and future shoulders use PCA9685 channels 0,1,2.",
+    "HUSB238 must select only the 5V PDO and confirm its negotiated 5A contract before enabling all three servos. Do not assume a connector or charger label establishes the negotiated current.",
+    "GPIO39 is exposed as VN on the DevKitC V4. Use esp:VN in Wokwi wiring and GPIO39 in firmware."
+  ],
+  "i2c_devices": {
+    "rtc": {
+      "address": "0x68"
+    },
+    "servo_driver": {
+      "address": "0x40",
+      "channels": {
+        "neck": 0,
+        "left_arm": 1,
+        "right_arm": 2
+      }
+    },
+    "usb_c_pd": {
+      "address": "0x08",
+      "selected_voltage": 5,
+      "required_current": 5
+    }
+  }
+}

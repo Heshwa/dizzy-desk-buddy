@@ -1,0 +1,36 @@
+signal,from,to,notes
+PACK+,Protected 2S output positive,Main fuse then DC-rated master switch,Size from measured loads and wire ratings
+PACK-,Protected 2S output negative,Star return,Do not bypass BMS
+BATT_RAW,Fused switch output,Logic buck VIN+ and separate motor disconnect input,Keep motor disconnect accessible
+MOTOR_IN,Physical motor disconnect,Motor buck VIN+,DC-rated switch or appropriately rated latched MOSFET disconnect
+MOTOR_5V,Motor buck output+,Eight servos red wires and local reservoir capacitor,Servo energy only never bridge to logic 5V
+LOGIC_5V,Logic buck output+,S3 VBUS and WROOM 5V and MAX98357A VIN,Isolate external rail before either USB connection
+GND,Star return,S3 WROOM MAX I2C regulators and servos,Separate high-current return to star
+I2C_3V3,S3 regulated 3.3V,I2C breakout VCC and bus pullups,Check S3 3.3V budget and module pullups
+BODY_SDA,S3 GPIO17,PCA9685+MCP23017+BMI270+ADS1115+DS3231 SDA,Body address map 40/20/69/48/68 in hex
+BODY_SCL,S3 GPIO18,PCA9685+MCP23017+BMI270+ADS1115+DS3231 SCL,100 kHz effective pullups once
+PWM_DISABLE,S3 GPIO16 open-drain,PCA9685 OE,External pull-up and released when MCU off
+YAW,PCA channel 0,Head yaw SG90 signal,Trim in guarded rig
+PITCH,PCA channel 1,Head pitch SG90 signal,Trim in guarded rig
+LEFT_ARM,PCA channel 2,Left SG90 signal,Trim in guarded rig
+RIGHT_ARM,PCA channel 3,Right SG90 signal,Trim in guarded rig
+LEFT_HIP,PCA channel 4,Left MG90S hip signal,Validate safe limits and torque before floor arming
+RIGHT_HIP,PCA channel 5,Right MG90S hip signal,Validate safe limits and torque before floor arming
+LEFT_ANKLE,PCA channel 6,Left MG90S ankle signal,Validate safe limits and torque before floor arming
+RIGHT_ANKLE,PCA channel 7,Right MG90S ankle signal,Validate safe limits and torque before floor arming
+TALK,MCP23017 GPA0,Chest switch to ground,Active low contact with pullup
+CROWN_LEFT,MCP23017 GPA1,Left body touch module output,Configure active low 3.3V or use active-low contact
+CROWN_RIGHT,MCP23017 GPA2,Right body touch module output,Configure active low 3.3V or use active-low contact
+ARM,MCP23017 GPA3,Local arming switch to ground,Active low contact
+MOTOR_STOP_SENSE,MCP23017 GPA4,Motor cut-off auxiliary contact,Active low when cut plus separate physical power path
+LEFT_FOOT,MCP23017 GPA5,Left sole microswitch,Active low fixture for calibration
+RIGHT_FOOT,MCP23017 GPA6,Right sole microswitch,Active low fixture for calibration
+BATTERY_ADS,Fused pack voltage via 30k/10k divider,ADS1115 A0,Add 100nF at A0 and verify divider with meter
+UART_HEAD_TX,S3 GPIO43,WROOM GPIO16 RX2,3.3V UART crossed common ground
+UART_HEAD_RX,S3 GPIO44,WROOM GPIO17 TX2,3.3V UART crossed common ground
+MUSIC_BCLK,WROOM GPIO26,MAX98357A BCLK,Keep accessible and short
+MUSIC_WS,WROOM GPIO25,MAX98357A LRC,Keep accessible and short
+MUSIC_DOUT,WROOM GPIO22,MAX98357A DIN,Keep accessible and short
+MUSIC_SPK,MAX98357A speaker plus/minus,Chest music speaker,Bridge outputs float
+VOICE_SPK,Waveshare SPK MX1.25,Voice speaker supplied in kit,Independent of MAX98357A
+EXPANSION,Body 3.3V+GND+body I2C+spare,Keyed expansion header,NFC and ToF later; camera provision has unpopulated 5V key

@@ -1,0 +1,688 @@
+[
+  {
+    "part": "Helmet_front",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "Helmet_rear",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "Face_bezel",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "LCD_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "Left_crown_cap",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      1
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "Right_crown_cap",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      1
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "Voice_clip",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "pitch"
+  },
+  {
+    "part": "Torso_front",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Torso_back",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Chest_grille",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Music_clip",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Talk_guide",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Talk_button",
+    "color": [
+      0.09,
+      0.16,
+      0.18
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Expansion_blank",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Rear_controls",
+    "color": [
+      0.09,
+      0.16,
+      0.18
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Backplane",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "RTC_clip",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Battery_drawer",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Battery_door",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Neck_yaw_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Neck_yaw_support",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      1
+    ],
+    "link": "yaw"
+  },
+  {
+    "part": "Neck_pitch_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "yaw"
+  },
+  {
+    "part": "Neck_yoke",
+    "color": [
+      0.09,
+      0.16,
+      0.18
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      1
+    ],
+    "link": "yaw"
+  },
+  {
+    "part": "Neck_pitch_pin_gauge",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      1
+    ],
+    "link": "calibration"
+  },
+  {
+    "part": "Left_sleeve",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      1,
+      0
+    ],
+    "link": "left_arm"
+  },
+  {
+    "part": "Left_sleeve_rear",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      -1,
+      1,
+      0
+    ],
+    "link": "left_arm"
+  },
+  {
+    "part": "Left_mitten",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      1,
+      0
+    ],
+    "link": "left_arm"
+  },
+  {
+    "part": "Left_shoulder_support",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      1,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Left_shoulder_cap",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      1,
+      0
+    ],
+    "link": "left_arm"
+  },
+  {
+    "part": "Left_shoulder_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      0,
+      1,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Left_calf_cover",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "left_hip"
+  },
+  {
+    "part": "Left_calf_rear",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "left_hip"
+  },
+  {
+    "part": "Left_thigh_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Left_ankle_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "left_hip"
+  },
+  {
+    "part": "Left_foot",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "left_ankle"
+  },
+  {
+    "part": "Left_sole",
+    "color": [
+      0.09,
+      0.16,
+      0.18
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      -1
+    ],
+    "link": "left_ankle"
+  },
+  {
+    "part": "Right_sleeve",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      -1,
+      0
+    ],
+    "link": "right_arm"
+  },
+  {
+    "part": "Right_sleeve_rear",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      -1,
+      -1,
+      0
+    ],
+    "link": "right_arm"
+  },
+  {
+    "part": "Right_mitten",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      -1,
+      0
+    ],
+    "link": "right_arm"
+  },
+  {
+    "part": "Right_shoulder_support",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      -1,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Right_shoulder_cap",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      -1,
+      0
+    ],
+    "link": "right_arm"
+  },
+  {
+    "part": "Right_shoulder_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      0,
+      -1,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Right_calf_cover",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "right_hip"
+  },
+  {
+    "part": "Right_calf_rear",
+    "color": [
+      0.71,
+      0.32,
+      0.23
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "right_hip"
+  },
+  {
+    "part": "Right_thigh_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "body"
+  },
+  {
+    "part": "Right_ankle_cassette",
+    "color": [
+      0.27,
+      0.5,
+      0.48
+    ],
+    "explosion_axis": [
+      -1,
+      0,
+      0
+    ],
+    "link": "right_hip"
+  },
+  {
+    "part": "Right_foot",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      1,
+      0,
+      0
+    ],
+    "link": "right_ankle"
+  },
+  {
+    "part": "Right_sole",
+    "color": [
+      0.09,
+      0.16,
+      0.18
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      -1
+    ],
+    "link": "right_ankle"
+  },
+  {
+    "part": "Seated_dock",
+    "color": [
+      0.88,
+      0.82,
+      0.7
+    ],
+    "explosion_axis": [
+      0,
+      0,
+      -1
+    ],
+    "link": "dock"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "check": "Controller restart preserves alarm and volume; alarm subsequently rings",
+    "status": "PASS",
+    "details": {
+      "alarm_id": "d2c23317",
+      "volume": 0.35
+    }
+  },
+  {
+    "check": "Repeated MQTT gesture stays deduplicated after controller restart",
+    "status": "PASS",
+    "details": "acceptance-1795050123560188000"
+  },
+  {
+    "check": "Expired MQTT event produces no greeting",
+    "status": "PASS"
+  }
+]

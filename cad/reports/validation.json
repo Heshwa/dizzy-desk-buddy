@@ -1,0 +1,1375 @@
+{
+  "hardware_intersections": [],
+  "kernel_fallback_checks": [
+    {
+      "component": "minus_switch",
+      "part": "Helmet_front",
+      "intersection": false,
+      "mesh_surface_gap_mm": 3.79
+    }
+  ],
+  "wall_samples": [
+    {
+      "part": "Helmet_front",
+      "samples": 189,
+      "minimum_mm": 0.02,
+      "percentile10_mm": 0.13
+    },
+    {
+      "part": "Helmet_rear",
+      "samples": 220,
+      "minimum_mm": 0.99,
+      "percentile10_mm": 2.48
+    },
+    {
+      "part": "Torso_front",
+      "samples": 220,
+      "minimum_mm": 0.14,
+      "percentile10_mm": 1.54
+    },
+    {
+      "part": "Torso_rear",
+      "samples": 220,
+      "minimum_mm": 0.2,
+      "percentile10_mm": 2.29
+    },
+    {
+      "part": "Hip_front",
+      "samples": 220,
+      "minimum_mm": 0.59,
+      "percentile10_mm": 2.3
+    },
+    {
+      "part": "Hip_rear",
+      "samples": 220,
+      "minimum_mm": 0.48,
+      "percentile10_mm": 2.3
+    },
+    {
+      "part": "Forearm_L",
+      "samples": 220,
+      "minimum_mm": 0.51,
+      "percentile10_mm": 2.17
+    },
+    {
+      "part": "Forearm_R",
+      "samples": 220,
+      "minimum_mm": 0.6,
+      "percentile10_mm": 2.21
+    }
+  ],
+  "meshes": [
+    {
+      "part": "Bottom_cover",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 76.593
+    },
+    {
+      "part": "CAL_board_rail_0p2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 35.0
+    },
+    {
+      "part": "CAL_board_rail_0p3",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 35.0
+    },
+    {
+      "part": "CAL_board_rail_0p4",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 35.0
+    },
+    {
+      "part": "CAL_button_0p2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 25.0
+    },
+    {
+      "part": "CAL_button_0p3",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 25.0
+    },
+    {
+      "part": "CAL_button_0p4",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 25.0
+    },
+    {
+      "part": "CAL_display_0p2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 57.0
+    },
+    {
+      "part": "CAL_display_0p3",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 57.0
+    },
+    {
+      "part": "CAL_display_0p4",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 57.0
+    },
+    {
+      "part": "CAL_screw_nut_0p2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 25.0
+    },
+    {
+      "part": "CAL_screw_nut_0p3",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 25.0
+    },
+    {
+      "part": "CAL_screw_nut_0p4",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 25.0
+    },
+    {
+      "part": "CAL_shoulder_seat_0p2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 20.0
+    },
+    {
+      "part": "CAL_shoulder_seat_0p3",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 20.0
+    },
+    {
+      "part": "CAL_shoulder_seat_0p4",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 20.0
+    },
+    {
+      "part": "Camera_shutter",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 11.0
+    },
+    {
+      "part": "Carrier_amplifier",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 31.2
+    },
+    {
+      "part": "Carrier_audio_capacitor",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.2
+    },
+    {
+      "part": "Carrier_camera_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 39.2
+    },
+    {
+      "part": "Carrier_clock_board_and_cell",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 51.2
+    },
+    {
+      "part": "Carrier_controller_100uF",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 16.2
+    },
+    {
+      "part": "Carrier_display_pocket",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 61.2
+    },
+    {
+      "part": "Carrier_esp32_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 67.2
+    },
+    {
+      "part": "Carrier_left_shoulder_servo",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.2
+    },
+    {
+      "part": "Carrier_master_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 23.2
+    },
+    {
+      "part": "Carrier_microphone_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 27.2
+    },
+    {
+      "part": "Carrier_minus_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 17.2
+    },
+    {
+      "part": "Carrier_neck_servo",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.2
+    },
+    {
+      "part": "Carrier_pca9685_driver",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 73.2
+    },
+    {
+      "part": "Carrier_plus_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 17.2
+    },
+    {
+      "part": "Carrier_power_distribution",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 37.2
+    },
+    {
+      "part": "Carrier_right_shoulder_servo",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.2
+    },
+    {
+      "part": "Carrier_servo_470uF_1",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.2
+    },
+    {
+      "part": "Carrier_servo_470uF_2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.2
+    },
+    {
+      "part": "Carrier_speaker",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 39.0
+    },
+    {
+      "part": "Carrier_talk_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 17.2
+    },
+    {
+      "part": "Carrier_usb_c_pd_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 37.2
+    },
+    {
+      "part": "Chest_inset",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 49.45
+    },
+    {
+      "part": "Clip_audio_capacitor",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 12.8
+    },
+    {
+      "part": "Clip_controller_100uF",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 9.797
+    },
+    {
+      "part": "Clip_servo_470uF_1",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 12.8
+    },
+    {
+      "part": "Clip_servo_470uF_2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 12.8
+    },
+    {
+      "part": "Crown_inlay_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 30.527
+    },
+    {
+      "part": "Crown_inlay_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 30.527
+    },
+    {
+      "part": "Cuff_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 26.854
+    },
+    {
+      "part": "Cuff_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 26.856
+    },
+    {
+      "part": "Face_bezel",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 74.175
+    },
+    {
+      "part": "Face_insert",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 61.92
+    },
+    {
+      "part": "Foot_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 62.35
+    },
+    {
+      "part": "Foot_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 62.35
+    },
+    {
+      "part": "Foot_pad_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.345
+    },
+    {
+      "part": "Foot_pad_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.345
+    },
+    {
+      "part": "Forearm_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 39.663
+    },
+    {
+      "part": "Forearm_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 39.663
+    },
+    {
+      "part": "Harness_clip_head",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 9.399
+    },
+    {
+      "part": "Harness_clip_hips",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 9.399
+    },
+    {
+      "part": "Harness_clip_neck",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 9.399
+    },
+    {
+      "part": "Helmet_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 109.126
+    },
+    {
+      "part": "Helmet_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 99.412
+    },
+    {
+      "part": "Hip_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 128.991
+    },
+    {
+      "part": "Hip_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 128.991
+    },
+    {
+      "part": "Horn_adapter_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 29.175
+    },
+    {
+      "part": "Horn_adapter_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 29.175
+    },
+    {
+      "part": "LED_holder",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 7.0
+    },
+    {
+      "part": "Lens_flex_support",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 14.0
+    },
+    {
+      "part": "Neck_bearing_seat",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 30.1
+    },
+    {
+      "part": "Neck_hollow_hub",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 15.0
+    },
+    {
+      "part": "Neck_retaining_ring",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 27.0
+    },
+    {
+      "part": "Palm_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 26.875
+    },
+    {
+      "part": "Palm_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 26.875
+    },
+    {
+      "part": "Passive_strip",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 29.0
+    },
+    {
+      "part": "Record_button",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 18.275
+    },
+    {
+      "part": "Retainer_amplifier",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 31.6
+    },
+    {
+      "part": "Retainer_audio_capacitor",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.6
+    },
+    {
+      "part": "Retainer_camera_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 39.6
+    },
+    {
+      "part": "Retainer_clock_board_and_cell",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 51.6
+    },
+    {
+      "part": "Retainer_controller_100uF",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 16.6
+    },
+    {
+      "part": "Retainer_display_pocket",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 61.6
+    },
+    {
+      "part": "Retainer_esp32_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 67.6
+    },
+    {
+      "part": "Retainer_left_shoulder_servo",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.6
+    },
+    {
+      "part": "Retainer_master_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 23.6
+    },
+    {
+      "part": "Retainer_microphone_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 27.6
+    },
+    {
+      "part": "Retainer_minus_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 17.6
+    },
+    {
+      "part": "Retainer_neck_servo",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.6
+    },
+    {
+      "part": "Retainer_pca9685_driver",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 73.6
+    },
+    {
+      "part": "Retainer_plus_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 17.6
+    },
+    {
+      "part": "Retainer_power_distribution",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 37.6
+    },
+    {
+      "part": "Retainer_right_shoulder_servo",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.6
+    },
+    {
+      "part": "Retainer_servo_470uF_1",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.6
+    },
+    {
+      "part": "Retainer_servo_470uF_2",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.6
+    },
+    {
+      "part": "Retainer_talk_switch",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 17.6
+    },
+    {
+      "part": "Retainer_usb_c_pd_board",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 37.6
+    },
+    {
+      "part": "Shoulder_bearing_seat_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.0
+    },
+    {
+      "part": "Shoulder_bearing_seat_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 19.0
+    },
+    {
+      "part": "Shoulder_housing_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 51.599
+    },
+    {
+      "part": "Shoulder_housing_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 51.589
+    },
+    {
+      "part": "Shutter_rails",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 29.0
+    },
+    {
+      "part": "Sole_insert_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.0
+    },
+    {
+      "part": "Sole_insert_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 43.0
+    },
+    {
+      "part": "Speaker_gasket",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 31.0
+    },
+    {
+      "part": "Torso_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 98.931
+    },
+    {
+      "part": "Torso_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 97.059
+    },
+    {
+      "part": "USB_cable_saddle",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 20.0
+    },
+    {
+      "part": "Volume_cap_L",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 30.1
+    },
+    {
+      "part": "Volume_cap_R",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 30.1
+    },
+    {
+      "part": "Waist_band",
+      "watertight": true,
+      "winding_consistent": true,
+      "max_edge_mm": 100.187
+    }
+  ],
+  "rigid_motion": {
+    "step_degrees": 5,
+    "pose_pair_tests": 1575,
+    "collisions": [],
+    "scope": "Triangle interference at discrete poses, excludes bearing and live loads"
+  },
+  "removal_paths": [
+    {
+      "component": "display_pocket",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Face_bezel",
+        "Face_insert",
+        "Shutter",
+        "Camera_shutter",
+        "Lens_flex_support",
+        "LED_holder"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "camera_board",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Helmet_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          85.0,
+          -20.0
+        ]
+      ]
+    },
+    {
+      "component": "minus_switch",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Helmet_rear",
+        "Volume_cap_L"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -20.0,
+          0.0,
+          0.0
+        ],
+        [
+          -20.0,
+          85.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "component": "plus_switch",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Helmet_rear",
+        "Volume_cap_R"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -20.0,
+          0.0,
+          0.0
+        ],
+        [
+          -20.0,
+          85.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "component": "neck_servo",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "power_distribution",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "talk_switch",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "esp32_board",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "pca9685_driver",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_front",
+        "Foot_",
+        "Sole_insert_",
+        "Torso_front",
+        "Chest_inset",
+        "Waist_band",
+        "Record_button"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          16.0
+        ],
+        [
+          0.0,
+          -85.0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "component": "clock_board_and_cell",
+      "direction": "bottom",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Bottom_cover"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        [
+          0.0,
+          -20.0,
+          -85.0
+        ]
+      ]
+    },
+    {
+      "component": "amplifier",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_front",
+        "Foot_",
+        "Sole_insert_"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "microphone_board",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_front",
+        "Foot_",
+        "Sole_insert_"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "speaker",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_front",
+        "Foot_",
+        "Sole_insert_"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "servo_470uF_1",
+      "direction": "left",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_front",
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          -85,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "servo_470uF_2",
+      "direction": "left",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_front",
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          -85,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "audio_capacitor",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          85.0,
+          8.0
+        ]
+      ]
+    },
+    {
+      "component": "usb_c_pd_board",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "left_shoulder_servo",
+      "direction": "side",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Shoulder_housing_L"
+      ],
+      "waypoints_mm": [
+        [
+          -85,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "right_shoulder_servo",
+      "direction": "side",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Shoulder_housing_R"
+      ],
+      "waypoints_mm": [
+        [
+          85,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "controller_100uF",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "master_switch",
+      "direction": "rear",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Hip_rear"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "decoupling_100nF_1",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "decoupling_100nF_2",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "decoupling_100nF_3",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "decoupling_100nF_4",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "decoupling_100nF_5",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "decoupling_100nF_6",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Torso_front",
+        "Chest_inset",
+        "Record_button",
+        "Waist_band"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "crown_left",
+      "direction": "top",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Crown_inlay_"
+      ],
+      "waypoints_mm": [
+        [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          7.0,
+          0.0,
+          -1.5
+        ],
+        [
+          7,
+          0,
+          85
+        ]
+      ]
+    },
+    {
+      "component": "crown_right",
+      "direction": "top",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Crown_inlay_"
+      ],
+      "waypoints_mm": [
+        [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          -7.0,
+          0.0,
+          -1.5
+        ],
+        [
+          -7,
+          0,
+          85
+        ]
+      ]
+    },
+    {
+      "component": "camera_lens",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Face_bezel",
+        "Face_insert",
+        "Shutter",
+        "Camera_shutter",
+        "Lens_flex_support",
+        "LED_holder"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    },
+    {
+      "component": "camera_LED",
+      "direction": "front",
+      "clear": true,
+      "blocking_geometry": [],
+      "removed_cover_prefixes": [
+        "Face_bezel",
+        "Face_insert",
+        "Shutter",
+        "Camera_shutter",
+        "Lens_flex_support",
+        "LED_holder"
+      ],
+      "waypoints_mm": [
+        [
+          0,
+          -85,
+          0
+        ]
+      ]
+    }
+  ],
+  "silhouettes": [
+    {
+      "view": "Front",
+      "max_mm": 0.9,
+      "percentile95_mm": 0.25,
+      "passes_max_0p75": false,
+      "raster_mm_per_pixel": 0.25
+    },
+    {
+      "view": "Side",
+      "max_mm": 2.57,
+      "percentile95_mm": 0.25,
+      "passes_max_0p75": false,
+      "raster_mm_per_pixel": 0.25
+    },
+    {
+      "view": "Rear",
+      "max_mm": 0.9,
+      "percentile95_mm": 0.25,
+      "passes_max_0p75": false,
+      "raster_mm_per_pixel": 0.25
+    },
+    {
+      "view": "Three-quarter",
+      "max_mm": 0.35,
+      "percentile95_mm": 0.25,
+      "passes_max_0p75": true,
+      "raster_mm_per_pixel": 0.25
+    }
+  ],
+  "reference_assets_unchanged": true
+}

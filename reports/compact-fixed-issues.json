@@ -1,0 +1,14 @@
+[
+  {
+    "issue": "Saved hidden joint translations overrode the compact prototype and displaced the arms",
+    "initial": "FAIL during visual review",
+    "fix": "Removed stale world overrides; added saved-pose regression check and actual live root-coordinate assertions",
+    "retest": "PASS"
+  },
+  {
+    "issue": "Closing the inspection shell used integer zero, rejected by the Webots float field wrapper",
+    "initial": "FAIL during visual review",
+    "fix": "Use float0.0; verify actual transparency field after opening and closing",
+    "retest": "PASS: final live run and opaque captured exterior"
+  }
+]

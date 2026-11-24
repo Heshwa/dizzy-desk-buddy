@@ -1,0 +1,231 @@
+{
+  "check": "Alarm audio runs with voice service stopped; stale voice state clears",
+  "status": "PASS",
+  "details": {
+    "id": "dizzy-a",
+    "clock": "2026-11-19T06:32:36.617674+05:30",
+    "expression": "alarm",
+    "head_degrees": 0.0,
+    "arm_degrees": {
+      "left": 0.0,
+      "right": 0.0
+    },
+    "arm_pose": "rest",
+    "target_degrees": 0.0,
+    "tracking": false,
+    "quiet": false,
+    "volume": 0.5,
+    "phone_connected": true,
+    "playing": true,
+    "track": "Desk morning",
+    "track_index": 0,
+    "music_gain": 0.075,
+    "voice": "idle",
+    "ringing": {
+      "id": "828a93b8",
+      "label": "Voice outage test"
+    },
+    "alarms": [
+      {
+        "id": "85bd4c13",
+        "at": 1794965196.117346,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "853cbeb2",
+        "at": 1794965496.353892,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f24601dc",
+        "at": 1794965553.862132,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "e480433f",
+        "at": 1794965581.558946,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "fbf6d414",
+        "at": 1794965625.476079,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f4c2f507",
+        "at": 1794965639.398075,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f376c6a2",
+        "at": 1794965661.335538,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "fb1c05ff",
+        "at": 1794965698.314502,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "486491c2",
+        "at": 1794965739.336102,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f954f78e",
+        "at": 1794966039.5910559,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "d8343978",
+        "at": 1794965940.134924,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "d817b5ab",
+        "at": 1794965954.227623,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "15c56de4",
+        "at": 1794966254.491634,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "20f94b73",
+        "at": 1794966024.441796,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f78f256a",
+        "at": 1794966324.679391,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "8c55b4a2",
+        "at": 1794967797.0,
+        "label": "Two minute alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "08c1eab1",
+        "at": 1794968128.3555782,
+        "label": "Two minute alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f82db455",
+        "at": 1794971297.123917,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "2baeccb7",
+        "at": 1794971597.382943,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "41381498",
+        "at": 1794971526.96105,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "5a5bf93b",
+        "at": 1794971827.185638,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "d0aa77d4",
+        "at": 1794971603.550594,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "df3f9007",
+        "at": 1794971903.777119,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "8ef1f234",
+        "at": 1795050074.026427,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "808f760c",
+        "at": 1795050374.267663,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "d2c23317",
+        "at": 1795050123.181403,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "828a93b8",
+        "at": 1795050155.546478,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      }
+    ],
+    "timer_remaining": null,
+    "partner_online": true,
+    "delivery": "idle",
+    "measured_arm_degrees": {
+      "left": -0.0,
+      "right": -0.0
+    },
+    "measured_head_degrees": 0.0,
+    "camera_objects": 1,
+    "alarm_audio_active": true,
+    "camera_active": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "wall_mm": 2.5,
+  "sliding_clearance_per_side_mm": 0.3,
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "max_print_edge_mm": 180,
+  "scale_override": 0
+}

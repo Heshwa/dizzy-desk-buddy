@@ -1,0 +1,15 @@
+{
+  "name": "PCA9685 PWM subset model",
+  "author": "Dizzy project",
+  "pins": [
+    "VCC",
+    "GND",
+    "SDA",
+    "SCL",
+    "OE",
+    "VPLUS",
+    "PWM0",
+    "PWM1",
+    "PWM2"
+  ]
+}

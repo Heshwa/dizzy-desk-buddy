@@ -1,0 +1,56 @@
+{
+  "head": [
+    {
+      "measured_head_degrees": -45.0,
+      "display_pixels": [
+        240,
+        240
+      ],
+      "touch_sensors": {
+        "pet_left": 0.0,
+        "pet_right": 0.0,
+        "talk": 0.0,
+        "volume_down": 0.0,
+        "volume_up": 0.0
+      },
+      "camera_fov_degrees": 120.0
+    },
+    {
+      "measured_head_degrees": 45.0,
+      "display_pixels": [
+        240,
+        240
+      ],
+      "touch_sensors": {
+        "pet_left": 0.0,
+        "pet_right": 0.0,
+        "talk": 0.0,
+        "volume_down": 0.0,
+        "volume_up": 0.0
+      },
+      "camera_fov_degrees": 120.0
+    },
+    {
+      "measured_head_degrees": 0.0,
+      "display_pixels": [
+        240,
+        240
+      ],
+      "touch_sensors": {
+        "pet_left": 0.0,
+        "pet_right": 0.0,
+        "talk": 0.0,
+        "volume_down": 0.0,
+        "volume_up": 0.0
+      },
+      "camera_fov_degrees": 120.0
+    }
+  ],
+  "hardware": "Electrical performance, PD negotiation and actual servo loads are not tested in Webots.",
+  "tracking": {
+    "measured_degrees": 15.29,
+    "recognized_objects": 1,
+    "stops_on_command": true
+  },
+  "display_pixels_inside_circle": "PASS"
+}

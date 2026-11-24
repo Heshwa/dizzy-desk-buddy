@@ -1,0 +1,17 @@
+[wokwi]
+version = 1
+firmware = 'build/dizzy-v2-wokwi.bin'
+elf = 'build/dizzy-v2-wokwi.elf'
+vcdFile = 'build/v2-logic.vcd'
+
+[[chip]]
+name = 'pca9685'
+binary = 'pca9685.chip.wasm'
+
+[[chip]]
+name = 'ds3231'
+binary = 'ds3231.chip.wasm'
+
+[[chip]]
+name = 'body'
+binary = 'body.chip.wasm'

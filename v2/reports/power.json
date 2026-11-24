@@ -1,0 +1,52 @@
+[
+  {
+    "case": "fresh",
+    "test": "PASS",
+    "rails_in_bounds": true,
+    "board_min": 4.95465,
+    "motor_min": 4.85594,
+    "battery_min": 8.1162,
+    "input_max": 4.73,
+    "after_cut": 6.95595e-27
+  },
+  {
+    "case": "nominal",
+    "test": "PASS",
+    "rails_in_bounds": true,
+    "board_min": 4.95465,
+    "motor_min": 4.85594,
+    "battery_min": 6.89977,
+    "input_max": 5.55808,
+    "after_cut": 6.95595e-27
+  },
+  {
+    "case": "low charge",
+    "test": "PASS",
+    "rails_in_bounds": true,
+    "board_min": 4.95465,
+    "motor_min": 4.85594,
+    "battery_min": 6.33444,
+    "input_max": 6.05057,
+    "after_cut": 6.95595e-27
+  },
+  {
+    "case": "aged pack",
+    "test": "PASS",
+    "rails_in_bounds": false,
+    "board_min": 4.31422,
+    "motor_min": 3.98192,
+    "battery_min": 5.13512,
+    "input_max": 7.45952,
+    "after_cut": 6.95595e-27
+  },
+  {
+    "case": "undercharged pack",
+    "test": "PASS",
+    "rails_in_bounds": false,
+    "board_min": 4.95465,
+    "motor_min": 4.70451,
+    "battery_min": 5.84885,
+    "input_max": 6.54729,
+    "after_cut": 6.95595e-27
+  }
+]

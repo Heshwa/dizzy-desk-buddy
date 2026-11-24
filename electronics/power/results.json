@@ -1,0 +1,20 @@
+[
+  {
+    "case": "five_amp",
+    "limit_A": 5,
+    "minimum_bus_V": 4.845,
+    "minimum_servo_V": 4.773,
+    "loaded_servo_V": 4.773,
+    "peak_lead_A": 4.25,
+    "assumed_design_load_A": 4.25
+  },
+  {
+    "case": "three_amp",
+    "limit_A": 3,
+    "minimum_bus_V": 3.20497243,
+    "minimum_servo_V": 3.15450042,
+    "loaded_servo_V": 3.15450141857,
+    "peak_lead_A": 3.01976674,
+    "assumed_design_load_A": 4.25
+  }
+]

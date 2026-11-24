@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Final face-panel camera opening and controls",
+    "result": "PASS",
+    "camera_objects": 1,
+    "touch_sensors": {
+      "pet_left": 0.0,
+      "pet_right": 0.0,
+      "talk": 0.0,
+      "volume_down": 0.0,
+      "volume_up": 0.0
+    }
+  },
+  {
+    "name": "Final-model two-hand hello capture",
+    "result": "PASS",
+    "frames": 34
+  }
+]

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dizzy V2</title>
+<style>
+:root{color-scheme:dark;background:#131b21;color:#edf6f2;font:16px/1.45 system-ui,sans-serif;--panel:#1c2930;--border:#334751;--mint:#a4f3dc;--sub:#aabfc4}
+*{box-sizing:border-box}body{margin:0;padding:24px}header,main{max-width:1110px;margin:auto}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}h1,h2,h3,p{margin:0}h1{font-size:38px;letter-spacing:-.05em}h1 small{font-size:15px;color:var(--mint);letter-spacing:0}h2{font-size:21px;margin-bottom:12px}h3{font-size:16px;margin:12px 0 8px}main{display:grid;grid-template-columns:minmax(270px,1fr) minmax(360px,1.36fr);gap:18px;align-items:start}section{border:1px solid var(--border);border-radius:20px;background:var(--panel);padding:20px;margin-bottom:16px}
+.face{max-width:400px;aspect-ratio:1;margin:0 auto 12px;background:#071017;border-radius:50%;overflow:hidden;box-shadow:0 12px 44px #0007,inset 0 0 0 2px #416065;display:grid;place-items:center;position:relative}
+canvas{display:block;width:100%;height:auto}.faceLabel{position:absolute;bottom:15%;text-align:center;max-width:78%;pointer-events:none;font-size:15px;color:#b1e2db}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.split{justify-content:space-between}.row+.row{margin-top:10px}.muted,small,output{color:var(--sub)}output{min-height:1.5em;display:block;margin-top:10px}.good{color:var(--mint)}.warn{color:#ffbb9b}
+button, input,select{font:inherit;color:inherit;border-radius:10px;border:1px solid #516970;background:#23363e;padding:9px 12px}button{cursor:pointer}button:hover{background:#334c57}button:active{transform:translateY(1px)}button.primary, button[aria-pressed=true]{background:var(--mint);border-color:var(--mint);color:#102a26}button.stop{border-color:#dd9989;color:#ffd1c8}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--mint);outline-offset:2px}input[type=range]{width:120px;padding:0}input[type=text]{min-width:115px;flex:1}label{display:inline-flex;gap:8px;align-items:center}form{margin-top:10px;display:flex;gap:7px}button[hidden]{display:none}
+.tabs{margin-bottom:12px}article[hidden]{display:none}.catalog{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin-top:10px}.reaction{display:flex;gap:4px;align-items:center}.reaction button:first-child{flex:1;text-align:left;padding:8px;font-size:13px}.reaction button:last-child{padding:7px}.catalog canvas{width:30px;height:30px;border-radius:50%;flex:none}.reaction .preview{display:flex;align-items:center;gap:7px}
+#history{min-height:48px;white-space:pre-line;margin-top:10px;overflow-wrap:anywhere}#device{max-width:180px}
+#gameBoard{min-height:80px;margin-top:12px}.game{min-width:72px;min-height:51px}.activeCue{background:var(--mint);color:#112923}
+a{color:var(--mint)}@media(max-width:780px){main{display:block}body{padding:13px}section{padding:16px}.face{max-width:300px}}
+</style>
+<header><div><h1>Dizzy <small>V2</small></h1><p class="muted">Desk companion simulator</p></div>
+<label>Pet <select id="device"><option value="dizzy-v2">Dizzy</option><option value="dizzy-v2-partner">Partner</option></select></label></header>
+<main><div><section aria-label="Dizzy face"><div class="face">
+<canvas id="face" width="466" height="466" aria-label="Animated face"></canvas><span id="faceLabel" class="faceLabel"></span></div>
+<div class="row split"><strong id="clock">—</strong><span id="partner" class="muted">Checking partner</span></div>
+<div class="row"><button data-action="touch" data-args='{"phase":"tap"}'>Pet</button><button data-action="touch" data-args='{"phase":"stroke"}'>Stroke</button><button data-action="gesture_send" data-args='{"gesture":"wave"}'>Send wave</button><button data-action="gesture_send" data-args='{"gesture":"goodnight"}'>Good night</button></div>
+</section><section><h2>Talk to Dizzy</h2><div class="row"><button class="primary" id="record">Start recording</button><button class="stop" id="stop" hidden>Stop recording</button><span id="voiceState" class="muted">Ready</span></div>
+<form id="voiceForm"><input id="prompt" type="text" maxlength="420" placeholder="Tell me a joke or look left" aria-label="Type a request"><button type="submit">Send</button></form>
+<p id="history" class="muted" aria-live="polite"></p></section></div>
+<section>
+<div class="row tabs" role="tablist"><button data-tab="faces" aria-pressed="true">Reactions</button><button data-tab="motion">Movement</button><button data-tab="music">Music</button><button data-tab="tools">Desk tools</button><button data-tab="games">Games</button></div>
+<article id="faces"><h2>Reaction library</h2>
+<div class="row"><label>Style <select id="style"><option>Mint</option><option>Pixel</option><option>Starlight</option><option>Favorites</option></select></label></div>
+<div id="catalog" class="catalog"></div>
+<h3>Reactions for each event</h3>
+<div class="row"><select aria-label="Event type" id="event"><option value="pet">Petting</option><option value="greeting">Greeting</option><option value="win">Game win</option></select>
+<button id="assign">Use my favorites</button></div><p id="assigned" class="muted"></p>
+</article>
+<article id="motion" hidden><h2>Movement</h2>
+<div class="row"><button data-action="head_turn" data-args='{"degrees":-40}'>Look left</button><button data-action="head_turn" data-args='{"degrees":40}'>Look right</button><button data-action="head_pitch" data-args='{"degrees":20}'>Look up</button><button data-action="head_pitch" data-args='{"degrees":-15}'>Look down</button><button id="center">Center</button></div>
+<div class="row"><button data-action="arm_lift" data-args='{"side":"left"}'>Lift left arm</button><button data-action="arm_lift" data-args='{"side":"right"}'>Lift right arm</button><button data-action="motion_play" data-args='{"name":"wave"}'>Wave</button></div>
+<h3>Floor motion</h3><div class="row"><button id="floor">Select floor mode</button><button data-action="motion_arm" data-args='{"local":true}'>Arm floor motion</button><button class="stop" data-action="motion_fault">Motor stop</button></div>
+<div class="row"><button data-action="motion_play" data-args='{"name":"sway"}'>Sway</button><button data-action="motion_play" data-args='{"name":"heel"}'>Heel taps</button><button data-action="motion_play" data-args='{"name":"bounce"}'>Bounce</button><button data-action="motion_play" data-args='{"name":"shuffle"}'>Shuffle</button><button data-action="tempo_tap">Tap tempo</button></div>
+<p id="motionSummary" class="muted"></p><p id="gait" class="muted"></p></article>
+<article id="music" hidden><h2>Phone music</h2><p class="muted">Use the simulated phone to test pairing, playback and volume.</p>
+<div class="row"><button id="pair">Connect simulated phone</button><button data-action="phone_forget">Forget phone</button></div>
+<div class="row"><button data-action="music_control" data-args='{"command":"previous"}'>Previous</button><button id="play">Play</button><button data-action="music_control" data-args='{"command":"next"}'>Next</button><label>Volume <input type="range" id="volume" min="0" max="100" value="50"></label></div>
+<p id="musicSummary" class="muted"></p></article>
+<article id="tools" hidden><h2>Desk tools</h2><div class="row"><button data-action="focus_start">25-minute focus</button><button data-action="timer_cancel">Cancel timer</button><button id="quiet">Quiet mode</button></div>
+<form id="timer"><label>Timer seconds <input id="seconds" type="number" value="60" min="1" max="86400" required></label><button>Start</button></form>
+<form id="alarm"><label>Alarm <input id="alarmTime" aria-label="Alarm date and time in India" type="datetime-local" required></label><button>Save</button></form>
+<small>Alarm time uses India Standard Time.</small>
+<div class="row"><button data-action="alarm_snooze">Snooze 5m</button><button data-action="alarm_dismiss">Dismiss alarm</button></div>
+<p id="timers" class="muted"></p><div id="alarms"></div>
+<h3>Stopwatch</h3><div class="row"><button data-action="stopwatch" data-args='{"command":"start"}'>Start</button><button data-action="stopwatch" data-args='{"command":"stop"}'>Stop</button><button data-action="stopwatch" data-args='{"command":"reset"}'>Reset</button><span id="watch">0.0 s</span></div></article>
+<article id="games" hidden><h2>Games</h2><div class="row"><button data-game="reaction">Reaction timing</button><button data-game="memory">Memory sequence</button><button data-game="rhythm">Rhythm taps</button></div><p id="gamePrompt" class="muted">Choose a game.</p><div id="gameBoard"></div></article>
+<output id="feedback" aria-live="polite"></output>
+</section></main>
+<script type="module">
+const $ = (id) => document.getElementById(id);
+let state={}, list=[], currentTab='faces', renderedKey='', remoteTime=0, spoken, ringPlaying=false;
+let record=null, gameRun=0;
+const fmt = new Intl.DateTimeFormat('en-IN',{hour:'numeric',minute:'2-digit',second:'2-digit',timeZone:'Asia/Kolkata'});
+async function get(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error('Dizzy is offline.');return r.json()}
+async function post(path,body,pcm=false){const r=await fetch(path,{method:'POST',headers:{'Content-Type':pcm?'application/octet-stream':'application/json'},body:pcm?body:JSON.stringify(body)});if(!r.ok)throw Error('Dizzy is offline.');return r.json()}
+function say(message, ok){const el=$('feedback');el.textContent=message;el.className=ok?'good':'warn'}
+async function action(name,args={},announce=true){
+ try{const result=await post('/api/action',{device:$('device').value,action:name,args});if(!result.ok){say(result.error,false);return false}
+ if(result.state){state=result.state;remoteTime=performance.now();paintState()}
+ if(announce)say(name==='gesture_send'?'Waiting for delivery acknowledgment.':'Done.',true);
+ return true}catch(e){say(e.message,false);return false}}
+function draw(canvas, shapes){
+ const ct=canvas.getContext('2d');ct.clearRect(0,0,466,466);
+ for(const [k,x,y,a,b,r,c] of shapes){
+   ct.fillStyle=ct.strokeStyle='#'+c.toString(16).padStart(6,'0');
+   ct.beginPath();if(k===0){ct.roundRect(x,y,a,b,r);ct.fill()}
+   else if(k===1){ct.ellipse(x,y,a/2,b/2,0,0,2*Math.PI);ct.fill()}
+   else {ct.lineCap='round';ct.lineWidth=r;ct.moveTo(x,y);ct.lineTo(a,b);ct.stroke()}
+ }}
+const thumbs=new Map();
+function reactionCards(){
+ if(currentTab!=='faces')return;
+ const key=JSON.stringify([$('style').value,state.favorites,state.reactions,$('event').value,list.length]);
+ if(key===renderedKey)return;renderedKey=key;
+ const chosen=list.filter(f=>$('style').value==='Favorites'?(state.favorites||[]).includes(f.id):f.style===$('style').value);
+ $('catalog').replaceChildren();
+ for(const f of chosen){const row=document.createElement('div');row.className='reaction';
+ const show=document.createElement('button');show.className='preview';show.onclick=()=>action('face_preview',{id:f.id},false);
+ const icon=document.createElement('canvas');icon.width=icon.height=466;show.append(icon,document.createTextNode(f.name));
+ if(thumbs.has(f.id))draw(icon,thumbs.get(f.id));else get('/api/frame?id='+f.id+'&ms=260').then(s=>{thumbs.set(f.id,s);draw(icon,s)}).catch(()=>{});
+ const fav=document.createElement('button');const selected=(state.favorites||[]).includes(f.id);
+ fav.textContent=selected?'★':'☆';fav.setAttribute('aria-pressed',selected);fav.setAttribute('aria-label',(selected?'Remove ':'Save ')+f.name);
+ fav.onclick=()=>action('favorites_set',{ids:selected?state.favorites.filter(i=>i!==f.id):[...(state.favorites||[]),f.id]},false);
+ row.append(show,fav);$('catalog').append(row);
+ }
+ $('assigned').textContent=(state.reactions?.[$('event').value]||[]).map(i=>list.find(f=>f.id===i)?.name||'').join(', ');
+}
+const chime=new Audio('/assets/alarm.wav');chime.loop=true;
+const music=new Audio();music.loop=true;
+let musicTrack=-1;
+function paintState(){
+ if(!state.clock)return;
+ $('clock').textContent=fmt.format(new Date(state.clock));
+ $('partner').textContent=(state.partner_online?'Partner online':'Partner offline')+(state.delivery==='idle'?'':' · '+state.delivery);
+ $('voiceState').textContent=state.voice==='idle'?'Ready':state.voice;
+ $('faceLabel').textContent=state.ringing?state.ringing.label:state.voice!=='idle'?state.voice:state.face<24?list[state.face]?.name||'':'';
+ $('floor').textContent=state.floor?'Return to seated mode':'Select floor mode';
+ $('motionSummary').textContent=(state.fault|| (state.armed?'Floor armed':state.floor?'Floor disarmed':'Seated'))+' · '+state.bpm+' bpm · '+state.motion;
+ $('play').textContent=state.playing?'Pause':'Play';$('pair').textContent=state.phone_connected?'Disconnect phone':'Connect simulated phone';
+ if(document.activeElement!==$('volume'))$('volume').value=100*state.volume;
+ $('musicSummary').textContent=state.phone_connected?(state.playing?'Playing '+state.track:'Connected · paused')+' · output '+Math.round(100*state.music_gain)+'%':'Disconnected';
+ $('quiet').setAttribute('aria-pressed',state.quiet);
+ $('timers').textContent=state.timer_remaining==null?'No timer':Math.ceil(state.timer_remaining)+' seconds remaining';
+ $('watch').textContent=state.stopwatch.toFixed(1)+' s';
+ const alarms=$('alarms');if(alarms.dataset.key!==JSON.stringify(state.alarms)){alarms.dataset.key=JSON.stringify(state.alarms);alarms.replaceChildren();for(const alarm of state.alarms.filter(a=>a.enabled)){const row=document.createElement('div');row.className='row';const t=document.createElement('span');t.textContent=alarm.label+' · '+new Date(alarm.at*1000).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'});const b=document.createElement('button');b.textContent='Cancel';b.onclick=()=>action('alarm_cancel',{id:alarm.id});row.append(t,b);alarms.append(row)}}
+ if(state.playing&&state.phone_connected){
+   const i=state.track_index;
+   if(musicTrack!==i){musicTrack=i;music.src='/assets/music-'+i+'.wav'}
+   music.volume=state.music_gain;
+   if(music.paused)music.play().catch(()=>{});
+ }else if(!music.paused)music.pause();
+ if(Boolean(state.ringing&&!state.quiet)!==ringPlaying){ringPlaying=Boolean(state.ringing&&!state.quiet);if(ringPlaying)chime.play().catch(()=>{});else chime.pause()}
+ reactionCards();
+}
+let busyFrame=false,lastFrame='';
+setInterval(async()=>{
+ if(busyFrame)return;const face=state.face??24;let ms=(state.phase||0)+performance.now()-remoteTime;
+ if(face===24)ms=Math.floor(ms/45)*45;else ms=Math.floor(ms/33)*33;
+ const key=face+':'+ms;if(key===lastFrame)return;busyFrame=true;
+ try{draw($('face'),await get('/api/frame?id='+face+'&ms='+ms));lastFrame=key}catch{}finally{busyFrame=false}
+},34);
+async function poll(){try{const data=await get('/api/status?device='+$('device').value);state=data.state;remoteTime=performance.now();paintState();const t=data.telemetry;$('gait').textContent=t?.t===undefined?'Webots motion telemetry appears while the scene is running.':'Webots distance '+t.distance.toFixed(2)+' m · '+(t.fallen?'fall detected':'upright')}catch{}finally{setTimeout(poll,180)}}
+list=await get('/api/catalog');poll();
+document.querySelectorAll('[data-tab]').forEach(button=>button.onclick=()=>{currentTab=button.dataset.tab;document.querySelectorAll('article').forEach(el=>el.hidden=el.id!==currentTab);document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',b===button));reactionCards()});
+document.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>action(b.dataset.action,JSON.parse(b.dataset.args||'{}')));
+$('style').onchange=$('event').onchange=reactionCards;
+$('assign').onclick=()=>action('reaction_assign',{event:$('event').value,ids:state.favorites||[]});
+$('center').onclick=async()=>{await action('head_turn',{degrees:0},false);await action('head_pitch',{degrees:0})};
+$('floor').onclick=()=>action('floor_select',{enabled:!state.floor});
+$('pair').onclick=()=>action('phone_connect',{connected:!state.phone_connected});
+$('play').onclick=()=>action('music_control',{command:state.playing?'pause':'play'});
+$('quiet').onclick=()=>action('quiet_set',{enabled:!state.quiet});
+$('volume').onchange=()=>action('volume_set',{level:Number($('volume').value)/100});
+$('timer').onsubmit=e=>{e.preventDefault();action('timer_start',{seconds:Number($('seconds').value)})};
+$('alarm').onsubmit=e=>{e.preventDefault();action('alarm_set',{at:$('alarmTime').value+':00+05:30',label:'Alarm'})};
+async function utter(result,device){
+ $('history').textContent=(result.text?'You: '+result.text+'\n':'')+'Dizzy: '+(result.answer||result.error);
+ if(!result.audio)return;
+ if(spoken)spoken.pause();
+ spoken=new Audio(result.audio);
+ const finish=()=>post('/api/action',{device,action:'voice_state',args:{state:'idle'}}).catch(()=>{});
+ spoken.onended=finish;spoken.onerror=finish;
+ try{await spoken.play()}catch{await finish();say('Reply ready. The browser blocked the audio.',false)}
+}
+$('voiceForm').onsubmit=async e=>{e.preventDefault();const text=$('prompt').value.trim();if(!text)return;
+ const device=$('device').value;$('prompt').value='';$('history').textContent='You: '+text+'\nDizzy is thinking…';
+ try{await utter(await post('/api/voice',{text,device}),device)}catch(err){say(err.message,false)}};
+$('record').onclick=async()=>{
+ if(record)return;
+ if(!navigator.mediaDevices?.getUserMedia){say('Use the local address to record.',false);return}
+ $('record').disabled=true;
+ try{const stream=await navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true},video:false});
+ const context=new AudioContext();await context.resume();
+ const node=context.createScriptProcessor(4096,1,1);const source=context.createMediaStreamSource(stream);const sink=context.createGain();sink.gain.value=0;
+ const item={device:$('device').value,stream,context,node,source,sink,samples:[]};record=item;
+ node.onaudioprocess=(e)=>item.samples.push(Float32Array.from(e.inputBuffer.getChannelData(0)));
+ source.connect(node);node.connect(sink);sink.connect(context.destination);
+ $('record').hidden=true;$('stop').hidden=false;$('device').disabled=true;
+ item.timeout=setTimeout(stop,30000);await action('voice_state',{state:'recording'},false);
+ }catch(e){say(e.message,false)}finally{$('record').disabled=false}
+};
+async function stop(){
+ const item=record;if(!item)return;record=null;clearTimeout(item.timeout);
+ $('stop').hidden=true;$('record').hidden=false;$('device').disabled=false;
+ item.node.disconnect();item.source.disconnect();item.stream.getTracks().forEach(t=>t.stop());await item.context.close();
+ const length=item.samples.reduce((n,s)=>n+s.length,0);const input=new Float32Array(length);
+ let off=0;for(const s of item.samples){input.set(s,off);off+=s.length}
+ const ratio=item.context.sampleRate/16000;const pcm=new Int16Array(Math.min(480000,Math.floor(length/ratio)));
+ for(let i=0;i<pcm.length;i++){const a=Math.floor(i*ratio),b=Math.max(a+1,Math.floor((i+1)*ratio));let val=0;for(let j=a;j<b;j++)val+=input[j]||0;pcm[i]=Math.round(32767*Math.max(-1,Math.min(1,val/(b-a))))}
+ $('history').textContent='Transcribing…';
+ try{await utter(await post('/api/speech?device='+item.device,pcm,true),item.device)}catch(e){say(e.message,false);await action('voice_state',{state:'fault'},false)}
+}
+$('stop').onclick=stop;
+function game(name){
+ const run=++gameRun, board=$('gameBoard'), prompt=$('gamePrompt');board.replaceChildren();
+ function button(label,fn){const b=document.createElement('button');b.className='game';b.textContent=label;b.onclick=fn;board.append(b);return b}
+ function win(text){prompt.textContent=text;action('game_win',{},false)}
+ if(name==='reaction'){
+   let cue=0;prompt.textContent='Wait until the button says Tap!';
+   const b=button('Wait…',()=>{if(!cue){prompt.textContent='Too early. Start again.';gameRun++;b.disabled=true;return}win(Math.round(performance.now()-cue)+' ms');b.disabled=true});
+   setTimeout(()=>{if(run===gameRun){b.textContent='Tap!';b.classList.add('activeCue');cue=performance.now()}},1100+1200*Math.random());
+ }else if(name==='memory'){
+   const seq=Array.from({length:4},()=>Math.floor(4*Math.random()));let i=0;
+   const buttons=['1','2','3','4'].map((label,j)=>button(label,()=>{if(j!==seq[i++]){prompt.textContent='Try again.';buttons.forEach(b=>b.disabled=true)}else if(i===seq.length){win('Sequence complete.');buttons.forEach(b=>b.disabled=true)}}));
+   prompt.textContent='Watch the sequence.';buttons.forEach(b=>b.disabled=true);
+   seq.forEach((j,n)=>{setTimeout(()=>{if(run===gameRun)buttons[j].classList.add('activeCue')},400+560*n);setTimeout(()=>buttons[j].classList.remove('activeCue'),730+560*n)});
+   setTimeout(()=>{if(run===gameRun){prompt.textContent='Repeat the sequence.';buttons.forEach(b=>b.disabled=false)}},2600);
+ }else{
+   prompt.textContent='Tap when the button lights. Hit four cues.';
+   let hits=0,cue=-Infinity,round=0,used=false;const b=button('Tap beat',()=>{if(!used&&performance.now()-cue<310){used=true;if(++hits===4){win('Four beats on time.');b.disabled=true;gameRun++}}});
+   const beat=setInterval(()=>{if(run!==gameRun){clearInterval(beat);return}
+   if(round++===8){clearInterval(beat);b.disabled=true;prompt.textContent=hits+' beats on time. Try again.';return}
+   cue=performance.now();used=false;b.classList.add('activeCue');setTimeout(()=>b.classList.remove('activeCue'),220)},600);
+ }
+}
+document.querySelectorAll('[data-game]').forEach(b=>b.onclick=()=>game(b.dataset.game));
+</script></html>

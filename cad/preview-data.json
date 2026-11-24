@@ -1,0 +1,3695 @@
+{
+  "scale": 1.075,
+  "parts": [
+    {
+      "id": "Bottom_cover",
+      "path": "output/webots/Bottom_cover.bin",
+      "count": 5652,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.000141143798828125,
+        0.0045623779296875,
+        4.2250001430511475
+      ],
+      "size_mm": [
+        76.59,
+        74.03,
+        4.15
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Bottom_cover.stl",
+      "step": "output/step/Bottom_cover.step",
+      "mass_g": 11.28
+    },
+    {
+      "id": "CAL_board_rail_0p2",
+      "path": "output/webots/CAL_board_rail_0p2.bin",
+      "count": 84,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        35.0,
+        20.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_board_rail_0p2.stl",
+      "step": "output/step/CAL_board_rail_0p2.step",
+      "mass_g": 2.68
+    },
+    {
+      "id": "CAL_board_rail_0p3",
+      "path": "output/webots/CAL_board_rail_0p3.bin",
+      "count": 84,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        35.0,
+        20.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_board_rail_0p3.stl",
+      "step": "output/step/CAL_board_rail_0p3.step",
+      "mass_g": 2.65
+    },
+    {
+      "id": "CAL_board_rail_0p4",
+      "path": "output/webots/CAL_board_rail_0p4.bin",
+      "count": 84,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        35.0,
+        20.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_board_rail_0p4.stl",
+      "step": "output/step/CAL_board_rail_0p4.step",
+      "mass_g": 2.63
+    },
+    {
+      "id": "CAL_button_0p2",
+      "path": "output/webots/CAL_button_0p2.bin",
+      "count": 96,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        25.0,
+        18.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_button_0p2.stl",
+      "step": "output/step/CAL_button_0p2.step",
+      "mass_g": 1.71
+    },
+    {
+      "id": "CAL_button_0p3",
+      "path": "output/webots/CAL_button_0p3.bin",
+      "count": 96,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        25.0,
+        18.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_button_0p3.stl",
+      "step": "output/step/CAL_button_0p3.step",
+      "mass_g": 1.69
+    },
+    {
+      "id": "CAL_button_0p4",
+      "path": "output/webots/CAL_button_0p4.bin",
+      "count": 96,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        25.0,
+        18.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_button_0p4.stl",
+      "step": "output/step/CAL_button_0p4.step",
+      "mass_g": 1.66
+    },
+    {
+      "id": "CAL_display_0p2",
+      "path": "output/webots/CAL_display_0p2.bin",
+      "count": 1104,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        57.0,
+        51.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_display_0p2.stl",
+      "step": "output/step/CAL_display_0p2.step",
+      "mass_g": 6.29
+    },
+    {
+      "id": "CAL_display_0p3",
+      "path": "output/webots/CAL_display_0p3.bin",
+      "count": 1104,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        57.0,
+        51.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_display_0p3.stl",
+      "step": "output/step/CAL_display_0p3.step",
+      "mass_g": 6.22
+    },
+    {
+      "id": "CAL_display_0p4",
+      "path": "output/webots/CAL_display_0p4.bin",
+      "count": 1104,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "size_mm": [
+        57.0,
+        51.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_display_0p4.stl",
+      "step": "output/step/CAL_display_0p4.step",
+      "mass_g": 6.14
+    },
+    {
+      "id": "CAL_screw_nut_0p2",
+      "path": "output/webots/CAL_screw_nut_0p2.bin",
+      "count": 2136,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "size_mm": [
+        25.0,
+        16.0,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_screw_nut_0p2.stl",
+      "step": "output/step/CAL_screw_nut_0p2.step",
+      "mass_g": 2.37
+    },
+    {
+      "id": "CAL_screw_nut_0p3",
+      "path": "output/webots/CAL_screw_nut_0p3.bin",
+      "count": 2136,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "size_mm": [
+        25.0,
+        16.0,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_screw_nut_0p3.stl",
+      "step": "output/step/CAL_screw_nut_0p3.step",
+      "mass_g": 2.37
+    },
+    {
+      "id": "CAL_screw_nut_0p4",
+      "path": "output/webots/CAL_screw_nut_0p4.bin",
+      "count": 2136,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "size_mm": [
+        25.0,
+        16.0,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_screw_nut_0p4.stl",
+      "step": "output/step/CAL_screw_nut_0p4.step",
+      "mass_g": 2.37
+    },
+    {
+      "id": "CAL_shoulder_seat_0p2",
+      "path": "output/webots/CAL_shoulder_seat_0p2.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "size_mm": [
+        20.0,
+        20.0,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_shoulder_seat_0p2.stl",
+      "step": "output/step/CAL_shoulder_seat_0p2.step",
+      "mass_g": 1.07
+    },
+    {
+      "id": "CAL_shoulder_seat_0p3",
+      "path": "output/webots/CAL_shoulder_seat_0p3.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "size_mm": [
+        20.0,
+        20.0,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_shoulder_seat_0p3.stl",
+      "step": "output/step/CAL_shoulder_seat_0p3.step",
+      "mass_g": 1.05
+    },
+    {
+      "id": "CAL_shoulder_seat_0p4",
+      "path": "output/webots/CAL_shoulder_seat_0p4.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Fit samples",
+      "region": "coupon",
+      "center": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "size_mm": [
+        20.0,
+        20.0,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/calibration/CAL_shoulder_seat_0p4.stl",
+      "step": "output/step/CAL_shoulder_seat_0p4.step",
+      "mass_g": 1.02
+    },
+    {
+      "id": "Camera_shutter",
+      "path": "output/webots/Camera_shutter.bin",
+      "count": 36,
+      "color": [
+        0.035,
+        0.054,
+        0.06
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        0.0,
+        -25.65000057220459,
+        195.64999389648438
+      ],
+      "size_mm": [
+        11.0,
+        1.1,
+        8.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Camera_shutter.stl",
+      "step": "output/step/Camera_shutter.step",
+      "mass_g": 0.12
+    },
+    {
+      "id": "Carrier_amplifier",
+      "path": "output/webots/Carrier_amplifier.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -36.55000114440918,
+        -8.600000381469727,
+        23.049999237060547
+      ],
+      "size_mm": [
+        31.2,
+        22.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_amplifier.stl",
+      "step": "output/step/Carrier_amplifier.step",
+      "mass_g": 1.17
+    },
+    {
+      "id": "Carrier_audio_capacitor",
+      "path": "output/webots/Carrier_audio_capacitor.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        34.39999961853027,
+        18.27500009536743,
+        22.125
+      ],
+      "size_mm": [
+        19.2,
+        11.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_audio_capacitor.stl",
+      "step": "output/step/Carrier_audio_capacitor.step",
+      "mass_g": 0.38
+    },
+    {
+      "id": "Carrier_camera_board",
+      "path": "output/webots/Carrier_camera_board.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        5.375000238418579,
+        157.625
+      ],
+      "size_mm": [
+        39.2,
+        17.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_camera_board.stl",
+      "step": "output/step/Carrier_camera_board.step",
+      "mass_g": 1.21
+    },
+    {
+      "id": "Carrier_clock_board_and_cell",
+      "path": "output/webots/Carrier_clock_board_and_cell.bin",
+      "count": 2406,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        10.750000238418579,
+        15.825000286102295
+      ],
+      "size_mm": [
+        51.2,
+        27.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_clock_board_and_cell.stl",
+      "step": "output/step/Carrier_clock_board_and_cell.step",
+      "mass_g": 2.49
+    },
+    {
+      "id": "Carrier_controller_100uF",
+      "path": "output/webots/Carrier_controller_100uF.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        48.375,
+        10.750000238418579,
+        26.350000381469727
+      ],
+      "size_mm": [
+        16.2,
+        8.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_controller_100uF.stl",
+      "step": "output/step/Carrier_controller_100uF.step",
+      "mass_g": 0.27
+    },
+    {
+      "id": "Carrier_display_pocket",
+      "path": "output/webots/Carrier_display_pocket.bin",
+      "count": 2340,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        -16.412500381469727,
+        143.1875
+      ],
+      "size_mm": [
+        61.2,
+        15.7,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_display_pocket.stl",
+      "step": "output/step/Carrier_display_pocket.step",
+      "mass_g": 1.75
+    },
+    {
+      "id": "Carrier_esp32_board",
+      "path": "output/webots/Carrier_esp32_board.bin",
+      "count": 2490,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        13.975000381469727,
+        40.32500076293945
+      ],
+      "size_mm": [
+        67.2,
+        31.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_esp32_board.stl",
+      "step": "output/step/Carrier_esp32_board.step",
+      "mass_g": 2.92
+    },
+    {
+      "id": "Carrier_left_shoulder_servo",
+      "path": "output/webots/Carrier_left_shoulder_servo.bin",
+      "count": 2406,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -38.69999980926514,
+        0.0,
+        94.1500015258789
+      ],
+      "size_mm": [
+        43.2,
+        10.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_left_shoulder_servo.stl",
+      "step": "output/step/Carrier_left_shoulder_servo.step",
+      "mass_g": 0.86
+    },
+    {
+      "id": "Carrier_master_switch",
+      "path": "output/webots/Carrier_master_switch.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        29.024999618530273,
+        32.249999046325684,
+        19.25
+      ],
+      "size_mm": [
+        23.2,
+        9.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_master_switch.stl",
+      "step": "output/step/Carrier_master_switch.step",
+      "mass_g": 0.41
+    },
+    {
+      "id": "Carrier_microphone_board",
+      "path": "output/webots/Carrier_microphone_board.bin",
+      "count": 2400,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        33.32499980926514,
+        -8.600000381469727,
+        23.475000381469727
+      ],
+      "size_mm": [
+        27.2,
+        16.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_microphone_board.stl",
+      "step": "output/step/Carrier_microphone_board.step",
+      "mass_g": 0.76
+    },
+    {
+      "id": "Carrier_minus_switch",
+      "path": "output/webots/Carrier_minus_switch.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        -44.07499885559082,
+        0.0,
+        164.875
+      ],
+      "size_mm": [
+        17.2,
+        9.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_minus_switch.stl",
+      "step": "output/step/Carrier_minus_switch.step",
+      "mass_g": 0.3
+    },
+    {
+      "id": "Carrier_neck_servo",
+      "path": "output/webots/Carrier_neck_servo.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -3.2250002026557922,
+        73.9375
+      ],
+      "size_mm": [
+        43.2,
+        10.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_neck_servo.stl",
+      "step": "output/step/Carrier_neck_servo.step",
+      "mass_g": 0.84
+    },
+    {
+      "id": "Carrier_pca9685_driver",
+      "path": "output/webots/Carrier_pca9685_driver.bin",
+      "count": 2394,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -17.199999570846558,
+        36.099998474121094
+      ],
+      "size_mm": [
+        73.2,
+        27.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_pca9685_driver.stl",
+      "step": "output/step/Carrier_pca9685_driver.step",
+      "mass_g": 3.68
+    },
+    {
+      "id": "Carrier_plus_switch",
+      "path": "output/webots/Carrier_plus_switch.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        44.07499885559082,
+        0.0,
+        164.875
+      ],
+      "size_mm": [
+        17.2,
+        9.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_plus_switch.stl",
+      "step": "output/step/Carrier_plus_switch.step",
+      "mass_g": 0.3
+    },
+    {
+      "id": "Carrier_power_distribution",
+      "path": "output/webots/Carrier_power_distribution.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -24.725000381469727,
+        76.0250015258789
+      ],
+      "size_mm": [
+        37.2,
+        8.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_power_distribution.stl",
+      "step": "output/step/Carrier_power_distribution.step",
+      "mass_g": 0.61
+    },
+    {
+      "id": "Carrier_right_shoulder_servo",
+      "path": "output/webots/Carrier_right_shoulder_servo.bin",
+      "count": 2406,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        38.69999980926514,
+        0.0,
+        94.1500015258789
+      ],
+      "size_mm": [
+        43.2,
+        10.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_right_shoulder_servo.stl",
+      "step": "output/step/Carrier_right_shoulder_servo.step",
+      "mass_g": 0.86
+    },
+    {
+      "id": "Carrier_servo_470uF_1",
+      "path": "output/webots/Carrier_servo_470uF_1.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -37.624999046325684,
+        12.899999856948853,
+        22.125
+      ],
+      "size_mm": [
+        19.2,
+        10.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_servo_470uF_1.stl",
+      "step": "output/step/Carrier_servo_470uF_1.step",
+      "mass_g": 0.36
+    },
+    {
+      "id": "Carrier_servo_470uF_2",
+      "path": "output/webots/Carrier_servo_470uF_2.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -37.624999046325684,
+        25.799999237060547,
+        22.125
+      ],
+      "size_mm": [
+        19.2,
+        10.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_servo_470uF_2.stl",
+      "step": "output/step/Carrier_servo_470uF_2.step",
+      "mass_g": 0.36
+    },
+    {
+      "id": "Carrier_speaker",
+      "path": "output/webots/Carrier_speaker.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -31.199999809265137,
+        32.25
+      ],
+      "size_mm": [
+        39.0,
+        1.4,
+        39.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_speaker.stl",
+      "step": "output/step/Carrier_speaker.step",
+      "mass_g": 0.96
+    },
+    {
+      "id": "Carrier_talk_switch",
+      "path": "output/webots/Carrier_talk_switch.bin",
+      "count": 2382,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -19.350000381469727,
+        97.1500015258789
+      ],
+      "size_mm": [
+        17.2,
+        9.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_talk_switch.stl",
+      "step": "output/step/Carrier_talk_switch.step",
+      "mass_g": 0.3
+    },
+    {
+      "id": "Carrier_usb_c_pd_board",
+      "path": "output/webots/Carrier_usb_c_pd_board.bin",
+      "count": 2406,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        39.77499961853027,
+        23.200000762939453
+      ],
+      "size_mm": [
+        37.2,
+        27.2,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Carrier_usb_c_pd_board.stl",
+      "step": "output/step/Carrier_usb_c_pd_board.step",
+      "mass_g": 1.73
+    },
+    {
+      "id": "Chest_inset",
+      "path": "output/webots/Chest_inset.bin",
+      "count": 5058,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -31.177250862121582,
+        90.29999923706055
+      ],
+      "size_mm": [
+        49.45,
+        26.46,
+        38.7
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Chest_inset.stl",
+      "step": "output/step/Chest_inset.step",
+      "mass_g": 3.71
+    },
+    {
+      "id": "Clip_audio_capacitor",
+      "path": "output/webots/Clip_audio_capacitor.bin",
+      "count": 1932,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        34.40003967285156,
+        18.235705852508545,
+        29.024999618530273
+      ],
+      "size_mm": [
+        12.8,
+        12.72,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Clip_audio_capacitor.stl",
+      "step": "output/step/Clip_audio_capacitor.step",
+      "mass_g": 0.19
+    },
+    {
+      "id": "Clip_controller_100uF",
+      "path": "output/webots/Clip_controller_100uF.bin",
+      "count": 1908,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        48.37653350830078,
+        10.698891162872314,
+        32.25
+      ],
+      "size_mm": [
+        9.8,
+        9.7,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Clip_controller_100uF.stl",
+      "step": "output/step/Clip_controller_100uF.step",
+      "mass_g": 0.14
+    },
+    {
+      "id": "Clip_servo_470uF_1",
+      "path": "output/webots/Clip_servo_470uF_1.bin",
+      "count": 1932,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -37.624958992004395,
+        12.860705852508545,
+        29.024999618530273
+      ],
+      "size_mm": [
+        12.8,
+        12.72,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Clip_servo_470uF_1.stl",
+      "step": "output/step/Clip_servo_470uF_1.step",
+      "mass_g": 0.19
+    },
+    {
+      "id": "Clip_servo_470uF_2",
+      "path": "output/webots/Clip_servo_470uF_2.bin",
+      "count": 1932,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -37.624958992004395,
+        25.760705947875977,
+        29.024999618530273
+      ],
+      "size_mm": [
+        12.8,
+        12.72,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Clip_servo_470uF_2.stl",
+      "step": "output/step/Clip_servo_470uF_2.step",
+      "mass_g": 0.19
+    },
+    {
+      "id": "Crown_inlay_L",
+      "path": "output/webots/Crown_inlay_L.bin",
+      "count": 13488,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        -11.999999806284904,
+        0.0,
+        214.98758697509766
+      ],
+      "size_mm": [
+        23.3,
+        30.53,
+        6.47
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Crown_inlay_L.stl",
+      "step": "output/step/Crown_inlay_L.step",
+      "mass_g": 1.07
+    },
+    {
+      "id": "Crown_inlay_R",
+      "path": "output/webots/Crown_inlay_R.bin",
+      "count": 18726,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        11.999999806284904,
+        0.0,
+        214.9875946044922
+      ],
+      "size_mm": [
+        23.3,
+        30.53,
+        6.47
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Crown_inlay_R.stl",
+      "step": "output/step/Crown_inlay_R.step",
+      "mass_g": 1.07
+    },
+    {
+      "id": "Cuff_L",
+      "path": "output/webots/Cuff_L.bin",
+      "count": 32064,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Shoulders and hands",
+      "region": "L",
+      "center": [
+        -76.32406234741211,
+        -7.630423069000244,
+        64.9988021850586
+      ],
+      "size_mm": [
+        23.92,
+        26.85,
+        7.45
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Cuff_L.stl",
+      "step": "output/step/Cuff_L.step",
+      "mass_g": 1.07
+    },
+    {
+      "id": "Cuff_R",
+      "path": "output/webots/Cuff_R.bin",
+      "count": 31896,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Shoulders and hands",
+      "region": "R",
+      "center": [
+        76.32593154907227,
+        -7.629350423812866,
+        64.9988021850586
+      ],
+      "size_mm": [
+        23.92,
+        26.86,
+        7.45
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Cuff_R.stl",
+      "step": "output/step/Cuff_R.step",
+      "mass_g": 1.07
+    },
+    {
+      "id": "Face_bezel",
+      "path": "output/webots/Face_bezel.bin",
+      "count": 2016,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        0.0,
+        -27.050000190734863,
+        168.7750015258789
+      ],
+      "size_mm": [
+        74.18,
+        1.8,
+        74.18
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Face_bezel.stl",
+      "step": "output/step/Face_bezel.step",
+      "mass_g": 2.92
+    },
+    {
+      "id": "Face_insert",
+      "path": "output/webots/Face_insert.bin",
+      "count": 4056,
+      "color": [
+        0.035,
+        0.054,
+        0.06
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        0.0,
+        -27.03874969482422,
+        168.7750015258789
+      ],
+      "size_mm": [
+        61.92,
+        1.5,
+        61.92
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Face_insert.stl",
+      "step": "output/step/Face_insert.step",
+      "mass_g": 3.98
+    },
+    {
+      "id": "Foot_L",
+      "path": "output/webots/Foot_L.bin",
+      "count": 25944,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        -30.10058069229126,
+        -61.27107048034668,
+        33.325000047683716
+      ],
+      "size_mm": [
+        49.45,
+        45.16,
+        62.35
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Foot_L.stl",
+      "step": "output/step/Foot_L.step",
+      "mass_g": 18.69
+    },
+    {
+      "id": "Foot_R",
+      "path": "output/webots/Foot_R.bin",
+      "count": 26694,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        30.099400997161865,
+        -61.27152633666992,
+        33.325000047683716
+      ],
+      "size_mm": [
+        49.45,
+        45.16,
+        62.35
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Foot_R.stl",
+      "step": "output/step/Foot_R.step",
+      "mass_g": 18.72
+    },
+    {
+      "id": "Foot_pad_L",
+      "path": "output/webots/Foot_pad_L.bin",
+      "count": 1188,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        -30.098608016967773,
+        -64.50166320800781,
+        1.0750000476837158
+      ],
+      "size_mm": [
+        17.2,
+        19.34,
+        2.15
+      ],
+      "hardware": false,
+      "material": "TPU",
+      "stl": "output/stl/Foot_pad_L.stl",
+      "step": "output/step/Foot_pad_L.step",
+      "mass_g": 0.68
+    },
+    {
+      "id": "Foot_pad_R",
+      "path": "output/webots/Foot_pad_R.bin",
+      "count": 1188,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        30.10139274597168,
+        -64.50166320800781,
+        1.0750000476837158
+      ],
+      "size_mm": [
+        17.2,
+        19.34,
+        2.15
+      ],
+      "hardware": false,
+      "material": "TPU",
+      "stl": "output/stl/Foot_pad_R.stl",
+      "step": "output/step/Foot_pad_R.step",
+      "mass_g": 0.68
+    },
+    {
+      "id": "Forearm_L",
+      "path": "output/webots/Forearm_L.bin",
+      "count": 19926,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Shoulders and hands",
+      "region": "L",
+      "center": [
+        -74.63483619689941,
+        -4.773884296417236,
+        83.25660133361816
+      ],
+      "size_mm": [
+        25.82,
+        29.59,
+        39.66
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Forearm_L.stl",
+      "step": "output/step/Forearm_L.step",
+      "mass_g": 7.42
+    },
+    {
+      "id": "Forearm_R",
+      "path": "output/webots/Forearm_R.bin",
+      "count": 21060,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Shoulders and hands",
+      "region": "R",
+      "center": [
+        74.6369571685791,
+        -4.773902893066406,
+        83.25660133361816
+      ],
+      "size_mm": [
+        25.82,
+        29.59,
+        39.66
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Forearm_R.stl",
+      "step": "output/step/Forearm_R.step",
+      "mass_g": 7.42
+    },
+    {
+      "id": "Harness_clip_head",
+      "path": "output/webots/Harness_clip_head.bin",
+      "count": 1788,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        19.350390911102295,
+        14.92720365524292,
+        173.4250030517578
+      ],
+      "size_mm": [
+        9.4,
+        9.15,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Harness_clip_head.stl",
+      "step": "output/step/Harness_clip_head.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Harness_clip_hips",
+      "path": "output/webots/Harness_clip_hips.bin",
+      "count": 1788,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -29.024608612060547,
+        -1.1977965831756592,
+        13.25
+      ],
+      "size_mm": [
+        9.4,
+        9.15,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Harness_clip_hips.stl",
+      "step": "output/step/Harness_clip_hips.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Harness_clip_neck",
+      "path": "output/webots/Harness_clip_neck.bin",
+      "count": 1788,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        8.600391268730164,
+        -0.12279629707336426,
+        118.5999984741211
+      ],
+      "size_mm": [
+        9.4,
+        9.15,
+        5.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Harness_clip_neck.stl",
+      "step": "output/step/Harness_clip_neck.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Helmet_front",
+      "path": "output/webots/Helmet_front.bin",
+      "count": 81792,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        -0.0013275146484375,
+        -4.375,
+        169.3455924987793
+      ],
+      "size_mm": [
+        109.13,
+        47.15,
+        92.52
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Helmet_front.stl",
+      "step": "output/step/Helmet_front.step",
+      "mass_g": 44.29
+    },
+    {
+      "id": "Helmet_rear",
+      "path": "output/webots/Helmet_rear.bin",
+      "count": 77916,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        0.0016937255859375,
+        32.856515884399414,
+        168.77536392211914
+      ],
+      "size_mm": [
+        99.41,
+        26.71,
+        89.67
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Helmet_rear.stl",
+      "step": "output/step/Helmet_rear.step",
+      "mass_g": 28.69
+    },
+    {
+      "id": "Hip_front",
+      "path": "output/webots/Hip_front.bin",
+      "count": 48000,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -31.248238757252693,
+        30.09999918937683
+      ],
+      "size_mm": [
+        128.99,
+        62.2,
+        47.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Hip_front.stl",
+      "step": "output/step/Hip_front.step",
+      "mass_g": 34.73
+    },
+    {
+      "id": "Hip_rear",
+      "path": "output/webots/Hip_rear.bin",
+      "count": 30954,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0,
+        31.224850848317146,
+        30.09999918937683
+      ],
+      "size_mm": [
+        128.99,
+        62.15,
+        47.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Hip_rear.stl",
+      "step": "output/step/Hip_rear.step",
+      "mass_g": 34.12
+    },
+    {
+      "id": "Horn_adapter_L",
+      "path": "output/webots/Horn_adapter_L.bin",
+      "count": 2070,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "L",
+      "center": [
+        -67.70000076293945,
+        0.0,
+        93.4625015258789
+      ],
+      "size_mm": [
+        13.35,
+        14.0,
+        29.18
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Horn_adapter_L.stl",
+      "step": "output/step/Horn_adapter_L.step",
+      "mass_g": 3.71
+    },
+    {
+      "id": "Horn_adapter_R",
+      "path": "output/webots/Horn_adapter_R.bin",
+      "count": 2070,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "R",
+      "center": [
+        67.28750038146973,
+        0.0,
+        93.4625015258789
+      ],
+      "size_mm": [
+        14.17,
+        14.0,
+        29.18
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Horn_adapter_R.stl",
+      "step": "output/step/Horn_adapter_R.step",
+      "mass_g": 3.78
+    },
+    {
+      "id": "LED_holder",
+      "path": "output/webots/LED_holder.bin",
+      "count": 1176,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        10.75,
+        -20.424999237060547,
+        195.64999389648438
+      ],
+      "size_mm": [
+        7.0,
+        5.0,
+        6.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/LED_holder.stl",
+      "step": "output/step/LED_holder.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Lens_flex_support",
+      "path": "output/webots/Lens_flex_support.bin",
+      "count": 96,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        -10.0,
+        195.64999389648438
+      ],
+      "size_mm": [
+        14.0,
+        3.0,
+        13.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Lens_flex_support.stl",
+      "step": "output/step/Lens_flex_support.step",
+      "mass_g": 0.34
+    },
+    {
+      "id": "Neck_bearing_seat",
+      "path": "output/webots/Neck_bearing_seat.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        0.0,
+        119.63749694824219
+      ],
+      "size_mm": [
+        30.1,
+        30.1,
+        6.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Neck_bearing_seat.stl",
+      "step": "output/step/Neck_bearing_seat.step",
+      "mass_g": 1.93
+    },
+    {
+      "id": "Neck_hollow_hub",
+      "path": "output/webots/Neck_hollow_hub.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        0.0,
+        123.67500305175781
+      ],
+      "size_mm": [
+        15.0,
+        15.0,
+        13.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Neck_hollow_hub.stl",
+      "step": "output/step/Neck_hollow_hub.step",
+      "mass_g": 1.32
+    },
+    {
+      "id": "Neck_retaining_ring",
+      "path": "output/webots/Neck_retaining_ring.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        0.0,
+        126.7750015258789
+      ],
+      "size_mm": [
+        27.0,
+        27.0,
+        2.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Neck_retaining_ring.stl",
+      "step": "output/step/Neck_retaining_ring.step",
+      "mass_g": 0.95
+    },
+    {
+      "id": "Palm_L",
+      "path": "output/webots/Palm_L.bin",
+      "count": 20850,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Shoulders and hands",
+      "region": "L",
+      "center": [
+        -77.13126373291016,
+        -10.751391652040184,
+        52.67500114440918
+      ],
+      "size_mm": [
+        25.26,
+        21.49,
+        26.88
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Palm_L.stl",
+      "step": "output/step/Palm_L.step",
+      "mass_g": 6.07
+    },
+    {
+      "id": "Palm_R",
+      "path": "output/webots/Palm_R.bin",
+      "count": 20406,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Shoulders and hands",
+      "region": "R",
+      "center": [
+        77.12897872924805,
+        -10.751391652040184,
+        52.67500114440918
+      ],
+      "size_mm": [
+        25.26,
+        21.49,
+        26.88
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Palm_R.stl",
+      "step": "output/step/Palm_R.step",
+      "mass_g": 6.07
+    },
+    {
+      "id": "Passive_strip",
+      "path": "output/webots/Passive_strip.bin",
+      "count": 396,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -31.71250057220459,
+        72.5625
+      ],
+      "size_mm": [
+        29.0,
+        4.6,
+        2.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Passive_strip.stl",
+      "step": "output/step/Passive_strip.step",
+      "mass_g": 0.17
+    },
+    {
+      "id": "Record_button",
+      "path": "output/webots/Record_button.bin",
+      "count": 792,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -29.69413471221924,
+        101.04999923706055
+      ],
+      "size_mm": [
+        18.27,
+        7.77,
+        6.45
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Record_button.stl",
+      "step": "output/step/Record_button.step",
+      "mass_g": 0.38
+    },
+    {
+      "id": "Retainer_amplifier",
+      "path": "output/webots/Retainer_amplifier.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -36.54999923706055,
+        -8.600000143051147,
+        34.04999923706055
+      ],
+      "size_mm": [
+        31.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_amplifier.stl",
+      "step": "output/step/Retainer_amplifier.step",
+      "mass_g": 0.34
+    },
+    {
+      "id": "Retainer_audio_capacitor",
+      "path": "output/webots/Retainer_audio_capacitor.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        34.40000057220459,
+        18.274999618530273,
+        37.125
+      ],
+      "size_mm": [
+        19.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_audio_capacitor.stl",
+      "step": "output/step/Retainer_audio_capacitor.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Retainer_camera_board",
+      "path": "output/webots/Retainer_camera_board.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        5.375,
+        202.625
+      ],
+      "size_mm": [
+        39.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_camera_board.stl",
+      "step": "output/step/Retainer_camera_board.step",
+      "mass_g": 0.44
+    },
+    {
+      "id": "Retainer_clock_board_and_cell",
+      "path": "output/webots/Retainer_clock_board_and_cell.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        10.75,
+        34.82500076293945
+      ],
+      "size_mm": [
+        51.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_clock_board_and_cell.stl",
+      "step": "output/step/Retainer_clock_board_and_cell.step",
+      "mass_g": 0.58
+    },
+    {
+      "id": "Retainer_controller_100uF",
+      "path": "output/webots/Retainer_controller_100uF.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        48.375,
+        10.75,
+        39.35000038146973
+      ],
+      "size_mm": [
+        16.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_controller_100uF.stl",
+      "step": "output/step/Retainer_controller_100uF.step",
+      "mass_g": 0.16
+    },
+    {
+      "id": "Retainer_display_pocket",
+      "path": "output/webots/Retainer_display_pocket.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        0.0,
+        -12.0625,
+        190.1875
+      ],
+      "size_mm": [
+        61.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_display_pocket.stl",
+      "step": "output/step/Retainer_display_pocket.step",
+      "mass_g": 0.7
+    },
+    {
+      "id": "Retainer_esp32_board",
+      "path": "output/webots/Retainer_esp32_board.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        13.975000381469727,
+        53.32500076293945
+      ],
+      "size_mm": [
+        67.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_esp32_board.stl",
+      "step": "output/step/Retainer_esp32_board.step",
+      "mass_g": 0.77
+    },
+    {
+      "id": "Retainer_left_shoulder_servo",
+      "path": "output/webots/Retainer_left_shoulder_servo.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -38.69999980926514,
+        0.0,
+        109.14999771118164
+      ],
+      "size_mm": [
+        43.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_left_shoulder_servo.stl",
+      "step": "output/step/Retainer_left_shoulder_servo.step",
+      "mass_g": 0.48
+    },
+    {
+      "id": "Retainer_master_switch",
+      "path": "output/webots/Retainer_master_switch.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        29.02500057220459,
+        32.25,
+        29.25
+      ],
+      "size_mm": [
+        23.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_master_switch.stl",
+      "step": "output/step/Retainer_master_switch.step",
+      "mass_g": 0.24
+    },
+    {
+      "id": "Retainer_microphone_board",
+      "path": "output/webots/Retainer_microphone_board.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        33.32499980926514,
+        -11.699999809265137,
+        31.475000381469727
+      ],
+      "size_mm": [
+        27.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_microphone_board.stl",
+      "step": "output/step/Retainer_microphone_board.step",
+      "mass_g": 0.29
+    },
+    {
+      "id": "Retainer_minus_switch",
+      "path": "output/webots/Retainer_minus_switch.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        -44.07500076293945,
+        0.0,
+        173.875
+      ],
+      "size_mm": [
+        17.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_minus_switch.stl",
+      "step": "output/step/Retainer_minus_switch.step",
+      "mass_g": 0.17
+    },
+    {
+      "id": "Retainer_neck_servo",
+      "path": "output/webots/Retainer_neck_servo.bin",
+      "count": 3096,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -3.224999964237213,
+        108.9375
+      ],
+      "size_mm": [
+        43.6,
+        9.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_neck_servo.stl",
+      "step": "output/step/Retainer_neck_servo.step",
+      "mass_g": 0.67
+    },
+    {
+      "id": "Retainer_pca9685_driver",
+      "path": "output/webots/Retainer_pca9685_driver.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -16.399999618530273,
+        51.10000038146973
+      ],
+      "size_mm": [
+        73.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_pca9685_driver.stl",
+      "step": "output/step/Retainer_pca9685_driver.step",
+      "mass_g": 0.84
+    },
+    {
+      "id": "Retainer_plus_switch",
+      "path": "output/webots/Retainer_plus_switch.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        44.07500076293945,
+        0.0,
+        173.875
+      ],
+      "size_mm": [
+        17.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_plus_switch.stl",
+      "step": "output/step/Retainer_plus_switch.step",
+      "mass_g": 0.17
+    },
+    {
+      "id": "Retainer_power_distribution",
+      "path": "output/webots/Retainer_power_distribution.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -24.725000381469727,
+        95.02499771118164
+      ],
+      "size_mm": [
+        37.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_power_distribution.stl",
+      "step": "output/step/Retainer_power_distribution.step",
+      "mass_g": 0.41
+    },
+    {
+      "id": "Retainer_right_shoulder_servo",
+      "path": "output/webots/Retainer_right_shoulder_servo.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        38.69999980926514,
+        0.0,
+        109.14999771118164
+      ],
+      "size_mm": [
+        43.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_right_shoulder_servo.stl",
+      "step": "output/step/Retainer_right_shoulder_servo.step",
+      "mass_g": 0.48
+    },
+    {
+      "id": "Retainer_servo_470uF_1",
+      "path": "output/webots/Retainer_servo_470uF_1.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -37.625,
+        12.899999618530273,
+        37.125
+      ],
+      "size_mm": [
+        19.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_servo_470uF_1.stl",
+      "step": "output/step/Retainer_servo_470uF_1.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Retainer_servo_470uF_2",
+      "path": "output/webots/Retainer_servo_470uF_2.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -37.625,
+        25.799999237060547,
+        37.125
+      ],
+      "size_mm": [
+        19.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_servo_470uF_2.stl",
+      "step": "output/step/Retainer_servo_470uF_2.step",
+      "mass_g": 0.2
+    },
+    {
+      "id": "Retainer_talk_switch",
+      "path": "output/webots/Retainer_talk_switch.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -19.350000381469727,
+        106.14999771118164
+      ],
+      "size_mm": [
+        17.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_talk_switch.stl",
+      "step": "output/step/Retainer_talk_switch.step",
+      "mass_g": 0.17
+    },
+    {
+      "id": "Retainer_usb_c_pd_board",
+      "path": "output/webots/Retainer_usb_c_pd_board.bin",
+      "count": 2076,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        0.0,
+        39.775001525878906,
+        38.20000076293945
+      ],
+      "size_mm": [
+        37.6,
+        6.0,
+        1.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Retainer_usb_c_pd_board.stl",
+      "step": "output/step/Retainer_usb_c_pd_board.step",
+      "mass_g": 0.41
+    },
+    {
+      "id": "Shoulder_bearing_seat_L",
+      "path": "output/webots/Shoulder_bearing_seat_L.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        -60.20000076293945,
+        0.0,
+        101.05000305175781
+      ],
+      "size_mm": [
+        5.0,
+        19.0,
+        19.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Shoulder_bearing_seat_L.stl",
+      "step": "output/step/Shoulder_bearing_seat_L.step",
+      "mass_g": 0.93
+    },
+    {
+      "id": "Shoulder_bearing_seat_R",
+      "path": "output/webots/Shoulder_bearing_seat_R.bin",
+      "count": 2016,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        60.20000076293945,
+        0.0,
+        101.05000305175781
+      ],
+      "size_mm": [
+        5.0,
+        19.0,
+        19.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Shoulder_bearing_seat_R.stl",
+      "step": "output/step/Shoulder_bearing_seat_R.step",
+      "mass_g": 0.93
+    },
+    {
+      "id": "Shoulder_housing_L",
+      "path": "output/webots/Shoulder_housing_L.bin",
+      "count": 48000,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Shoulders and hands",
+      "region": "fixed",
+      "center": [
+        -38.70021036099362,
+        0.0,
+        101.04997634887695
+      ],
+      "size_mm": [
+        43.0,
+        51.6,
+        32.25
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Shoulder_housing_L.stl",
+      "step": "output/step/Shoulder_housing_L.step",
+      "mass_g": 40.63
+    },
+    {
+      "id": "Shoulder_housing_R",
+      "path": "output/webots/Shoulder_housing_R.bin",
+      "count": 48000,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Shoulders and hands",
+      "region": "fixed",
+      "center": [
+        38.70030695979954,
+        0.005127906799316406,
+        101.04997634887695
+      ],
+      "size_mm": [
+        43.0,
+        51.59,
+        32.25
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Shoulder_housing_R.stl",
+      "step": "output/step/Shoulder_housing_R.step",
+      "mass_g": 40.62
+    },
+    {
+      "id": "Shutter_rails",
+      "path": "output/webots/Shutter_rails.bin",
+      "count": 84,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "head",
+      "center": [
+        6.0,
+        -24.649999618530273,
+        195.6500015258789
+      ],
+      "size_mm": [
+        29.0,
+        2.5,
+        10.6
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Shutter_rails.stl",
+      "step": "output/step/Shutter_rails.step",
+      "mass_g": 0.25
+    },
+    {
+      "id": "Sole_insert_L",
+      "path": "output/webots/Sole_insert_L.bin",
+      "count": 756,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        -30.100000858306885,
+        -83.70000076293945,
+        32.25
+      ],
+      "size_mm": [
+        30.1,
+        1.1,
+        43.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Sole_insert_L.stl",
+      "step": "output/step/Sole_insert_L.step",
+      "mass_g": 1.54
+    },
+    {
+      "id": "Sole_insert_R",
+      "path": "output/webots/Sole_insert_R.bin",
+      "count": 756,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        30.100000858306885,
+        -83.70000076293945,
+        32.25
+      ],
+      "size_mm": [
+        30.1,
+        1.1,
+        43.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Sole_insert_R.stl",
+      "step": "output/step/Sole_insert_R.step",
+      "mass_g": 1.54
+    },
+    {
+      "id": "Speaker_gasket",
+      "path": "output/webots/Speaker_gasket.bin",
+      "count": 2016,
+      "color": [
+        0.035,
+        0.054,
+        0.06
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -46.25,
+        32.25
+      ],
+      "size_mm": [
+        31.0,
+        1.5,
+        31.0
+      ],
+      "hardware": false,
+      "material": "TPU",
+      "stl": "output/stl/Speaker_gasket.stl",
+      "step": "output/step/Speaker_gasket.step",
+      "mass_g": 0.54
+    },
+    {
+      "id": "Torso_front",
+      "path": "output/webots/Torso_front.bin",
+      "count": 11664,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        -0.015562057495117188,
+        -18.8809494972229,
+        86.6279411315918
+      ],
+      "size_mm": [
+        98.93,
+        54.66,
+        65.46
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Torso_front.stl",
+      "step": "output/step/Torso_front.step",
+      "mass_g": 24.09
+    },
+    {
+      "id": "Torso_rear",
+      "path": "output/webots/Torso_rear.bin",
+      "count": 13812,
+      "color": [
+        0.95,
+        0.915,
+        0.85
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0,
+        27.471956253051758,
+        86.48375701904297
+      ],
+      "size_mm": [
+        97.06,
+        37.44,
+        65.17
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Torso_rear.stl",
+      "step": "output/step/Torso_rear.step",
+      "mass_g": 19.85
+    },
+    {
+      "id": "USB_cable_saddle",
+      "path": "output/webots/USB_cable_saddle.bin",
+      "count": 540,
+      "color": [
+        0.27,
+        0.5,
+        0.48
+      ],
+      "group": "Mounts and retainers",
+      "region": "fixed",
+      "center": [
+        20.0,
+        37.625,
+        13.975000381469727
+      ],
+      "size_mm": [
+        20.0,
+        8.0,
+        4.0
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/USB_cable_saddle.stl",
+      "step": "output/step/USB_cable_saddle.step",
+      "mass_g": 0.6
+    },
+    {
+      "id": "Volume_cap_L",
+      "path": "output/webots/Volume_cap_L.bin",
+      "count": 1044,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        -52.51250076293945,
+        0.0,
+        168.7750015258789
+      ],
+      "size_mm": [
+        7.85,
+        30.1,
+        30.1
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Volume_cap_L.stl",
+      "step": "output/step/Volume_cap_L.step",
+      "mass_g": 3.95
+    },
+    {
+      "id": "Volume_cap_R",
+      "path": "output/webots/Volume_cap_R.bin",
+      "count": 1044,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Helmet and face",
+      "region": "head",
+      "center": [
+        52.51250076293945,
+        0.0,
+        168.7750015258789
+      ],
+      "size_mm": [
+        7.85,
+        30.1,
+        30.1
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Volume_cap_R.stl",
+      "step": "output/step/Volume_cap_R.step",
+      "mass_g": 3.95
+    },
+    {
+      "id": "Waist_band",
+      "path": "output/webots/Waist_band.bin",
+      "count": 8112,
+      "color": [
+        0.68,
+        0.34,
+        0.23
+      ],
+      "group": "Torso and base",
+      "region": "fixed",
+      "center": [
+        0.0028076171875,
+        0.0012569427490234375,
+        57.299102783203125
+      ],
+      "size_mm": [
+        100.19,
+        91.39,
+        9.03
+      ],
+      "hardware": false,
+      "material": "PETG",
+      "stl": "output/stl/Waist_band.stl",
+      "step": "output/step/Waist_band.step",
+      "mass_g": 1.85
+    },
+    {
+      "id": "HW_display_pocket",
+      "path": "output/webots/HW_display_pocket.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        0.0,
+        -16.662499999999998,
+        166.0875
+      ],
+      "size_mm": [
+        52.0,
+        14.0,
+        46.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Display pocket"
+    },
+    {
+      "id": "HW_camera_board",
+      "path": "output/webots/HW_camera_board.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        0.0,
+        5.375,
+        179.525
+      ],
+      "size_mm": [
+        30.0,
+        16.0,
+        44.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Camera board"
+    },
+    {
+      "id": "HW_minus_switch",
+      "path": "output/webots/HW_minus_switch.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        -44.074999999999996,
+        0.0,
+        168.775
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Minus switch"
+    },
+    {
+      "id": "HW_plus_switch",
+      "path": "output/webots/HW_plus_switch.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        44.074999999999996,
+        0.0,
+        168.775
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Plus switch"
+    },
+    {
+      "id": "HW_neck_servo",
+      "path": "output/webots/HW_neck_servo.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -3.2249999999999996,
+        90.83749999999999
+      ],
+      "size_mm": [
+        34.0,
+        14.0,
+        34.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Neck servo"
+    },
+    {
+      "id": "HW_power_distribution",
+      "path": "output/webots/HW_power_distribution.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -24.724999999999998,
+        84.925
+      ],
+      "size_mm": [
+        28.0,
+        7.0,
+        18.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Power distribution"
+    },
+    {
+      "id": "HW_talk_switch",
+      "path": "output/webots/HW_talk_switch.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -19.349999999999998,
+        101.05
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Talk switch"
+    },
+    {
+      "id": "HW_esp32_board",
+      "path": "output/webots/HW_esp32_board.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        13.975000000000001,
+        46.225
+      ],
+      "size_mm": [
+        58.0,
+        30.0,
+        12.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Esp32 board"
+    },
+    {
+      "id": "HW_pca9685_driver",
+      "path": "output/webots/HW_pca9685_driver.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -17.2,
+        43.0
+      ],
+      "size_mm": [
+        64.0,
+        26.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Pca9685 driver"
+    },
+    {
+      "id": "HW_clock_board_and_cell",
+      "path": "output/webots/HW_clock_board_and_cell.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        10.75,
+        24.724999999999994
+      ],
+      "size_mm": [
+        42.0,
+        26.0,
+        18.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Clock board and cell"
+    },
+    {
+      "id": "HW_amplifier",
+      "path": "output/webots/HW_amplifier.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -36.55,
+        -8.600000000000001,
+        27.950000000000003
+      ],
+      "size_mm": [
+        22.0,
+        21.0,
+        10.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Amplifier"
+    },
+    {
+      "id": "HW_microphone_board",
+      "path": "output/webots/HW_microphone_board.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        33.324999999999996,
+        -8.600000000000001,
+        26.875
+      ],
+      "size_mm": [
+        18.0,
+        15.0,
+        7.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Microphone board"
+    },
+    {
+      "id": "HW_speaker",
+      "path": "output/webots/HW_speaker.bin",
+      "count": 576,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        -38.699999999999996,
+        32.25
+      ],
+      "size_mm": [
+        36.0,
+        13.0,
+        36.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Speaker"
+    },
+    {
+      "id": "HW_servo_470uF_1",
+      "path": "output/webots/HW_servo_470uF_1.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -37.625,
+        12.899999999999999,
+        29.025
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "470uf/10v capacitor"
+    },
+    {
+      "id": "HW_servo_470uF_2",
+      "path": "output/webots/HW_servo_470uF_2.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -37.625,
+        25.799999999999997,
+        29.025
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "470uf/10v capacitor"
+    },
+    {
+      "id": "HW_audio_capacitor",
+      "path": "output/webots/HW_audio_capacitor.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        34.4,
+        18.275,
+        29.025
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Audio capacitor"
+    },
+    {
+      "id": "HW_usb_c_pd_board",
+      "path": "output/webots/HW_usb_c_pd_board.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        0.0,
+        39.775,
+        30.099999999999994
+      ],
+      "size_mm": [
+        28.0,
+        26.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Usb c pd board"
+    },
+    {
+      "id": "HW_left_shoulder_servo",
+      "path": "output/webots/HW_left_shoulder_servo.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -38.699999999999996,
+        0.0,
+        101.05
+      ],
+      "size_mm": [
+        34.0,
+        34.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Left shoulder servo"
+    },
+    {
+      "id": "HW_right_shoulder_servo",
+      "path": "output/webots/HW_right_shoulder_servo.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        38.699999999999996,
+        0.0,
+        101.05
+      ],
+      "size_mm": [
+        34.0,
+        34.0,
+        14.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Right shoulder servo"
+    },
+    {
+      "id": "HW_controller_100uF",
+      "path": "output/webots/HW_controller_100uF.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        48.375,
+        10.75,
+        32.25
+      ],
+      "size_mm": [
+        7.0,
+        7.0,
+        12.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "100uf controller capacitor"
+    },
+    {
+      "id": "HW_master_switch",
+      "path": "output/webots/HW_master_switch.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        29.025,
+        32.25,
+        23.65
+      ],
+      "size_mm": [
+        14.0,
+        8.0,
+        9.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Master power switch"
+    },
+    {
+      "id": "HW_decoupling_100nF_1",
+      "path": "output/webots/HW_decoupling_100nF_1.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -10.75,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Local decoupling allocation; distribute on breakout pins during hardware wiring"
+    },
+    {
+      "id": "HW_decoupling_100nF_2",
+      "path": "output/webots/HW_decoupling_100nF_2.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -6.449999999999999,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Local decoupling allocation; distribute on breakout pins during hardware wiring"
+    },
+    {
+      "id": "HW_decoupling_100nF_3",
+      "path": "output/webots/HW_decoupling_100nF_3.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        -2.15,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Local decoupling allocation; distribute on breakout pins during hardware wiring"
+    },
+    {
+      "id": "HW_decoupling_100nF_4",
+      "path": "output/webots/HW_decoupling_100nF_4.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        2.15,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Local decoupling allocation; distribute on breakout pins during hardware wiring"
+    },
+    {
+      "id": "HW_decoupling_100nF_5",
+      "path": "output/webots/HW_decoupling_100nF_5.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        6.449999999999999,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Local decoupling allocation; distribute on breakout pins during hardware wiring"
+    },
+    {
+      "id": "HW_decoupling_100nF_6",
+      "path": "output/webots/HW_decoupling_100nF_6.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "fixed",
+      "center": [
+        10.75,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Local decoupling allocation; distribute on breakout pins during hardware wiring"
+    },
+    {
+      "id": "HW_crown_left",
+      "path": "output/webots/HW_crown_left.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        -10.75,
+        0.0,
+        210.00125
+      ],
+      "size_mm": [
+        18.0,
+        22.0,
+        0.1
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Insulated copper touch electrode"
+    },
+    {
+      "id": "HW_crown_right",
+      "path": "output/webots/HW_crown_right.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        10.75,
+        0.0,
+        210.00125
+      ],
+      "size_mm": [
+        18.0,
+        22.0,
+        0.1
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Insulated copper touch electrode"
+    },
+    {
+      "id": "HW_camera_lens",
+      "path": "output/webots/HW_camera_lens.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        0.0,
+        -19.349999999999998,
+        195.65
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        8.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "Ov2640 on compatible 75mm fpc"
+    },
+    {
+      "id": "HW_camera_LED",
+      "path": "output/webots/HW_camera_LED.bin",
+      "count": 36,
+      "color": [
+        0.35,
+        0.65,
+        0.53
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        10.75,
+        -23.65,
+        195.65
+      ],
+      "size_mm": [
+        3.0,
+        5.0,
+        3.0
+      ],
+      "hardware": true,
+      "material": "Fit envelope",
+      "title": "3mm activity led"
+    },
+    {
+      "id": "LCD_visible",
+      "path": "output/webots/LCD_visible.bin",
+      "count": 1152,
+      "color": [
+        0.03,
+        0.055,
+        0.065
+      ],
+      "group": "Hardware allowances",
+      "region": "head",
+      "center": [
+        0.0,
+        -26.45,
+        166.275
+      ],
+      "size_mm": [
+        32.4,
+        0.3,
+        32.4
+      ],
+      "hardware": true,
+      "material": "Display surface",
+      "title": "GC9A01 active display",
+      "visible_exterior": true
+    }
+  ]
+}

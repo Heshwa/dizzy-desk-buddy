@@ -1,0 +1,2955 @@
+{
+  "scale": 1.075,
+  "components": [
+    {
+      "id": "esp32_board",
+      "label": "Espressif ESP32 DevKitC V4",
+      "basis": "Official 48.26 \u00d7 27.94 mm PCB outline. Module/socket stack and plug dimensions are assumptions.",
+      "source": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf"
+    },
+    {
+      "id": "usb_c_pd_board",
+      "label": "Adafruit HUSB238 5807",
+      "basis": "Manufacturer 3D file, including the tall terminal block. The chosen cable overmold uses a provisional gauge.",
+      "source": "https://learn.adafruit.com/adafruit-husb238-usb-type-c-power-delivery-breakout/downloads"
+    },
+    {
+      "id": "pca9685_driver",
+      "label": "TECH1049 PCA9685 servo board",
+      "basis": "Supplier 62 \u00d7 25 mm outline. Header, screw terminals and JR plugs are occupied volumes.",
+      "source": "https://techtonics.in/product/pca9685-16-channel-12-bit-pwm-servo-driver-i2c-interface/"
+    },
+    {
+      "id": "display_pocket",
+      "label": "TECH2512 round GC9A01 LCD",
+      "basis": "1.28-inch display class. 46 \u00d7 40 mm carrier orientation and header position await a measurement.",
+      "source": "https://techtonics.in/product/1-28-inch-round-display-module-gc9a01-7p-240x240-spi/"
+    },
+    {
+      "id": "camera_board",
+      "label": "ESP32-CAM and separate OV2640 lens",
+      "basis": "Supplier 40 \u00d7 27 \u00d7 12 mm board size. Lens bracket/FPC pin and connector positions remain provisional.",
+      "source": "https://techtonics.in/product/esp32-cam-wifi-bluetooth-development-board-with-ov2640-camera-module-2mp/"
+    },
+    {
+      "id": "clock_board_and_cell",
+      "label": "DS3231 and coin-cell holder",
+      "basis": "The supplier variant needs measurement. PCB and plug placement are representative.",
+      "source": null
+    },
+    {
+      "id": "amplifier",
+      "label": "MAX98357A amplifier",
+      "basis": "The supplier variant needs measurement. PCB and plug placement are representative.",
+      "source": null
+    },
+    {
+      "id": "microphone_board",
+      "label": "INMP441 microphone",
+      "basis": "The supplier variant needs measurement. PCB and plug placement are representative.",
+      "source": null
+    },
+    {
+      "id": "power_distribution",
+      "label": "5 V distribution board",
+      "basis": "The supplier variant needs measurement. PCB and plug placement are representative.",
+      "source": null
+    },
+    {
+      "id": "speaker",
+      "label": "PUI Audio 28 mm speaker",
+      "basis": "Manufacturer 28 \u00d7 7.5 mm nominal speaker plus a separate diaphragm-travel gauge.",
+      "source": "https://puiaudio.com/product/speakers-and-receivers/as02804pr-n50-r"
+    },
+    {
+      "id": "neck_servo",
+      "label": "TowerPro SG90 neck",
+      "basis": "Manufacturer body specification 23 \u00d7 12.2 \u00d7 29 mm. Shaft centre and housing orientation are trial values.",
+      "source": "https://towerpro.com.tw/product/sg90-analog/"
+    },
+    {
+      "id": "left_shoulder_servo",
+      "label": "TowerPro SG90 left shoulder",
+      "basis": "Manufacturer body specification 23 \u00d7 12.2 \u00d7 29 mm. Shaft centre and housing orientation are trial values.",
+      "source": "https://towerpro.com.tw/product/sg90-analog/"
+    },
+    {
+      "id": "right_shoulder_servo",
+      "label": "TowerPro SG90 right shoulder",
+      "basis": "Manufacturer body specification 23 \u00d7 12.2 \u00d7 29 mm. Shaft centre and housing orientation are trial values.",
+      "source": "https://towerpro.com.tw/product/sg90-analog/"
+    }
+  ],
+  "meshes": [
+    {
+      "id": "Fit_Hardware_0",
+      "owner": "esp32_board",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_0.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        0.0,
+        13.975,
+        41.325
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_1",
+      "owner": "esp32_board",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_1.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        -2.3000000000000007,
+        13.975000000000001,
+        43.675
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_2",
+      "owner": "esp32_board",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_2.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        0.0,
+        13.974999999999998,
+        37.825
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_3",
+      "owner": "esp32_board",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_3.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        0.0,
+        13.974999999999998,
+        31.975
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_4",
+      "owner": "usb_c_pd_board",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_4.bin",
+      "count": 42000,
+      "region": "fixed",
+      "center": [
+        -1.5258789076710855e-07,
+        39.77499990081803,
+        29.450000184692385
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_5",
+      "owner": "usb_c_pd_board",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_5.bin",
+      "count": 7200,
+      "region": "fixed",
+      "center": [
+        -1.5240000820159914,
+        38.68650011634826,
+        27.39017649284744
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_6",
+      "owner": "usb_c_pd_board",
+      "kind": "body",
+      "color": [
+        0.15,
+        0.49,
+        0.32
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_6.bin",
+      "count": 132,
+      "region": "fixed",
+      "center": [
+        -6.731000099182129,
+        32.868999763488766,
+        27.39017649284744
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_7",
+      "owner": "pca9685_driver",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_7.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -17.2,
+        41.9
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_8",
+      "owner": "pca9685_driver",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_8.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -17.2,
+        39.3
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_9",
+      "owner": "pca9685_driver",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_9.bin",
+      "count": 576,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -23.95,
+        40.8
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_10",
+      "owner": "pca9685_driver",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_10.bin",
+      "count": 108,
+      "region": "fixed",
+      "center": [
+        -22.1,
+        -23.95,
+        47.65
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_11",
+      "owner": "display_pocket",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_11.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        0.0,
+        -22.162499999999998,
+        166.275
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_12",
+      "owner": "display_pocket",
+      "kind": "body",
+      "color": [
+        0.035,
+        0.08,
+        0.105
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_12.bin",
+      "count": 384,
+      "region": "head",
+      "center": [
+        0.0,
+        -26.25,
+        166.275
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_13",
+      "owner": "display_pocket",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_13.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        0.0,
+        -19.4625,
+        149.775
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_14",
+      "owner": "display_pocket",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_14.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        0.0,
+        -14.162499999999998,
+        149.775
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_15",
+      "owner": "camera_board",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_15.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        0.0,
+        7.375,
+        179.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_16",
+      "owner": "camera_board",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_16.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        0.0,
+        9.475,
+        186.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_17",
+      "owner": "camera_board",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_17.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        0.0,
+        5.325,
+        192.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_18",
+      "owner": "camera_board",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_18.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        9.0,
+        10.375,
+        165.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_19",
+      "owner": "camera_lens",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_19.bin",
+      "count": 384,
+      "region": "head",
+      "center": [
+        0.0,
+        -19.349999999999998,
+        195.65
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_20",
+      "owner": "clock_board_and_cell",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_20.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        0.0,
+        10.75,
+        16.825
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_21",
+      "owner": "clock_board_and_cell",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_21.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -3.0,
+        10.75,
+        20.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_22",
+      "owner": "clock_board_and_cell",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_22.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        12.0,
+        10.75,
+        22.125
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_23",
+      "owner": "amplifier",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_23.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        -36.55,
+        -8.600000000000001,
+        24.05
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_24",
+      "owner": "amplifier",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_24.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        -36.55,
+        -14.600000000000001,
+        28.35
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_25",
+      "owner": "amplifier",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_25.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        -36.55,
+        -3.5999999999999996,
+        28.35
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_26",
+      "owner": "microphone_board",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_26.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        33.324999999999996,
+        -8.6,
+        24.475
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_27",
+      "owner": "microphone_board",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_27.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        33.324999999999996,
+        -11.6,
+        25.875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_28",
+      "owner": "microphone_board",
+      "kind": "connector",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_28.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        33.324999999999996,
+        -5.6,
+        28.775000000000006
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_29",
+      "owner": "power_distribution",
+      "kind": "body",
+      "color": [
+        0.15,
+        0.49,
+        0.32
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_29.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -24.724999999999998,
+        84.925
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_30",
+      "owner": "power_distribution",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_30.bin",
+      "count": 108,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -21.924999999999997,
+        84.925
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_31",
+      "owner": "speaker",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_31.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -38.699999999999996,
+        32.25
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_32",
+      "owner": "speaker",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_32.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -34.99999999999999,
+        32.25
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_33",
+      "owner": "neck_servo",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_33.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -3.2249999999999996,
+        90.83749999999999
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_34",
+      "owner": "neck_servo",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_34.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -5.0,
+        -3.2249999999999996,
+        107.33749999999999
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_35",
+      "owner": "left_shoulder_servo",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_35.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        -38.699999999999996,
+        0.0,
+        101.05
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_36",
+      "owner": "left_shoulder_servo",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_36.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -55.199999999999996,
+        -5.0,
+        101.05
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_37",
+      "owner": "right_shoulder_servo",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_37.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        38.699999999999996,
+        0.0,
+        101.05
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_38",
+      "owner": "right_shoulder_servo",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_38.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        55.199999999999996,
+        -5.0,
+        101.05
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_39",
+      "owner": "talk_switch",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_39.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        0.0,
+        -19.349999999999998,
+        101.05
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_40",
+      "owner": "minus_switch",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_40.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        -44.074999999999996,
+        0.0,
+        168.775
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_41",
+      "owner": "plus_switch",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_41.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        44.074999999999996,
+        0.0,
+        168.775
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_42",
+      "owner": "master_switch",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_42.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        29.025,
+        32.25,
+        23.65
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_43",
+      "owner": "master_switch",
+      "kind": "body",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_43.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        29.025,
+        37.65,
+        23.65
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_44",
+      "owner": "crown_left",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_44.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        -10.75,
+        0.0,
+        210.00125
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_45",
+      "owner": "crown_right",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_45.bin",
+      "count": 36,
+      "region": "head",
+      "center": [
+        10.75,
+        0.0,
+        210.00125
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_46",
+      "owner": "camera_LED",
+      "kind": "body",
+      "color": [
+        0.13,
+        0.65,
+        0.29
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_46.bin",
+      "count": 384,
+      "region": "head",
+      "center": [
+        10.75,
+        -23.65,
+        195.65
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_47",
+      "owner": "servo_470uF_1",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_47.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -37.625,
+        12.899999999999999,
+        29.025
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_48",
+      "owner": "servo_470uF_1",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_48.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -37.625,
+        12.899999999999999,
+        35.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_49",
+      "owner": "servo_470uF_2",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_49.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -37.625,
+        25.799999999999997,
+        29.025
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_50",
+      "owner": "servo_470uF_2",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_50.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -37.625,
+        25.799999999999997,
+        35.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_51",
+      "owner": "audio_capacitor",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_51.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        34.4,
+        18.275,
+        29.025
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_52",
+      "owner": "audio_capacitor",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_52.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        34.4,
+        18.275,
+        35.525
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_53",
+      "owner": "controller_100uF",
+      "kind": "body",
+      "color": [
+        0.12,
+        0.15,
+        0.18
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_53.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        48.375,
+        10.75,
+        32.25
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_54",
+      "owner": "controller_100uF",
+      "kind": "body",
+      "color": [
+        0.67,
+        0.72,
+        0.73
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_54.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        48.375,
+        10.75,
+        37.75
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_55",
+      "owner": "decoupling_100nF_1",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_55.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        -10.75,
+        -31.7125,
+        71.4875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_56",
+      "owner": "decoupling_100nF_2",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_56.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        -6.449999999999999,
+        -31.7125,
+        71.4875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_57",
+      "owner": "decoupling_100nF_3",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_57.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        -2.15,
+        -31.7125,
+        71.4875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_58",
+      "owner": "decoupling_100nF_4",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_58.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        2.15,
+        -31.7125,
+        71.4875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_59",
+      "owner": "decoupling_100nF_5",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_59.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        6.449999999999999,
+        -31.7125,
+        71.4875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_60",
+      "owner": "decoupling_100nF_6",
+      "kind": "body",
+      "color": [
+        0.8,
+        0.61,
+        0.31
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_60.bin",
+      "count": 36,
+      "region": "fixed",
+      "center": [
+        10.75,
+        -31.7125,
+        71.4875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Hardware_61",
+      "owner": "usb_c_pd_board",
+      "kind": "gauge",
+      "color": [
+        0.86,
+        0.34,
+        0.16
+      ],
+      "path": "fit-study/meshes/Fit_Hardware_61.bin",
+      "count": 72,
+      "region": "fixed",
+      "center": [
+        0.0,
+        57.803999999999995,
+        27.990176499999997
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_PD_to_switch",
+      "owner": "PD_to_switch",
+      "kind": "wire",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Wire_PD_to_switch.bin",
+      "count": 3072,
+      "region": "fixed",
+      "center": [
+        14.957471937380244,
+        34.75583676088176,
+        28.97232743991505
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Switch_to_distribution",
+      "owner": "Switch_to_distribution",
+      "kind": "wire",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Switch_to_distribution.bin",
+      "count": 5760,
+      "region": "fixed",
+      "center": [
+        16.64977873302479,
+        3.647726933686508,
+        54.407398789790676
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Power_main",
+      "owner": "Power_main",
+      "kind": "wire",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Power_main.bin",
+      "count": 4416,
+      "region": "fixed",
+      "center": [
+        15.0,
+        -8.315195423552339,
+        56.651064067988656
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Power_servo",
+      "owner": "Power_servo",
+      "kind": "wire",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Power_servo.bin",
+      "count": 3072,
+      "region": "fixed",
+      "center": [
+        13.66861935225506,
+        -13.99211489724465,
+        66.29371565372224
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Power_audio",
+      "owner": "Power_audio",
+      "kind": "wire",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Power_audio.bin",
+      "count": 1728,
+      "region": "fixed",
+      "center": [
+        -18.395648914704832,
+        -11.333244867804051,
+        59.23149085366151
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_I2C_RTC",
+      "owner": "I2C_RTC",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_I2C_RTC.bin",
+      "count": 1728,
+      "region": "fixed",
+      "center": [
+        6.995616645653657,
+        17.96724013169127,
+        27.203329694377103
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_I2C_PWM",
+      "owner": "I2C_PWM",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_I2C_PWM.bin",
+      "count": 4416,
+      "region": "fixed",
+      "center": [
+        23.8271705158138,
+        8.81842241613483,
+        35.64964343789034
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_I2C_PD",
+      "owner": "I2C_PD",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_I2C_PD.bin",
+      "count": 1728,
+      "region": "fixed",
+      "center": [
+        4.684957257170407,
+        31.787175812221147,
+        27.409953554887245
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Audio_amp",
+      "owner": "Audio_amp",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Audio_amp.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        -17.275,
+        -0.41249999999999964,
+        29.9875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Audio_mic",
+      "owner": "Audio_mic",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Audio_mic.bin",
+      "count": 3072,
+      "region": "fixed",
+      "center": [
+        18.07120897578836,
+        -1.6536133092697827,
+        29.657604569003734
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Speaker_pair",
+      "owner": "Speaker_pair",
+      "kind": "wire",
+      "color": [
+        0.55,
+        0.25,
+        0.17
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Speaker_pair.bin",
+      "count": 1728,
+      "region": "fixed",
+      "center": [
+        -21.04386806887716,
+        -25.1386402169419,
+        31.948401881670147
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_PWM_CH0",
+      "owner": "PWM_CH0",
+      "kind": "wire",
+      "color": [
+        0.75,
+        0.42,
+        0.16
+      ],
+      "path": "fit-study/meshes/Fit_Wire_PWM_CH0.bin",
+      "count": 3072,
+      "region": "fixed",
+      "center": [
+        -12.68382971811652,
+        -11.220401443323967,
+        66.63215084176758
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_PWM_CH1",
+      "owner": "PWM_CH1",
+      "kind": "wire",
+      "color": [
+        0.75,
+        0.42,
+        0.16
+      ],
+      "path": "fit-study/meshes/Fit_Wire_PWM_CH1.bin",
+      "count": 5760,
+      "region": "fixed",
+      "center": [
+        -19.381263368753388,
+        -7.8416167786102395,
+        77.31002606062341
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_PWM_CH2",
+      "owner": "PWM_CH2",
+      "kind": "wire",
+      "color": [
+        0.75,
+        0.42,
+        0.16
+      ],
+      "path": "fit-study/meshes/Fit_Wire_PWM_CH2.bin",
+      "count": 3072,
+      "region": "fixed",
+      "center": [
+        3.4505302071710666,
+        -7.788612465390915,
+        77.04422889054618
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Record",
+      "owner": "Record",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Record.bin",
+      "count": 5760,
+      "region": "fixed",
+      "center": [
+        7.597210592408137,
+        4.060657380209472,
+        64.76266254307363
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Head_riser",
+      "owner": "Head_riser",
+      "kind": "wire",
+      "color": [
+        0.46,
+        0.29,
+        0.57
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Head_riser.bin",
+      "count": 3072,
+      "region": "fixed",
+      "center": [
+        -11.298031672032518,
+        18.407989753100818,
+        70.946060108589
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Head_joint",
+      "owner": "Head_joint",
+      "kind": "wire",
+      "color": [
+        0.46,
+        0.29,
+        0.57
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Head_joint.bin",
+      "count": 384,
+      "region": "fixed",
+      "center": [
+        0.0,
+        0.0,
+        123.25
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_LCD_SPI",
+      "owner": "LCD_SPI",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_LCD_SPI.bin",
+      "count": 384,
+      "region": "head",
+      "center": [
+        0.0,
+        -4.831249999999999,
+        141.3875
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Camera_power",
+      "owner": "Camera_power",
+      "kind": "wire",
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Camera_power.bin",
+      "count": 3072,
+      "region": "head",
+      "center": [
+        4.490887530625266,
+        8.372365082503293,
+        147.0167991460046
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_Camera_FPC",
+      "owner": "Camera_FPC",
+      "kind": "wire",
+      "color": [
+        0.82,
+        0.58,
+        0.16
+      ],
+      "path": "fit-study/meshes/Fit_Wire_Camera_FPC.bin",
+      "count": 492,
+      "region": "head",
+      "center": [
+        0.0,
+        -7.889061427005962,
+        178.9208206834712
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_minus_switch",
+      "owner": "minus_switch",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_minus_switch.bin",
+      "count": 1728,
+      "region": "head",
+      "center": [
+        -21.72885999047022,
+        0.0,
+        151.39878665347044
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_plus_switch",
+      "owner": "plus_switch",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_plus_switch.bin",
+      "count": 1728,
+      "region": "head",
+      "center": [
+        21.72885999047022,
+        0.0,
+        151.39878665347044
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_crown_left",
+      "owner": "crown_left",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_crown_left.bin",
+      "count": 3072,
+      "region": "head",
+      "center": [
+        -8.084687067461505,
+        -3.012915892140288,
+        171.3749349828692
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_crown_right",
+      "owner": "crown_right",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_crown_right.bin",
+      "count": 1728,
+      "region": "head",
+      "center": [
+        7.556666166459706,
+        -3.0058134850347202,
+        171.32462480210825
+      ],
+      "flagged": false
+    },
+    {
+      "id": "Fit_Wire_camera_LED",
+      "owner": "camera_LED",
+      "kind": "wire",
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "path": "fit-study/meshes/Fit_Wire_camera_LED.bin",
+      "count": 4416,
+      "region": "head",
+      "center": [
+        6.078446952353707,
+        -8.08402226718631,
+        164.4631997975985
+      ],
+      "flagged": false
+    }
+  ],
+  "pd_transform_mm": [
+    -10.16,
+    27.470999999999997,
+    25.3201765
+  ],
+  "rigid_contacts": [],
+  "component_contacts": [],
+  "routes": [
+    {
+      "id": "PD_to_switch",
+      "label": "USB-C board to master switch",
+      "pins": "5 V power and common ground",
+      "start": "pd_terminal",
+      "end": "master_switch",
+      "radius_mm": 2.25,
+      "ribbon_mm": null,
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 39.5,
+      "points_mm": [
+        [
+          -0.06,
+          30.971,
+          34.32
+        ],
+        [
+          11.0,
+          35.0,
+          31.0
+        ],
+        [
+          21.0,
+          40.5,
+          27.0
+        ],
+        [
+          29.025,
+          28.05,
+          23.65
+        ]
+      ]
+    },
+    {
+      "id": "Switch_to_distribution",
+      "label": "Master switch to 5 V distribution",
+      "pins": "Switched 5 V + GND",
+      "start": "master_switch",
+      "end": "distribution",
+      "radius_mm": 2.25,
+      "ribbon_mm": null,
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 97.3,
+      "points_mm": [
+        [
+          29.025,
+          28.05,
+          23.65
+        ],
+        [
+          24.0,
+          16.5,
+          27.0
+        ],
+        [
+          33.0,
+          6.0,
+          36.0
+        ],
+        [
+          31.5,
+          7.5,
+          45.0
+        ],
+        [
+          6.0,
+          -15.0,
+          76.5
+        ],
+        [
+          0.0,
+          -19.725,
+          85.925
+        ]
+      ]
+    },
+    {
+      "id": "Power_main",
+      "label": "Distribution to ESP32",
+      "pins": "ESP32 5V/GND",
+      "start": "distribution",
+      "end": "esp_-1",
+      "radius_mm": 1.65,
+      "ribbon_mm": null,
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 99.8,
+      "points_mm": [
+        [
+          0.0,
+          -19.725,
+          85.925
+        ],
+        [
+          -3.0,
+          -12.5,
+          76.5
+        ],
+        [
+          33.0,
+          1.5,
+          39.0
+        ],
+        [
+          28.5,
+          1.5,
+          34.5
+        ],
+        [
+          2.0,
+          2.775,
+          27.925
+        ]
+      ]
+    },
+    {
+      "id": "Power_servo",
+      "label": "Distribution to PWM servos",
+      "pins": "PCA9685 V+/GND",
+      "start": "distribution",
+      "end": "pca_power",
+      "radius_mm": 2.25,
+      "ribbon_mm": null,
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 52.7,
+      "points_mm": [
+        [
+          0.0,
+          -19.725,
+          85.925
+        ],
+        [
+          10.5,
+          -18.5,
+          82.0
+        ],
+        [
+          19.0,
+          -14.5,
+          68.5
+        ],
+        [
+          26.0,
+          -8.2,
+          45.4
+        ]
+      ]
+    },
+    {
+      "id": "Power_audio",
+      "label": "Distribution to amplifier",
+      "pins": "MAX98357A VIN/GND",
+      "start": "distribution",
+      "end": "amp_bus",
+      "radius_mm": 1.65,
+      "ribbon_mm": null,
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 67.5,
+      "points_mm": [
+        [
+          0.0,
+          -19.725,
+          85.925
+        ],
+        [
+          -36.0,
+          -3.0,
+          34.5
+        ],
+        [
+          -36.55,
+          -3.6,
+          32.05
+        ]
+      ]
+    },
+    {
+      "id": "I2C_RTC",
+      "label": "ESP32 to clock",
+      "pins": "rtc sda GPIO21, rtc scl GPIO22, 3V3/GND",
+      "start": "esp_1",
+      "end": "rtc",
+      "radius_mm": 1.6,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 17.7,
+      "points_mm": [
+        [
+          2.0,
+          25.175,
+          27.925
+        ],
+        [
+          8.0,
+          16.5,
+          26.5
+        ],
+        [
+          12.0,
+          10.75,
+          26.825
+        ]
+      ]
+    },
+    {
+      "id": "I2C_PWM",
+      "label": "ESP32 to servo controller",
+      "pins": "rtc sda GPIO21, rtc scl GPIO22, servo outputs enable GPIO16, 3V3/GND",
+      "start": "esp_1",
+      "end": "pca_i2c",
+      "radius_mm": 1.7,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 84.8,
+      "points_mm": [
+        [
+          2.0,
+          25.175,
+          27.925
+        ],
+        [
+          27.0,
+          6.0,
+          31.5
+        ],
+        [
+          45.0,
+          -6.0,
+          36.0
+        ],
+        [
+          21.5,
+          -6.5,
+          42.0
+        ],
+        [
+          15.0,
+          -7.2,
+          43.4
+        ]
+      ]
+    },
+    {
+      "id": "I2C_PD",
+      "label": "ESP32 to PD controller",
+      "pins": "rtc sda GPIO21, rtc scl GPIO22, common GND",
+      "start": "esp_1",
+      "end": "pd_i2c",
+      "radius_mm": 1.4,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 16.1,
+      "points_mm": [
+        [
+          2.0,
+          25.175,
+          27.925
+        ],
+        [
+          6.5,
+          37.5,
+          26.5
+        ],
+        [
+          7.34,
+          37.471,
+          29.32
+        ]
+      ]
+    },
+    {
+      "id": "Audio_amp",
+      "label": "ESP32 to amplifier",
+      "pins": "audio bclk GPIO26, audio lrclk GPIO25, amplifier din GPIO32",
+      "start": "esp_-1",
+      "end": "amp_bus",
+      "radius_mm": 1.6,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 39.3,
+      "points_mm": [
+        [
+          2.0,
+          2.775,
+          27.925
+        ],
+        [
+          -36.55,
+          -3.6,
+          32.05
+        ]
+      ]
+    },
+    {
+      "id": "Audio_mic",
+      "label": "ESP32 to microphone",
+      "pins": "audio bclk GPIO26, audio lrclk GPIO25, microphone sd GPIO33, 3V3/GND",
+      "start": "esp_-1",
+      "end": "mic",
+      "radius_mm": 1.65,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 34.1,
+      "points_mm": [
+        [
+          2.0,
+          2.775,
+          27.925
+        ],
+        [
+          13.5,
+          -1.0,
+          27.5
+        ],
+        [
+          31.5,
+          -6.0,
+          30.0
+        ],
+        [
+          33.325,
+          -5.6,
+          32.475
+        ]
+      ]
+    },
+    {
+      "id": "Speaker_pair",
+      "label": "Amplifier to speaker",
+      "pins": "SPK+ / SPK\u2212 only",
+      "start": "amp_out",
+      "end": "speaker",
+      "radius_mm": 1.25,
+      "ribbon_mm": null,
+      "color": [
+        0.55,
+        0.25,
+        0.17
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 37.9,
+      "points_mm": [
+        [
+          -36.55,
+          -15.6,
+          30.05
+        ],
+        [
+          -9.0,
+          -31.5,
+          30.0
+        ],
+        [
+          -6.0,
+          -34.7,
+          34.25
+        ]
+      ]
+    },
+    {
+      "id": "PWM_CH0",
+      "label": "PCA9685 CH0 to neck servo",
+      "pins": "PWM / 5 V / GND",
+      "start": "pca_0",
+      "end": "neck_servo",
+      "radius_mm": 1.55,
+      "ribbon_mm": null,
+      "color": [
+        0.75,
+        0.42,
+        0.16
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 65.5,
+      "points_mm": [
+        [
+          -25.5,
+          -23.95,
+          52.9
+        ],
+        [
+          -31.0,
+          -25.0,
+          69.5
+        ],
+        [
+          -4.5,
+          -9.0,
+          76.5
+        ],
+        [
+          6.0,
+          3.075,
+          79.337
+        ]
+      ]
+    },
+    {
+      "id": "PWM_CH1",
+      "label": "PCA9685 CH1 to left shoulder servo",
+      "pins": "PWM / 5 V / GND",
+      "start": "pca_1",
+      "end": "left_shoulder_servo",
+      "radius_mm": 1.55,
+      "ribbon_mm": null,
+      "color": [
+        0.75,
+        0.42,
+        0.16
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 70.7,
+      "points_mm": [
+        [
+          -22.1,
+          -23.95,
+          52.9
+        ],
+        [
+          -19.5,
+          -6.5,
+          78.5
+        ],
+        [
+          -13.5,
+          6.0,
+          90.0
+        ],
+        [
+          -15.0,
+          7.5,
+          99.0
+        ],
+        [
+          -16.5,
+          7.5,
+          100.5
+        ],
+        [
+          -26.7,
+          8.0,
+          101.05
+        ]
+      ]
+    },
+    {
+      "id": "PWM_CH2",
+      "label": "PCA9685 CH2 to right shoulder servo",
+      "pins": "PWM / 5 V / GND",
+      "start": "pca_2",
+      "end": "right_shoulder_servo",
+      "radius_mm": 1.55,
+      "ribbon_mm": null,
+      "color": [
+        0.75,
+        0.42,
+        0.16
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 86.6,
+      "points_mm": [
+        [
+          -18.7,
+          -23.95,
+          52.9
+        ],
+        [
+          10.5,
+          6.0,
+          72.0
+        ],
+        [
+          15.0,
+          7.5,
+          100.5
+        ],
+        [
+          26.7,
+          8.0,
+          101.05
+        ]
+      ]
+    },
+    {
+      "id": "Record",
+      "label": "Chest recording button",
+      "pins": "talk button GPIO34, ground; external pull-up",
+      "start": "esp_1",
+      "end": "talk_switch",
+      "radius_mm": 1.1,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 101.9,
+      "points_mm": [
+        [
+          2.0,
+          25.175,
+          27.925
+        ],
+        [
+          15.0,
+          27.0,
+          51.0
+        ],
+        [
+          15.0,
+          -9.0,
+          87.0
+        ],
+        [
+          7.5,
+          -13.5,
+          96.0
+        ],
+        [
+          3.0,
+          -15.0,
+          100.5
+        ],
+        [
+          0.0,
+          -19.35,
+          101.05
+        ]
+      ]
+    },
+    {
+      "id": "Head_riser",
+      "label": "Control wiring from body into neck",
+      "pins": "14-wire head harness: signals, 3V3, 5 V and two grounds",
+      "start": "esp_head",
+      "end": "neck_entry",
+      "radius_mm": 3.25,
+      "ribbon_mm": null,
+      "color": [
+        0.46,
+        0.29,
+        0.57
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 106.9,
+      "points_mm": [
+        [
+          -12.0,
+          23.875,
+          27.925
+        ],
+        [
+          -22.5,
+          34.5,
+          37.5
+        ],
+        [
+          -1.5,
+          6.0,
+          112.5
+        ],
+        [
+          0.0,
+          0.0,
+          113.5
+        ]
+      ]
+    },
+    {
+      "id": "Head_joint",
+      "label": "Head harness across the turning joint",
+      "pins": "14-wire head harness through nominal 11 mm bore",
+      "start": "neck_entry",
+      "end": "head_bus",
+      "radius_mm": 3.25,
+      "ribbon_mm": null,
+      "color": [
+        0.46,
+        0.29,
+        0.57
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 19.5,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          113.5
+        ],
+        [
+          0.0,
+          0.0,
+          133.0
+        ]
+      ]
+    },
+    {
+      "id": "LCD_SPI",
+      "label": "Neck harness to display",
+      "pins": "lcd sck GPIO18, lcd mosi GPIO23, lcd cs GPIO19, lcd dc GPIO27, lcd reset GPIO4, 3V3/GND",
+      "start": "head_bus",
+      "end": "lcd",
+      "radius_mm": 2,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 19.4,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          0.0,
+          -9.662,
+          149.775
+        ]
+      ]
+    },
+    {
+      "id": "Camera_power",
+      "label": "Neck harness to camera board",
+      "pins": "Separate camera node, 5 V and GND",
+      "start": "head_bus",
+      "end": "cam_power",
+      "radius_mm": 1.4,
+      "ribbon_mm": null,
+      "color": [
+        0.81,
+        0.24,
+        0.19
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 39.0,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          7.5,
+          16.5,
+          156.0
+        ],
+        [
+          7.5,
+          15.0,
+          160.5
+        ],
+        [
+          9.0,
+          10.375,
+          159.525
+        ]
+      ]
+    },
+    {
+      "id": "Camera_FPC",
+      "label": "Camera board to lens",
+      "pins": "24-pin 75 mm flex with provisional flat clearance envelope",
+      "start": "cam_fpc",
+      "end": "lens_fpc",
+      "radius_mm": 0.4,
+      "ribbon_mm": [
+        13.5,
+        0.8
+      ],
+      "color": [
+        0.82,
+        0.58,
+        0.16
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 75.0,
+      "points_mm": [
+        [
+          0.0,
+          4.375,
+          194.525
+        ],
+        [
+          0.0,
+          -2.0,
+          189.525
+        ],
+        [
+          0.0,
+          -2.0,
+          172.402
+        ],
+        [
+          0.0,
+          -2.173,
+          170.646
+        ],
+        [
+          0.0,
+          -2.685,
+          168.958
+        ],
+        [
+          0.0,
+          -3.517,
+          167.402
+        ],
+        [
+          0.0,
+          -4.636,
+          166.038
+        ],
+        [
+          0.0,
+          -6.0,
+          164.919
+        ],
+        [
+          0.0,
+          -7.556,
+          164.087
+        ],
+        [
+          0.0,
+          -9.244,
+          163.575
+        ],
+        [
+          0.0,
+          -11.0,
+          163.402
+        ],
+        [
+          0.0,
+          -12.756,
+          163.575
+        ],
+        [
+          0.0,
+          -14.444,
+          164.087
+        ],
+        [
+          0.0,
+          -16.0,
+          164.919
+        ],
+        [
+          0.0,
+          -17.364,
+          166.038
+        ],
+        [
+          0.0,
+          -18.483,
+          167.402
+        ],
+        [
+          0.0,
+          -19.315,
+          168.958
+        ],
+        [
+          0.0,
+          -19.827,
+          170.646
+        ],
+        [
+          0.0,
+          -20.0,
+          172.402
+        ],
+        [
+          0.0,
+          -20.0,
+          187.45
+        ],
+        [
+          0.0,
+          -15.85,
+          192.45
+        ]
+      ]
+    },
+    {
+      "id": "minus_switch",
+      "label": "Minus switch",
+      "pins": "volume down GPIO35",
+      "start": "head_bus",
+      "end": "minus_switch",
+      "radius_mm": 1.05,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 58.9,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          -37.5,
+          0.0,
+          169.5
+        ],
+        [
+          -44.075,
+          0.0,
+          168.775
+        ]
+      ]
+    },
+    {
+      "id": "plus_switch",
+      "label": "Plus switch",
+      "pins": "volume up GPIO39",
+      "start": "head_bus",
+      "end": "plus_switch",
+      "radius_mm": 1.05,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 58.9,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          37.5,
+          0.0,
+          169.5
+        ],
+        [
+          44.075,
+          0.0,
+          168.775
+        ]
+      ]
+    },
+    {
+      "id": "crown_left",
+      "label": "Crown left",
+      "pins": "pet left GPIO13",
+      "start": "head_bus",
+      "end": "crown_left",
+      "radius_mm": 1.05,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 83.9,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          -16,
+          -6,
+          157
+        ],
+        [
+          -16,
+          -6,
+          188
+        ],
+        [
+          -10.75,
+          0.0,
+          210.001
+        ]
+      ]
+    },
+    {
+      "id": "crown_right",
+      "label": "Crown right",
+      "pins": "pet right GPIO14",
+      "start": "head_bus",
+      "end": "crown_right",
+      "radius_mm": 1.05,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 81.8,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          15.0,
+          -6.0,
+          162.0
+        ],
+        [
+          10.75,
+          0.0,
+          210.001
+        ]
+      ]
+    },
+    {
+      "id": "camera_LED",
+      "label": "Camera led",
+      "pins": "camera activity led GPIO17",
+      "start": "head_bus",
+      "end": "camera_LED",
+      "radius_mm": 1.05,
+      "ribbon_mm": null,
+      "color": [
+        0.12,
+        0.3,
+        0.62
+      ],
+      "covers_hit": [],
+      "supports_hit": [],
+      "other_parts_hit": [],
+      "centerline_mm": 77.4,
+      "points_mm": [
+        [
+          0.0,
+          0.0,
+          133.0
+        ],
+        [
+          12,
+          -11,
+          149
+        ],
+        [
+          10.5,
+          -7.5,
+          163.0
+        ],
+        [
+          10.5,
+          -7.5,
+          193.5
+        ],
+        [
+          10.75,
+          -16.85,
+          195.65
+        ]
+      ]
+    }
+  ],
+  "usb_c": {
+    "socket_mm": [
+      0.0,
+      52.08,
+      27.99
+    ],
+    "panel_mm": [
+      0,
+      61.8,
+      27.99
+    ],
+    "setback_mm": 9.72,
+    "height_offset_mm": 0,
+    "opening_mm": [
+      15.4,
+      10.6
+    ],
+    "tip_mm": 6.55,
+    "plug_gauge_mm": [
+      12.4,
+      18.0,
+      7.6
+    ],
+    "clearance_per_side_mm": 0.3,
+    "seated_case_hits": [],
+    "unplugged_insertion_hits": [],
+    "insertion_hardware_hits": [],
+    "insertion_wire_hits": []
+  },
+  "micro_usb": {
+    "test": "Representative attached micro-USB overmold in current x-facing orientation",
+    "shell_hits": [],
+    "closed_case_insertion_hits": [
+      "Hip_rear"
+    ],
+    "rear_cover_removed_insertion_hits": [],
+    "rear_cover_removed_wire_hits": []
+  },
+  "audio": {
+    "diaphragm_gauge_hits": [],
+    "diaphragm_to_grille_centerline_mm": 16.0,
+    "mic_center_to_port_mm": 58.5
+  },
+  "camera": {
+    "pupil_setback_mm": 5.1,
+    "opening_mm": 6,
+    "cone_angle_deg": 60.9,
+    "flex_route_mm": 75.0,
+    "flex_spec_mm": 75,
+    "flex_envelope_mm": [
+      13.5,
+      0.8
+    ]
+  },
+  "wire_pair_contacts": [],
+  "shared_fanout_mm": 9,
+  "service_checks_passed": true,
+  "neck_passage_mm": 11,
+  "bundle_outer_diameter_mm": 6.5,
+  "head_sweep": [
+    {
+      "yaw_deg": -45,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -40,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -35,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -30,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -25,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -20,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -15,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -10,
+      "contacts": []
+    },
+    {
+      "yaw_deg": -5,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 0,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 5,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 10,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 15,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 20,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 25,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 30,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 35,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 40,
+      "contacts": []
+    },
+    {
+      "yaw_deg": 45,
+      "contacts": []
+    }
+  ],
+  "arm_contacts": [],
+  "combined_motion_contacts": [],
+  "combined_motion_samples": 950
+}

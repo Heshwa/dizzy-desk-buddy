@@ -1,0 +1,144 @@
+{
+  "selected_concept": "C \u2014 Seated Companion",
+  "status": "preliminary component-envelope study; not implemented in the running model",
+  "proposed_hip_size_mm": [
+    128,
+    128,
+    64
+  ],
+  "hip_center_z_mm": 32,
+  "electronics_vertical_shift_mm": 18,
+  "checked_corners": 80,
+  "reserved_parts": {
+    "clock_board_and_cell": {
+      "size": [
+        42.0,
+        26.0,
+        18.0
+      ],
+      "center": [
+        0.0,
+        13.0,
+        30.0
+      ]
+    },
+    "amplifier": {
+      "size": [
+        22.0,
+        21.0,
+        10.0
+      ],
+      "center": [
+        -34.0,
+        -8.0,
+        28.0
+      ]
+    },
+    "microphone_board": {
+      "size": [
+        18.0,
+        15.0,
+        7.0
+      ],
+      "center": [
+        31.0,
+        -8.0,
+        27.0
+      ]
+    },
+    "speaker": {
+      "size": [
+        36.0,
+        36.0,
+        13.0
+      ],
+      "center": [
+        0.0,
+        -23.0,
+        29.0
+      ]
+    },
+    "servo_capacitor": {
+      "size": [
+        10.0,
+        20.0,
+        14.0
+      ],
+      "center": [
+        -35.0,
+        18.0,
+        29.0
+      ]
+    },
+    "audio_capacitor": {
+      "size": [
+        10.0,
+        10.0,
+        14.0
+      ],
+      "center": [
+        32.0,
+        17.0,
+        29.0
+      ]
+    },
+    "usb_c_pd_board": {
+      "size": [
+        28.0,
+        26.0,
+        14.0
+      ],
+      "center": [
+        0.0,
+        42.0,
+        30.0
+      ]
+    },
+    "talk_switch": {
+      "size": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "center": [
+        0.0,
+        -52.5,
+        36.0
+      ]
+    },
+    "minus_switch": {
+      "size": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "center": [
+        -24.0,
+        -46.0,
+        36.0
+      ]
+    },
+    "plus_switch": {
+      "size": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "center": [
+        24.0,
+        -46.0,
+        36.0
+      ]
+    }
+  },
+  "envelope_fit": "PASS",
+  "envelope_overlap": "NONE",
+  "unverified": [
+    "mounting holes",
+    "control cap locations",
+    "cable bends",
+    "head/arm/feet pose collisions",
+    "support polygon and centre of gravity",
+    "actual board measurements"
+  ]
+}

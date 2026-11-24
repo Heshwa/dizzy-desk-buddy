@@ -1,0 +1,31 @@
+Dizzy 5V rail / illustrative regulator and harness model, NOT vendor model
+* Source droop 20 milliohm; ideal current limit 5 A.
+Breg 0 source I=min(5,max(0,(5.1-v(source))/0.02))
+Csource source 0 47u
+Rlead source wire 0.12
+Llead wire bus 1u
+Rservo bus servo 0.03
+Rcapservo1 servo cservo1 .08
+Cservo1 cservo1 0 470u
+Rcapservo2 servo cservo2 .08
+Cservo2 cservo2 0 470u
+Rcapamp bus camp .08
+Camp camp 0 470u
+Rcapmcu bus cmcu .1
+Cmcu cmcu 0 100u
+Clocal bus 0 100n
+* Main MCU .5A + camera .5A + display/other .15A.
+Bbase bus 0 I=1.15*min(1,max(0,v(bus)/4.5))
+* Three servo allowance .8A each, ramp then hold; no mechanical motor model.
+Vmotion motion 0 PWL(0 0 10m 0 11m 2.4 70m 2.4 71m 0 100m 0)
+Bmotors servo 0 I=v(motion)*min(1,max(0,v(servo)/4.5))
+Vmusic music 0 PWL(0 0 20m 0 21m .7 60m .7 61m 0 100m 0)
+Baudio bus 0 I=v(music)*min(1,max(0,v(bus)/4.5))
+.control
+set wr_singlescale
+set wr_vecnames
+tran 10u 100m
+wrdata three_times_cable_resistance.dat v(bus) v(servo) i(Llead)
+quit
+.endc
+.end

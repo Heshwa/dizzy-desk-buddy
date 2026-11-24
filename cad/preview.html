@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dizzy enclosure workshop</title>
+  <link rel="stylesheet" href="review.css">
+  <script type="module" src="review.js"></script>
+</head>
+<body>
+<header class="top">
+  <div><h1>Dizzy enclosure</h1><p>Seated companion · CAD prototype</p></div>
+  <nav aria-label="Review views">
+    <a href="#assembly" data-page="assembly">Assembly</a>
+    <a href="#parts" data-page="parts">All parts</a>
+    <a href="#assembly-gif" data-page="assembly-gif">Assembly GIF</a>
+    <a href="#connected-fit" data-page="connected-fit">Connected fit</a>
+  </nav>
+</header>
+<main>
+  <section id="assembly-page" class="workspace">
+    <div class="stage">
+      <canvas id="assembly-canvas" aria-label="Rotatable CAD assembly"></canvas>
+      <div class="stage-toolbar">
+        <button id="front" type="button">Front</button>
+        <button id="rear" type="button">Rear</button>
+        <button id="reset" type="button">Reset</button>
+      </div>
+      <p class="stage-help">Drag to rotate · scroll to zoom</p>
+    </div>
+    <aside class="controls">
+      <h2>Assembly view</h2>
+      <p id="assembly-info" class="secondary" role="status">Loading assembly…</p>
+      <label class="check"><input type="checkbox" id="inside"> Show internals</label>
+      <label class="check"><input type="checkbox" id="explode"> Explode assembly</label>
+      <fieldset>
+        <legend>Joint motion</legend>
+        <label class="slider">Head yaw <output id="head-value">0°</output>
+          <input id="head" type="range" min="-45" max="45" value="0">
+        </label>
+        <label class="slider">Left arm <output id="left-value">0°</output>
+          <input id="left" type="range" min="0" max="120" value="0">
+        </label>
+        <label class="slider">Right arm <output id="right-value">0°</output>
+          <input id="right" type="range" min="0" max="120" value="0">
+        </label>
+      </fieldset>
+      <a class="button primary" href="#parts">Inspect individual parts</a>
+      <a class="quiet-link" href="README.md">Assembly and print guide</a>
+    </aside>
+  </section>
+
+  <section id="parts-page" class="catalogue" hidden>
+    <div class="catalogue-header">
+      <div><h2>Parts catalogue</h2><p id="part-count" role="status">Loading catalogue…</p></div>
+      <label>Find a part<input id="part-search" type="search" placeholder="Helmet, LCD, bracket…"></label>
+      <label>Group<select id="part-group"><option value="">All groups</option></select></label>
+    </div>
+    <p class="catalogue-note">Hardware allowances show component size and placement. Printable parts have STL and STEP downloads.</p>
+    <div id="parts"></div>
+  </section>
+
+  <section id="assembly-gif-page" class="animation-page" hidden>
+    <div>
+      <h2>Assembly sequence</h2>
+      <p>From the separate CAD parts to the closed enclosure.</p>
+      <img id="assembly-animation" data-src="reports/dizzy-assembly.gif" alt="Looping assembly sequence of the Dizzy enclosure">
+    </div>
+    <div class="animation-links">
+      <a class="button primary" href="reports/dizzy-assembly.gif" download>Download GIF</a>
+      <a class="button" href="#parts">Browse the parts</a>
+      <p class="secondary">The animation shows assembly groups. Check the build guide for fasteners, wiring and physical fit.</p>
+    </div>
+  </section>
+
+  <section id="connected-fit-page" hidden>
+    <div class="fit-banner">
+      <div><h2>Connected fit test</h2>
+      <p>Installed components, connector gauges and cable paths inside the current enclosure.</p></div>
+      <span class="fit-verdict" id="fit-verdict" role="status">Opening fit study…</span>
+    </div>
+    <div class="workspace">
+      <div class="stage fit-stage">
+        <canvas id="fit-canvas" aria-label="Connected fit with installed boards, plugs and wires"></canvas>
+        <div class="stage-toolbar">
+          <button id="fit-front" type="button">Front</button>
+          <button id="fit-rear" type="button">Rear</button>
+          <button id="fit-reset" type="button">Reset</button>
+        </div>
+        <p class="stage-help">Drag to rotate · scroll to zoom</p>
+      </div>
+      <aside class="controls">
+        <h2>Inspect the fit</h2>
+        <label class="check"><input type="checkbox" id="fit-shell" checked> Translucent shell</label>
+        <label class="check"><input type="checkbox" id="fit-mounts"> Mounts and retainers</label>
+        <label class="check"><input type="checkbox" id="fit-wires" checked> Candidate cable routes</label>
+        <label class="check"><input type="checkbox" id="fit-flagged"> Highlight contacts</label>
+        <label class="fit-select">Focus<select id="fit-focus"><option value="">Whole assembly</option></select></label>
+        <label class="slider">Head yaw <output id="fit-yaw-value">0°</output>
+          <input id="fit-yaw" type="range" min="-45" max="45" step="5" value="0">
+        </label>
+        <p id="fit-pose" class="secondary"></p>
+        <p id="fit-detail" class="fit-detail" role="status"></p>
+        <a class="quiet-link" href="fit-study/FIT-REPORT.md">Full fit report</a>
+        <a class="quiet-link" href="fit-study/wiring-routes.csv" download>Wire routes and pin labels</a>
+        <a class="quiet-link" href="fit-study/Dizzy-connected-fit.FCStd" download>Download FreeCAD fit model</a>
+      </aside>
+    </div>
+    <div id="fit-findings" class="fit-findings"></div>
+  </section>
+</main>
+
+<dialog id="part-dialog" aria-labelledby="part-title">
+  <div class="dialog-head">
+    <div><p id="detail-group" class="secondary"></p><h2 id="part-title"></h2></div>
+    <button id="close-part" type="button" aria-label="Close part">Close</button>
+  </div>
+  <div class="detail-canvas">
+    <canvas id="part-canvas" aria-label="Rotatable individual CAD part"></canvas>
+    <img id="part-fallback" alt="" hidden>
+  </div>
+  <div class="dialog-foot">
+    <div><p id="part-dimensions"></p><p id="part-help" class="secondary">Drag to rotate · scroll to zoom</p></div>
+    <div id="part-downloads"></div>
+  </div>
+</dialog>
+</body>
+</html>

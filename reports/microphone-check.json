@@ -1,0 +1,9 @@
+{
+  "check": "User microphone to whisper to Gemini head tool to Piper reply",
+  "status": "PASS",
+  "transcript": "Look left.",
+  "reply": "Done!",
+  "action": "head_turn",
+  "result": "success",
+  "voice_after": "idle"
+}

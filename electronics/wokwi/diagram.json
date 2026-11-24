@@ -1,0 +1,872 @@
+{
+  "version": 1,
+  "author": "Dizzy project",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "id": "esp",
+      "type": "board-esp32-devkit-c-v4",
+      "left": 0,
+      "top": 80,
+      "attrs": {}
+    },
+    {
+      "id": "pd",
+      "type": "chip-husb238",
+      "left": -330,
+      "top": 80,
+      "attrs": {
+        "currentAmps": "5"
+      }
+    },
+    {
+      "id": "rtc",
+      "type": "chip-ds3231",
+      "left": -330,
+      "top": 260,
+      "attrs": {}
+    },
+    {
+      "id": "pwm",
+      "type": "chip-pca9685",
+      "left": 350,
+      "top": 90,
+      "attrs": {}
+    },
+    {
+      "id": "lcd",
+      "type": "chip-gc9a01",
+      "left": 370,
+      "top": -230,
+      "attrs": {}
+    },
+    {
+      "id": "amp",
+      "type": "chip-max98357",
+      "left": -330,
+      "top": 450,
+      "attrs": {}
+    },
+    {
+      "id": "mic",
+      "type": "chip-inmp441",
+      "left": -330,
+      "top": 620,
+      "attrs": {}
+    },
+    {
+      "id": "cam",
+      "type": "chip-esp32cam",
+      "left": 350,
+      "top": 430,
+      "attrs": {}
+    },
+    {
+      "id": "neck",
+      "type": "wokwi-servo",
+      "left": 660,
+      "top": 100,
+      "attrs": {}
+    },
+    {
+      "id": "necklabel",
+      "type": "wokwi-text",
+      "left": 660,
+      "top": 75,
+      "attrs": {
+        "text": "Neck"
+      }
+    },
+    {
+      "id": "left",
+      "type": "wokwi-servo",
+      "left": 810,
+      "top": 100,
+      "attrs": {}
+    },
+    {
+      "id": "leftlabel",
+      "type": "wokwi-text",
+      "left": 810,
+      "top": 75,
+      "attrs": {
+        "text": "Left hand"
+      }
+    },
+    {
+      "id": "right",
+      "type": "wokwi-servo",
+      "left": 960,
+      "top": 100,
+      "attrs": {}
+    },
+    {
+      "id": "rightlabel",
+      "type": "wokwi-text",
+      "left": 960,
+      "top": 75,
+      "attrs": {
+        "text": "Right hand"
+      }
+    },
+    {
+      "id": "talk",
+      "type": "wokwi-pushbutton",
+      "left": -220,
+      "top": 820,
+      "attrs": {
+        "color": "blue",
+        "label": "Talk",
+        "key": "T"
+      }
+    },
+    {
+      "id": "talkpull",
+      "type": "wokwi-resistor",
+      "left": -220,
+      "top": 740,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "down",
+      "type": "wokwi-pushbutton",
+      "left": -80,
+      "top": 820,
+      "attrs": {
+        "color": "blue",
+        "label": "Vol \u2212",
+        "key": "J"
+      }
+    },
+    {
+      "id": "downpull",
+      "type": "wokwi-resistor",
+      "left": -80,
+      "top": 740,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "up",
+      "type": "wokwi-pushbutton",
+      "left": 60,
+      "top": 820,
+      "attrs": {
+        "color": "blue",
+        "label": "Vol +",
+        "key": "K"
+      }
+    },
+    {
+      "id": "uppull",
+      "type": "wokwi-resistor",
+      "left": 60,
+      "top": 740,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "petL",
+      "type": "wokwi-pushbutton",
+      "left": 200,
+      "top": 820,
+      "attrs": {
+        "color": "blue",
+        "label": "Crown L*",
+        "key": "P"
+      }
+    },
+    {
+      "id": "petLpull",
+      "type": "wokwi-resistor",
+      "left": 200,
+      "top": 740,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "petR",
+      "type": "wokwi-pushbutton",
+      "left": 340,
+      "top": 820,
+      "attrs": {
+        "color": "blue",
+        "label": "Crown R*",
+        "key": "O"
+      }
+    },
+    {
+      "id": "petRpull",
+      "type": "wokwi-resistor",
+      "left": 340,
+      "top": 740,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "sdaPull",
+      "type": "wokwi-resistor",
+      "left": -140,
+      "top": -90,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "id": "sclPull",
+      "type": "wokwi-resistor",
+      "left": -70,
+      "top": -90,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "id": "oePull",
+      "type": "wokwi-resistor",
+      "left": 230,
+      "top": -90,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "speaker",
+      "type": "chip-speaker",
+      "left": -580,
+      "top": 480,
+      "attrs": {}
+    },
+    {
+      "id": "cameraLED",
+      "type": "wokwi-led",
+      "left": 540,
+      "top": 450,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "id": "ledR",
+      "type": "wokwi-resistor",
+      "left": 490,
+      "top": 540,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "id": "logic",
+      "type": "wokwi-logic-analyzer",
+      "left": 700,
+      "top": 460,
+      "attrs": {}
+    },
+    {
+      "id": "title",
+      "type": "wokwi-text",
+      "left": -370,
+      "top": -300,
+      "attrs": {
+        "text": "DIZZY \u2022 ELECTRONICS BRING-UP / functional models"
+      }
+    },
+    {
+      "id": "audioNote",
+      "type": "wokwi-text",
+      "left": -540,
+      "top": 400,
+      "attrs": {
+        "text": "Audio + camera: wiring only / no capture or sound"
+      }
+    },
+    {
+      "id": "ampLabel",
+      "type": "wokwi-text",
+      "left": -330,
+      "top": 425,
+      "attrs": {
+        "text": "SPEAKER AMPLIFIER / MAX98357A"
+      }
+    },
+    {
+      "id": "speakerLabel",
+      "type": "wokwi-text",
+      "left": -620,
+      "top": 550,
+      "attrs": {
+        "text": "SPEAKER: 4 ohm / 3 W\nWiring symbol only; no audio output"
+      }
+    },
+    {
+      "id": "micLabel",
+      "type": "wokwi-text",
+      "left": -330,
+      "top": 690,
+      "attrs": {
+        "text": "MICROPHONE / INMP441\nI2S pins connected; no audio capture"
+      }
+    },
+    {
+      "id": "camLabel",
+      "type": "wokwi-text",
+      "left": 350,
+      "top": 575,
+      "attrs": {
+        "text": "CAMERA / ESP32-CAM + OV2640\nSeparate Wi-Fi node; power only here\nGreen LED is only an activity indicator"
+      }
+    },
+    {
+      "id": "touchNote",
+      "type": "wokwi-text",
+      "left": -250,
+      "top": 940,
+      "attrs": {
+        "text": "* Digital stand-ins for touch electrodes. External 10k pull-ups.\nRed = supply, black = common ground. Not a breadboard assembly guide."
+      }
+    },
+    {
+      "id": "powerNote",
+      "type": "wokwi-text",
+      "left": -550,
+      "top": -50,
+      "attrs": {
+        "text": "USB-C: ideal 5V rail; slider changes reported contract.\n5A required for motors. Real PD/voltage/current tested separately."
+      }
+    },
+    {
+      "id": "i2cNote",
+      "type": "wokwi-text",
+      "left": -460,
+      "top": 200,
+      "attrs": {
+        "text": "I\u00b2C: 0x08 PD / 0x68 clock / 0x40 PWM\nOne effective pair of 4.7k pull-ups to 3.3V"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:3V3",
+      "talkpull:1",
+      "red",
+      []
+    ],
+    [
+      "talkpull:2",
+      "talk:1.l",
+      "green",
+      []
+    ],
+    [
+      "esp:34",
+      "talk:1.l",
+      "green",
+      []
+    ],
+    [
+      "talk:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "downpull:1",
+      "red",
+      []
+    ],
+    [
+      "downpull:2",
+      "down:1.l",
+      "green",
+      []
+    ],
+    [
+      "esp:35",
+      "down:1.l",
+      "green",
+      []
+    ],
+    [
+      "down:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "uppull:1",
+      "red",
+      []
+    ],
+    [
+      "uppull:2",
+      "up:1.l",
+      "green",
+      []
+    ],
+    [
+      "esp:VN",
+      "up:1.l",
+      "green",
+      []
+    ],
+    [
+      "up:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "petLpull:1",
+      "red",
+      []
+    ],
+    [
+      "petLpull:2",
+      "petL:1.l",
+      "green",
+      []
+    ],
+    [
+      "esp:13",
+      "petL:1.l",
+      "green",
+      []
+    ],
+    [
+      "petL:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "petRpull:1",
+      "red",
+      []
+    ],
+    [
+      "petRpull:2",
+      "petR:1.l",
+      "green",
+      []
+    ],
+    [
+      "esp:14",
+      "petR:1.l",
+      "green",
+      []
+    ],
+    [
+      "petR:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "sdaPull:1",
+      "red",
+      []
+    ],
+    [
+      "sdaPull:2",
+      "esp:21",
+      "green",
+      []
+    ],
+    [
+      "esp:3V3",
+      "sclPull:1",
+      "red",
+      []
+    ],
+    [
+      "sclPull:2",
+      "esp:22",
+      "green",
+      []
+    ],
+    [
+      "esp:3V3",
+      "oePull:1",
+      "red",
+      []
+    ],
+    [
+      "oePull:2",
+      "esp:16",
+      "green",
+      []
+    ],
+    [
+      "pd:V+",
+      "esp:5V",
+      "red",
+      []
+    ],
+    [
+      "pd:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "rtc:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "rtc:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "pwm:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "pwm:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "lcd:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "lcd:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:21",
+      "rtc:SDA",
+      "green",
+      []
+    ],
+    [
+      "esp:22",
+      "rtc:SCL",
+      "blue",
+      []
+    ],
+    [
+      "esp:21",
+      "pwm:SDA",
+      "green",
+      []
+    ],
+    [
+      "esp:22",
+      "pwm:SCL",
+      "blue",
+      []
+    ],
+    [
+      "esp:21",
+      "pd:SDA",
+      "green",
+      []
+    ],
+    [
+      "esp:22",
+      "pd:SCL",
+      "blue",
+      []
+    ],
+    [
+      "esp:18",
+      "lcd:SCK",
+      "orange",
+      []
+    ],
+    [
+      "esp:23",
+      "lcd:SDA",
+      "orange",
+      []
+    ],
+    [
+      "esp:19",
+      "lcd:CS",
+      "orange",
+      []
+    ],
+    [
+      "esp:27",
+      "lcd:DC",
+      "orange",
+      []
+    ],
+    [
+      "esp:4",
+      "lcd:RST",
+      "orange",
+      []
+    ],
+    [
+      "esp:16",
+      "pwm:OE",
+      "purple",
+      []
+    ],
+    [
+      "pd:V+",
+      "pwm:VPLUS",
+      "red",
+      []
+    ],
+    [
+      "pwm:PWM0",
+      "neck:PWM",
+      "orange",
+      []
+    ],
+    [
+      "pd:V+",
+      "neck:V+",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "neck:GND",
+      "black",
+      []
+    ],
+    [
+      "pwm:PWM1",
+      "left:PWM",
+      "orange",
+      []
+    ],
+    [
+      "pd:V+",
+      "left:V+",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "left:GND",
+      "black",
+      []
+    ],
+    [
+      "pwm:PWM2",
+      "right:PWM",
+      "orange",
+      []
+    ],
+    [
+      "pd:V+",
+      "right:V+",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "right:GND",
+      "black",
+      []
+    ],
+    [
+      "pd:V+",
+      "amp:VIN",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "amp:GND",
+      "black",
+      []
+    ],
+    [
+      "pd:V+",
+      "cam:5V",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "cam:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:3V3",
+      "mic:VDD",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "mic:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "mic:L/R",
+      "black",
+      []
+    ],
+    [
+      "esp:26",
+      "amp:BCLK",
+      "green",
+      []
+    ],
+    [
+      "esp:26",
+      "mic:SCK",
+      "green",
+      []
+    ],
+    [
+      "esp:25",
+      "amp:LRC",
+      "green",
+      []
+    ],
+    [
+      "esp:25",
+      "mic:WS",
+      "green",
+      []
+    ],
+    [
+      "esp:32",
+      "amp:DIN",
+      "green",
+      []
+    ],
+    [
+      "mic:SD",
+      "esp:33",
+      "green",
+      []
+    ],
+    [
+      "pd:V+",
+      "amp:SD",
+      "red",
+      []
+    ],
+    [
+      "amp:SPK+",
+      "speaker:PLUS",
+      "green",
+      []
+    ],
+    [
+      "amp:SPK-",
+      "speaker:MINUS",
+      "green",
+      []
+    ],
+    [
+      "esp:17",
+      "ledR:1",
+      "green",
+      []
+    ],
+    [
+      "ledR:2",
+      "cameraLED:A",
+      "green",
+      []
+    ],
+    [
+      "cameraLED:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pwm:PWM0",
+      "logic:D0",
+      "gray",
+      []
+    ],
+    [
+      "pwm:PWM1",
+      "logic:D1",
+      "gray",
+      []
+    ],
+    [
+      "pwm:PWM2",
+      "logic:D2",
+      "gray",
+      []
+    ],
+    [
+      "pwm:OE",
+      "logic:D3",
+      "gray",
+      []
+    ],
+    [
+      "esp:21",
+      "logic:D4",
+      "gray",
+      []
+    ],
+    [
+      "esp:22",
+      "logic:D5",
+      "gray",
+      []
+    ],
+    [
+      "esp:34",
+      "logic:D6",
+      "gray",
+      []
+    ],
+    [
+      "esp:17",
+      "logic:D7",
+      "gray",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "logic:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

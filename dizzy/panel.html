@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dizzy controls</title>
+<style>
+:root {
+  color-scheme: dark;
+  font: 16px system-ui, sans-serif;
+  background: #102022;
+  color: #e1f2eb;
+}
+* { box-sizing: border-box; }
+body { max-width: 1120px; margin: 32px auto; padding: 0 24px 40px; }
+h1 { font-size: 38px; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 0 0 16px; }
+p { color: #b2c9bf; line-height: 1.5; }
+main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.card { min-width: 0; border: 1px solid #39524a; background: #192e2c; border-radius: 18px; padding: 24px; }
+button, input, select { font: inherit; border-radius: 9px; border: 1px solid #557365; background: #223e36; color: #e9fff3; }
+button { min-height: 44px; padding: 11px 15px; cursor: pointer; line-height: 1.3; overflow-wrap: anywhere; }
+button:hover { background: #365c4e; }
+button:disabled { opacity: .5; cursor: wait; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #a6ffde; outline-offset: 3px; }
+input, select { min-width: 0; max-width: 100%; padding: 11px 12px; }
+input[type="range"] { display: block; width: 100%; margin: 14px 0 0; padding: 0; accent-color: #a6ffde; }
+input[type="checkbox"] { margin: 0; accent-color: #a6ffde; }
+input[type="number"], input[type="datetime-local"] { width: 100%; }
+label { display: block; line-height: 1.5; }
+.field { display: grid; gap: 8px; margin: 20px 0; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.pet-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 20px; }
+.selector { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 24px 0; }
+.selector label { display: flex; align-items: center; gap: 10px; }
+.checkbox { display: flex; align-items: center; gap: 10px; margin-top: 18px; }
+form { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+form input { flex: 1 1 180px; }
+form button { flex: 0 0 auto; }
+#record { width: 100%; background: #a6ffde; color: #102022; border-color: #a6ffde; font-weight: 650; }
+output { display: block; white-space: pre-wrap; overflow-wrap: anywhere; min-height: 24px; margin-top: 12px; line-height: 1.5; color: #d5f9e3; }
+.face { position: relative; display: flex; gap: 34px; justify-content: center; align-items: flex-start; padding-top: 58px; background: #081415; border: 10px solid #233a3e; border-radius: 50%; margin: 0 auto 20px; width: 220px; height: 220px; max-width: 100%; box-sizing: border-box; }
+.face #clock { position: absolute; top: 139px; left: 0; width: 100%; text-align: center; font-size: 24px; margin: 0; color: #a6ffde; }
+
+.eye { width: 28px; height: 35px; border-radius: 13px; background: #a6ffde; }
+.happy .eye, .sleepy .eye, .goodnight .eye { height: 5px; }
+.heart .eye { background: #f39fc3; }
+img { display: block; width: 100%; max-width: 320px; margin-top: 20px; border-radius: 10px; image-rendering: pixelated; }
+img[hidden] { display: none; }
+#alarms > div { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 16px; overflow-wrap: anywhere; }
+#alarms button { margin-left: auto; }
+.wide { grid-column: 1 / -1; }
+details pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; }
+@media (max-width: 760px) {
+  body { margin: 20px auto; padding: 0 16px 32px; }
+  main { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .card { padding: 20px; }
+}
+</style>
+<h1>Dizzy</h1>
+<p>Keep Webots running to move and interact with your desk pets.</p>
+<div class="selector">
+  <label>Control <select id="device"><option value="dizzy-a">Your Dizzy</option><option value="dizzy-b">Partner Dizzy</option></select></label>
+  <span id="connection"></span>
+</div>
+<main>
+  <section class="card">
+    <div id="face" class="face sleepy" aria-label="Round display preview"><i class="eye"></i><i class="eye"></i><output id="clock"></output></div>
+    <p>Two petting areas sit on the crown. Tap either, stroke across both, or hold.</p>
+    <output id="summary"></output>
+    <div class="pet-buttons">
+      <button onclick="act('touch',{phase:'tap'})">Pet / snooze</button>
+      <button onclick="doubleTap()">Double tap</button>
+      <button onclick="act('touch',{phase:'stroke'})">Stroke head</button>
+      <button onpointerdown="holdStart()" onpointerup="holdEnd()" onpointercancel="holdEnd()">Hold head</button>
+    </div>
+    <div class="buttons">
+      <button onclick="act('arms_pose',{pose:'wave'})">Wave hand</button>
+      <button onclick="act('arms_pose',{pose:'hello'})">Both hands hello</button>
+      <button onclick="act('arms_pose',{pose:'lift'})">Lift hands</button>
+      <button onclick="act('arms_pose',{pose:'rest'})">Rest hands</button>
+      <button onclick="act('components_view',{enabled:true})">Show components</button>
+      <button onclick="act('components_view',{enabled:false})">Close shell</button>
+    </div>
+    <label class="field">Head position <input id="head" type="range" min="-45" max="45" value="0" onchange="act('head_turn',{degrees:+this.value})"></label>
+    <div class="buttons">
+      <button onclick="act('head_turn',{degrees:0})">Center</button>
+      <button onclick="act('quiet_set',{enabled:!current.quiet})">Toggle quiet</button>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Talk with Dizzy</h2>
+    <p>Press Record, speak, then press Stop. Your Mac records the audio.</p>
+    <button id="record" onclick="record()">Record</button>
+    <form onsubmit="chat(event)">
+      <input id="request" aria-label="Ask Dizzy" type="text" placeholder="Set an alarm for seven">
+      <button>Send</button>
+    </form>
+    <label class="checkbox"><input id="speak" type="checkbox" checked> Speak replies</label>
+    <output id="transcript" aria-live="polite"></output>
+    <output id="reply" aria-live="polite"></output>
+    <p id="provider"></p>
+  </section>
+  <section class="card">
+    <h2>Clock & timers</h2>
+    <label class="field">Alarm time <input id="alarm" type="datetime-local"></label>
+    <button onclick="setAlarm()">Set alarm</button>
+    <div id="alarms"></div>
+    <label class="field">Timer seconds <input id="seconds" type="number" min="1" max="86400" value="10"></label>
+    <div class="buttons">
+      <button onclick="act('timer_start',{seconds:+el('seconds').value})">Start timer</button>
+      <button onclick="act('timer_cancel')">Cancel timer</button>
+      <button onclick="act('alarm_dismiss')">Dismiss alarm</button>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Music</h2>
+    <p>Simulated phone · original demo tracks</p>
+    <button onclick="act('phone_connect',{connected:!current.phone_connected})">Connect / disconnect phone</button>
+    <div class="buttons">
+      <button onclick="act('music_control',{command:'previous'})">Previous</button>
+      <button onclick="act('music_control',{command:current.playing?'pause':'play'})">Play / pause</button>
+      <button onclick="act('music_control',{command:'next'})">Next</button>
+    </div>
+    <label class="field">Volume <input type="range" min="0" max="1" step=".05" value=".5" onchange="act('volume_set',{level:+this.value})"></label>
+  </section>
+  <section class="card">
+    <h2>Camera</h2>
+    <div class="buttons">
+      <button onclick="photo()">Take photo</button>
+      <button onclick="act('tracking_set',{enabled:!current.tracking})">Toggle face tracking</button>
+    </div>
+    <label class="field">Move simulated face <input type="range" min="-.55" max=".55" step=".01" value="-.18" onchange="act('target_move',{x:+this.value})"></label>
+    <img id="photo" alt="Captured camera image" hidden>
+  </section>
+  <section class="card">
+    <h2>Partner Dizzy</h2>
+    <p id="partner"></p>
+    <div class="buttons">
+      <button onclick="act('gesture_send',{gesture:'wave'})">Send a wave</button>
+      <button onclick="act('gesture_send',{gesture:'goodnight'})">Send good night</button>
+    </div>
+  </section>
+  <section class="card wide">
+    <output id="feedback" aria-live="polite"></output>
+    <details><summary>Device state and recent events</summary><pre id="debug"></pre></details>
+    <p>Webots keyboard shortcuts · T pet · S stroke · G greeting · N good night · V record/stop · A five-second timer · F tracking · C photo · P phone · M music · Q quiet</p>
+  </section>
+</main>
+<script>
+const el = id => document.getElementById(id);
+const device = () => el('device').value;
+let current = {};
+let held = false;
+let recordingOwner = null;
+let recordingSession = null;
+let voiceJobDevice = null;
+let microphonePhase = 'idle';
+let processingRecording = false;
+let speakingReply = false;
+let recordBusy = false;
+let pendingRecordOperation = null;
+let refreshing = false;
+const displayedJobs = new Set();
+
+async function post(path, data) {
+  const response = await fetch(path, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  });
+  if (!response.ok) throw Error('Service request failed');
+  return response.json();
+}
+
+async function act(action, args = {}) {
+  try {
+    const result = await post('/api/action', {device: device(), action, args});
+    el('feedback').textContent = result.ok ? 'Done · ' + action : result.error;
+    return result;
+  } catch (error) {
+    el('feedback').textContent = error.message;
+    return {ok: false};
+  }
+}
+
+async function doubleTap() {
+  await act('touch', {phase: 'tap'});
+  await act('touch', {phase: 'tap'});
+}
+
+async function holdStart() {
+  held = true;
+  await act('touch', {phase: 'down'});
+}
+
+async function holdEnd() {
+  if (held) {
+    held = false;
+    await act('touch', {phase: 'up'});
+  }
+}
+
+async function photo() {
+  const result = await act('photo_capture');
+  if (result.ok) {
+    el('photo').src = 'data:image/png;base64,' + result.result.image;
+    el('photo').hidden = false;
+  }
+}
+
+async function setAlarm() {
+  const value = el('alarm').value;
+  if (value) await act('alarm_set', {at: value + ':00+05:30', label: 'Desk alarm'});
+}
+
+function updateRecordButton() {
+  const button = el('record');
+  button.disabled = recordBusy || (!recordingOwner &&
+    (processingRecording || microphonePhase === 'starting' || microphonePhase === 'stopping'));
+  if (recordBusy) {
+    button.textContent = pendingRecordOperation === 'stop' ? 'Stopping recording…' : 'Starting microphone…';
+  } else if (recordingOwner) {
+    button.textContent = recordingOwner === device() ? 'Stop recording' : 'Stop other Dizzy’s recording';
+  } else if (processingRecording) {
+    button.textContent = speakingReply ? 'Speaking…' : 'Processing…';
+  } else if (microphonePhase === 'starting' || microphonePhase === 'stopping') {
+    button.textContent = microphonePhase === 'starting' ? 'Starting microphone…' : 'Stopping recording…';
+  } else {
+    button.textContent = 'Record';
+  }
+}
+
+async function record() {
+  if (recordBusy) return;
+  const owner = recordingOwner || device();
+  const operation = recordingOwner ? 'stop' : 'start';
+  voiceJobDevice = owner;
+  recordBusy = true;
+  pendingRecordOperation = operation;
+  updateRecordButton();
+  try {
+    const result = await post('/api/record', {
+      device: owner,
+      operation,
+      session_id: operation === 'stop' ? recordingSession : undefined
+    });
+    if (!result.ok) {
+      el('reply').textContent = result.error;
+    } else {
+      recordingOwner = result.recording ? owner : null;
+      recordingSession = result.session_id;
+      processingRecording = result.phase === 'processing';
+      el('reply').textContent = result.recording
+        ? 'Listening… press Stop when finished.'
+        : processingRecording ? 'Recording stopped. Processing your request…' : 'Recording stopped.';
+    }
+  } catch (error) {
+    el('reply').textContent = error.message;
+  } finally {
+    recordBusy = false;
+    pendingRecordOperation = null;
+    updateRecordButton();
+    await refresh();
+  }
+}
+
+async function chat(event) {
+  event.preventDefault();
+  el('reply').textContent = 'Thinking…';
+  try {
+    const result = await post('/api/chat', {
+      device: device(), text: el('request').value, speak: el('speak').checked
+    });
+    el('reply').textContent = (result.reply || result.error) +
+      (result.speech_error ? '\n' + result.speech_error : '') +
+      (result.speech_notice ? '\n' + result.speech_notice : '');
+  } catch (error) {
+    el('reply').textContent = error.message;
+  }
+}
+
+async function refresh() {
+  if (refreshing) return;
+  refreshing = true;
+  try {
+    const response = await fetch('/api/status');
+    if (!response.ok) throw Error('Control service unavailable');
+    const data = await response.json();
+    current = data.devices[device()] || {};
+    el('connection').textContent = data.connected.includes(device()) ? 'Connected to Webots' : 'Waiting for Webots';
+    el('clock').textContent = current.clock?.slice(11, 16) || '';
+    el('face').className = 'face ' + (current.expression || 'sleepy');
+    el('summary').textContent = current.ringing ? 'Alarm · ' + current.ringing.label :
+      (current.expression || '') + ' · head ' + (current.measured_head_degrees || 0) + '°' +
+      ' · hands ' + (current.arm_pose || 'rest') +
+      (current.playing ? ' · ' + current.track : '');
+    el('partner').textContent = 'Partner ' + (current.partner_online ? 'online' : 'offline') +
+      ' · ' + (current.delivery || 'idle');
+    el('provider').textContent = 'Voice provider · ' + data.provider +
+      (data.provider === 'gemini' && !data.key_configured ? ' · API key needed' : '') +
+      (current.quiet ? ' · Quiet mode: replies are muted' : current.volume === 0 ? ' · Volume is zero' : ' · Sound on');
+    if (!recordBusy) {
+      recordingOwner = data.recording;
+      recordingSession = data.recording_session;
+      microphonePhase = data.microphone_phase || 'idle';
+      processingRecording = Object.values(data.voice_requests || {}).some(job => job.phase === 'processing');
+      speakingReply = Object.values(data.voice_requests || {}).some(job => job.phase === 'processing' && job.stage === 'speaking');
+      updateRecordButton();
+      const job = data.voice_requests?.[voiceJobDevice || device()];
+      el('transcript').textContent = job?.transcript ? 'Heard: ' + job.transcript : '';
+      if (job?.phase === 'done' && !displayedJobs.has(job.id)) {
+        displayedJobs.add(job.id);
+        const result = job.result;
+        el('reply').textContent = (result.reply || result.error || 'Ready') +
+          (result.speech_error ? '\n' + result.speech_error : '') +
+      (result.speech_notice ? '\n' + result.speech_notice : '');
+      } else if (job?.phase === 'processing') {
+        el('reply').textContent = job.preview_reply || (job.transcript ? 'Preparing your reply…' : 'Recording stopped. Transcribing…');
+      } else if (data.recording === device()) {
+        el('reply').textContent = 'Listening… press Stop when finished.';
+      }
+    }
+    el('debug').textContent = JSON.stringify({state: current, events: data.events.slice(-6)}, null, 2);
+    const list = el('alarms');
+    list.replaceChildren();
+    for (const alarm of current.alarms || []) {
+      if (!alarm.enabled) continue;
+      const row = document.createElement('div');
+      row.textContent = alarm.label + ' · ' + new Date(alarm.at * 1000).toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'});
+      const button = document.createElement('button');
+      button.textContent = 'Cancel';
+      button.onclick = () => act('alarm_cancel', {id: alarm.id});
+      row.append(button);
+      list.append(row);
+    }
+  } catch (error) {
+    el('connection').textContent = 'Control service unavailable';
+  } finally {
+    refreshing = false;
+  }
+}
+
+el('device').addEventListener('change', () => {
+  el('reply').textContent = '';
+  if (!recordingOwner && !processingRecording) voiceJobDevice = device();
+  updateRecordButton();
+  refresh();
+});
+setInterval(refresh, 500);
+refresh();
+</script>
+</html>

@@ -1,0 +1,8 @@
+PASS RTC BCD reads, time advance and missing-power NACK
+PASS PCA 50Hz pulse, center width, OE inhibit, missing V+ and sleep inhibit
+PASS PD 5V contract register, 5A/3A/1A fault settings, reject other voltage request
+PASS LCD RGB565 pixels, split-byte transfer, circular clipping and missing-power inhibit
+PASS actual sketch: power interlock, missing-device inhibit, pet/double/hold gestures, snooze, neck limits, blocked motion and volume clamps
+PASS wiring: external pull-ups, common I2C, OE pull-up, three servo branches, custom-model pin names
+PASS native ESP32 terminal names: GPIO39 is VN; every connected board pin exists
+PASS every firmware GPIO and signal connection matches the approved hardware pin map

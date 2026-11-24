@@ -1,0 +1,2085 @@
+{
+  "checks": [
+    {
+      "name": "solid:Crown_inlay_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 866.8
+    },
+    {
+      "name": "print-volume:Crown_inlay_L",
+      "passed": true,
+      "size_mm": [
+        23.3,
+        30.53,
+        6.47
+      ]
+    },
+    {
+      "name": "solid:Crown_inlay_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 866.86
+    },
+    {
+      "name": "print-volume:Crown_inlay_R",
+      "passed": true,
+      "size_mm": [
+        23.3,
+        30.53,
+        6.47
+      ]
+    },
+    {
+      "name": "solid:Helmet_front",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 35715.17
+    },
+    {
+      "name": "print-volume:Helmet_front",
+      "passed": true,
+      "size_mm": [
+        109.13,
+        47.15,
+        92.52
+      ]
+    },
+    {
+      "name": "solid:Helmet_rear",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 23140.15
+    },
+    {
+      "name": "print-volume:Helmet_rear",
+      "passed": true,
+      "size_mm": [
+        99.41,
+        26.71,
+        89.67
+      ]
+    },
+    {
+      "name": "solid:Face_bezel",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2357.86
+    },
+    {
+      "name": "print-volume:Face_bezel",
+      "passed": true,
+      "size_mm": [
+        74.18,
+        1.8,
+        74.18
+      ]
+    },
+    {
+      "name": "solid:Face_insert",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3207.34
+    },
+    {
+      "name": "print-volume:Face_insert",
+      "passed": true,
+      "size_mm": [
+        61.92,
+        1.5,
+        61.92
+      ]
+    },
+    {
+      "name": "solid:Camera_shutter",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 96.8
+    },
+    {
+      "name": "print-volume:Camera_shutter",
+      "passed": true,
+      "size_mm": [
+        11.0,
+        1.1,
+        8.0
+      ]
+    },
+    {
+      "name": "solid:Shutter_rails",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 198.75
+    },
+    {
+      "name": "print-volume:Shutter_rails",
+      "passed": true,
+      "size_mm": [
+        29.0,
+        2.5,
+        10.6
+      ]
+    },
+    {
+      "name": "solid:Torso_front",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 19430.2
+    },
+    {
+      "name": "print-volume:Torso_front",
+      "passed": true,
+      "size_mm": [
+        98.93,
+        54.66,
+        65.46
+      ]
+    },
+    {
+      "name": "solid:Torso_rear",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 16010.28
+    },
+    {
+      "name": "print-volume:Torso_rear",
+      "passed": true,
+      "size_mm": [
+        97.06,
+        37.44,
+        65.17
+      ]
+    },
+    {
+      "name": "solid:Hip_front",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 28009.98
+    },
+    {
+      "name": "print-volume:Hip_front",
+      "passed": true,
+      "size_mm": [
+        128.99,
+        62.2,
+        47.0
+      ]
+    },
+    {
+      "name": "solid:Hip_rear",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 27517.59
+    },
+    {
+      "name": "print-volume:Hip_rear",
+      "passed": true,
+      "size_mm": [
+        128.99,
+        62.15,
+        47.0
+      ]
+    },
+    {
+      "name": "solid:Bottom_cover",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 9098.96
+    },
+    {
+      "name": "print-volume:Bottom_cover",
+      "passed": true,
+      "size_mm": [
+        76.59,
+        74.03,
+        4.15
+      ]
+    },
+    {
+      "name": "solid:Chest_inset",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2993.9
+    },
+    {
+      "name": "print-volume:Chest_inset",
+      "passed": true,
+      "size_mm": [
+        49.45,
+        26.46,
+        38.7
+      ]
+    },
+    {
+      "name": "solid:Record_button",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 304.65
+    },
+    {
+      "name": "print-volume:Record_button",
+      "passed": true,
+      "size_mm": [
+        18.27,
+        7.77,
+        6.45
+      ]
+    },
+    {
+      "name": "solid:Waist_band",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1493.4
+    },
+    {
+      "name": "print-volume:Waist_band",
+      "passed": true,
+      "size_mm": [
+        100.19,
+        91.39,
+        9.03
+      ]
+    },
+    {
+      "name": "solid:Foot_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 15076.22
+    },
+    {
+      "name": "print-volume:Foot_L",
+      "passed": true,
+      "size_mm": [
+        49.45,
+        45.16,
+        62.35
+      ]
+    },
+    {
+      "name": "solid:Foot_pad_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 566.84
+    },
+    {
+      "name": "print-volume:Foot_pad_L",
+      "passed": true,
+      "size_mm": [
+        17.2,
+        19.34,
+        2.15
+      ]
+    },
+    {
+      "name": "solid:Volume_cap_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3187.59
+    },
+    {
+      "name": "print-volume:Volume_cap_L",
+      "passed": true,
+      "size_mm": [
+        7.85,
+        30.1,
+        30.1
+      ]
+    },
+    {
+      "name": "solid:Foot_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 15093.92
+    },
+    {
+      "name": "print-volume:Foot_R",
+      "passed": true,
+      "size_mm": [
+        49.45,
+        45.16,
+        62.35
+      ]
+    },
+    {
+      "name": "solid:Foot_pad_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 566.84
+    },
+    {
+      "name": "print-volume:Foot_pad_R",
+      "passed": true,
+      "size_mm": [
+        17.2,
+        19.34,
+        2.15
+      ]
+    },
+    {
+      "name": "solid:Volume_cap_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3187.59
+    },
+    {
+      "name": "print-volume:Volume_cap_R",
+      "passed": true,
+      "size_mm": [
+        7.85,
+        30.1,
+        30.1
+      ]
+    },
+    {
+      "name": "solid:Shoulder_housing_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 32762.91
+    },
+    {
+      "name": "print-volume:Shoulder_housing_L",
+      "passed": true,
+      "size_mm": [
+        43.0,
+        51.6,
+        32.25
+      ]
+    },
+    {
+      "name": "solid:Forearm_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 5980.91
+    },
+    {
+      "name": "print-volume:Forearm_L",
+      "passed": true,
+      "size_mm": [
+        25.82,
+        29.59,
+        39.66
+      ]
+    },
+    {
+      "name": "solid:Palm_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 4891.87
+    },
+    {
+      "name": "print-volume:Palm_L",
+      "passed": true,
+      "size_mm": [
+        25.26,
+        21.49,
+        26.88
+      ]
+    },
+    {
+      "name": "solid:Cuff_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 866.01
+    },
+    {
+      "name": "print-volume:Cuff_L",
+      "passed": true,
+      "size_mm": [
+        23.92,
+        26.85,
+        7.45
+      ]
+    },
+    {
+      "name": "solid:Horn_adapter_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2991.35
+    },
+    {
+      "name": "print-volume:Horn_adapter_L",
+      "passed": true,
+      "size_mm": [
+        13.35,
+        14.0,
+        29.18
+      ]
+    },
+    {
+      "name": "solid:Shoulder_bearing_seat_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 753.98
+    },
+    {
+      "name": "print-volume:Shoulder_bearing_seat_L",
+      "passed": true,
+      "size_mm": [
+        5.0,
+        19.0,
+        19.0
+      ]
+    },
+    {
+      "name": "solid:Shoulder_housing_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 32761.4
+    },
+    {
+      "name": "print-volume:Shoulder_housing_R",
+      "passed": true,
+      "size_mm": [
+        43.0,
+        51.59,
+        32.25
+      ]
+    },
+    {
+      "name": "solid:Forearm_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 5980.94
+    },
+    {
+      "name": "print-volume:Forearm_R",
+      "passed": true,
+      "size_mm": [
+        25.82,
+        29.59,
+        39.66
+      ]
+    },
+    {
+      "name": "solid:Palm_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 4898.39
+    },
+    {
+      "name": "print-volume:Palm_R",
+      "passed": true,
+      "size_mm": [
+        25.26,
+        21.49,
+        26.88
+      ]
+    },
+    {
+      "name": "solid:Cuff_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 866.01
+    },
+    {
+      "name": "print-volume:Cuff_R",
+      "passed": true,
+      "size_mm": [
+        23.92,
+        26.86,
+        7.45
+      ]
+    },
+    {
+      "name": "solid:Horn_adapter_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3047.92
+    },
+    {
+      "name": "print-volume:Horn_adapter_R",
+      "passed": true,
+      "size_mm": [
+        14.17,
+        14.0,
+        29.18
+      ]
+    },
+    {
+      "name": "solid:Shoulder_bearing_seat_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 753.98
+    },
+    {
+      "name": "print-volume:Shoulder_bearing_seat_R",
+      "passed": true,
+      "size_mm": [
+        5.0,
+        19.0,
+        19.0
+      ]
+    },
+    {
+      "name": "solid:Neck_bearing_seat",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1555.14
+    },
+    {
+      "name": "print-volume:Neck_bearing_seat",
+      "passed": true,
+      "size_mm": [
+        30.1,
+        30.1,
+        6.0
+      ]
+    },
+    {
+      "name": "solid:Neck_hollow_hub",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1061.86
+    },
+    {
+      "name": "print-volume:Neck_hollow_hub",
+      "passed": true,
+      "size_mm": [
+        15.0,
+        15.0,
+        13.0
+      ]
+    },
+    {
+      "name": "solid:Neck_retaining_ring",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 762.84
+    },
+    {
+      "name": "print-volume:Neck_retaining_ring",
+      "passed": true,
+      "size_mm": [
+        27.0,
+        27.0,
+        2.0
+      ]
+    },
+    {
+      "name": "solid:Carrier_display_pocket",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1410.39
+    },
+    {
+      "name": "print-volume:Carrier_display_pocket",
+      "passed": true,
+      "size_mm": [
+        61.2,
+        15.7,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_display_pocket",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 562.31
+    },
+    {
+      "name": "print-volume:Retainer_display_pocket",
+      "passed": true,
+      "size_mm": [
+        61.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_camera_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 972.25
+    },
+    {
+      "name": "print-volume:Carrier_camera_board",
+      "passed": true,
+      "size_mm": [
+        39.2,
+        17.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_camera_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 351.11
+    },
+    {
+      "name": "print-volume:Retainer_camera_board",
+      "passed": true,
+      "size_mm": [
+        39.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_minus_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 242.66
+    },
+    {
+      "name": "print-volume:Carrier_minus_switch",
+      "passed": true,
+      "size_mm": [
+        17.2,
+        9.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_minus_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 139.91
+    },
+    {
+      "name": "print-volume:Retainer_minus_switch",
+      "passed": true,
+      "size_mm": [
+        17.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_plus_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 242.66
+    },
+    {
+      "name": "print-volume:Carrier_plus_switch",
+      "passed": true,
+      "size_mm": [
+        17.2,
+        9.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_plus_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 139.91
+    },
+    {
+      "name": "print-volume:Retainer_plus_switch",
+      "passed": true,
+      "size_mm": [
+        17.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_neck_servo",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 674.41
+    },
+    {
+      "name": "print-volume:Carrier_neck_servo",
+      "passed": true,
+      "size_mm": [
+        43.2,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_neck_servo",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 540.68
+    },
+    {
+      "name": "print-volume:Retainer_neck_servo",
+      "passed": true,
+      "size_mm": [
+        43.6,
+        9.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_power_distribution",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 490.34
+    },
+    {
+      "name": "print-volume:Carrier_power_distribution",
+      "passed": true,
+      "size_mm": [
+        37.2,
+        8.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_power_distribution",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 331.91
+    },
+    {
+      "name": "print-volume:Retainer_power_distribution",
+      "passed": true,
+      "size_mm": [
+        37.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_talk_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 242.66
+    },
+    {
+      "name": "print-volume:Carrier_talk_switch",
+      "passed": true,
+      "size_mm": [
+        17.2,
+        9.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_talk_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 139.91
+    },
+    {
+      "name": "print-volume:Retainer_talk_switch",
+      "passed": true,
+      "size_mm": [
+        17.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_esp32_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2351.02
+    },
+    {
+      "name": "print-volume:Carrier_esp32_board",
+      "passed": true,
+      "size_mm": [
+        67.2,
+        31.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_esp32_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 619.91
+    },
+    {
+      "name": "print-volume:Retainer_esp32_board",
+      "passed": true,
+      "size_mm": [
+        67.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_pca9685_driver",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2965.94
+    },
+    {
+      "name": "print-volume:Carrier_pca9685_driver",
+      "passed": true,
+      "size_mm": [
+        73.2,
+        27.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_pca9685_driver",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 677.51
+    },
+    {
+      "name": "print-volume:Retainer_pca9685_driver",
+      "passed": true,
+      "size_mm": [
+        73.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_clock_board_and_cell",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2006.6
+    },
+    {
+      "name": "print-volume:Carrier_clock_board_and_cell",
+      "passed": true,
+      "size_mm": [
+        51.2,
+        27.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_clock_board_and_cell",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 466.31
+    },
+    {
+      "name": "print-volume:Retainer_clock_board_and_cell",
+      "passed": true,
+      "size_mm": [
+        51.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_amplifier",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 943.74
+    },
+    {
+      "name": "print-volume:Carrier_amplifier",
+      "passed": true,
+      "size_mm": [
+        31.2,
+        22.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_amplifier",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 274.31
+    },
+    {
+      "name": "print-volume:Retainer_amplifier",
+      "passed": true,
+      "size_mm": [
+        31.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_microphone_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 611.66
+    },
+    {
+      "name": "print-volume:Carrier_microphone_board",
+      "passed": true,
+      "size_mm": [
+        27.2,
+        16.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_microphone_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 235.91
+    },
+    {
+      "name": "print-volume:Retainer_microphone_board",
+      "passed": true,
+      "size_mm": [
+        27.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_speaker",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 773.03
+    },
+    {
+      "name": "print-volume:Carrier_speaker",
+      "passed": true,
+      "size_mm": [
+        39.0,
+        1.4,
+        39.0
+      ]
+    },
+    {
+      "name": "solid:Carrier_servo_470uF_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 286.44
+    },
+    {
+      "name": "print-volume:Carrier_servo_470uF_1",
+      "passed": true,
+      "size_mm": [
+        19.2,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_servo_470uF_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 159.11
+    },
+    {
+      "name": "print-volume:Retainer_servo_470uF_1",
+      "passed": true,
+      "size_mm": [
+        19.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_servo_470uF_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 286.44
+    },
+    {
+      "name": "print-volume:Carrier_servo_470uF_2",
+      "passed": true,
+      "size_mm": [
+        19.2,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_servo_470uF_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 159.11
+    },
+    {
+      "name": "print-volume:Retainer_servo_470uF_2",
+      "passed": true,
+      "size_mm": [
+        19.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_audio_capacitor",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 307.94
+    },
+    {
+      "name": "print-volume:Carrier_audio_capacitor",
+      "passed": true,
+      "size_mm": [
+        19.2,
+        11.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_audio_capacitor",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 159.11
+    },
+    {
+      "name": "print-volume:Retainer_audio_capacitor",
+      "passed": true,
+      "size_mm": [
+        19.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_usb_c_pd_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1397.32
+    },
+    {
+      "name": "print-volume:Carrier_usb_c_pd_board",
+      "passed": true,
+      "size_mm": [
+        37.2,
+        27.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_usb_c_pd_board",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 331.91
+    },
+    {
+      "name": "print-volume:Retainer_usb_c_pd_board",
+      "passed": true,
+      "size_mm": [
+        37.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_left_shoulder_servo",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 694.92
+    },
+    {
+      "name": "print-volume:Carrier_left_shoulder_servo",
+      "passed": true,
+      "size_mm": [
+        43.2,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_left_shoulder_servo",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 389.51
+    },
+    {
+      "name": "print-volume:Retainer_left_shoulder_servo",
+      "passed": true,
+      "size_mm": [
+        43.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_right_shoulder_servo",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 694.92
+    },
+    {
+      "name": "print-volume:Carrier_right_shoulder_servo",
+      "passed": true,
+      "size_mm": [
+        43.2,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_right_shoulder_servo",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 389.51
+    },
+    {
+      "name": "print-volume:Retainer_right_shoulder_servo",
+      "passed": true,
+      "size_mm": [
+        43.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_controller_100uF",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 214.82
+    },
+    {
+      "name": "print-volume:Carrier_controller_100uF",
+      "passed": true,
+      "size_mm": [
+        16.2,
+        8.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_controller_100uF",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 130.31
+    },
+    {
+      "name": "print-volume:Retainer_controller_100uF",
+      "passed": true,
+      "size_mm": [
+        16.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:Carrier_master_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 330.98
+    },
+    {
+      "name": "print-volume:Carrier_master_switch",
+      "passed": true,
+      "size_mm": [
+        23.2,
+        9.2,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Retainer_master_switch",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 197.51
+    },
+    {
+      "name": "print-volume:Retainer_master_switch",
+      "passed": true,
+      "size_mm": [
+        23.6,
+        6.0,
+        1.6
+      ]
+    },
+    {
+      "name": "solid:LED_holder",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 158.32
+    },
+    {
+      "name": "print-volume:LED_holder",
+      "passed": true,
+      "size_mm": [
+        7.0,
+        5.0,
+        6.0
+      ]
+    },
+    {
+      "name": "solid:Lens_flex_support",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 272.52
+    },
+    {
+      "name": "print-volume:Lens_flex_support",
+      "passed": true,
+      "size_mm": [
+        14.0,
+        3.0,
+        13.0
+      ]
+    },
+    {
+      "name": "solid:Clip_servo_470uF_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 152.89
+    },
+    {
+      "name": "print-volume:Clip_servo_470uF_1",
+      "passed": true,
+      "size_mm": [
+        12.8,
+        12.72,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Clip_servo_470uF_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 152.89
+    },
+    {
+      "name": "print-volume:Clip_servo_470uF_2",
+      "passed": true,
+      "size_mm": [
+        12.8,
+        12.72,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Clip_audio_capacitor",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 152.89
+    },
+    {
+      "name": "print-volume:Clip_audio_capacitor",
+      "passed": true,
+      "size_mm": [
+        12.8,
+        12.72,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Clip_controller_100uF",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 111.38
+    },
+    {
+      "name": "print-volume:Clip_controller_100uF",
+      "passed": true,
+      "size_mm": [
+        9.8,
+        9.7,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Passive_strip",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 136.12
+    },
+    {
+      "name": "print-volume:Passive_strip",
+      "passed": true,
+      "size_mm": [
+        29.0,
+        4.6,
+        2.0
+      ]
+    },
+    {
+      "name": "solid:USB_cable_saddle",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 481.15
+    },
+    {
+      "name": "print-volume:USB_cable_saddle",
+      "passed": true,
+      "size_mm": [
+        20.0,
+        8.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:Harness_clip_head",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 163.03
+    },
+    {
+      "name": "print-volume:Harness_clip_head",
+      "passed": true,
+      "size_mm": [
+        9.4,
+        9.15,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:Harness_clip_neck",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 163.03
+    },
+    {
+      "name": "print-volume:Harness_clip_neck",
+      "passed": true,
+      "size_mm": [
+        9.4,
+        9.15,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:Harness_clip_hips",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 163.03
+    },
+    {
+      "name": "print-volume:Harness_clip_hips",
+      "passed": true,
+      "size_mm": [
+        9.4,
+        9.15,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:Speaker_gasket",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 453.57
+    },
+    {
+      "name": "print-volume:Speaker_gasket",
+      "passed": true,
+      "size_mm": [
+        31.0,
+        1.5,
+        31.0
+      ]
+    },
+    {
+      "name": "solid:Sole_insert_L",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1242.48
+    },
+    {
+      "name": "print-volume:Sole_insert_L",
+      "passed": true,
+      "size_mm": [
+        30.1,
+        1.1,
+        43.0
+      ]
+    },
+    {
+      "name": "solid:Sole_insert_R",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1242.48
+    },
+    {
+      "name": "print-volume:Sole_insert_R",
+      "passed": true,
+      "size_mm": [
+        30.1,
+        1.1,
+        43.0
+      ]
+    },
+    {
+      "name": "solid:CAL_display_0p2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 5075.35
+    },
+    {
+      "name": "print-volume:CAL_display_0p2",
+      "passed": true,
+      "size_mm": [
+        57.0,
+        51.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_screw_nut_0p2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1913.29
+    },
+    {
+      "name": "print-volume:CAL_screw_nut_0p2",
+      "passed": true,
+      "size_mm": [
+        25.0,
+        16.0,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:CAL_board_rail_0p2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2159.92
+    },
+    {
+      "name": "print-volume:CAL_board_rail_0p2",
+      "passed": true,
+      "size_mm": [
+        35.0,
+        20.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_shoulder_seat_0p2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 865.67
+    },
+    {
+      "name": "print-volume:CAL_shoulder_seat_0p2",
+      "passed": true,
+      "size_mm": [
+        20.0,
+        20.0,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:CAL_button_0p2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1380.32
+    },
+    {
+      "name": "print-volume:CAL_button_0p2",
+      "passed": true,
+      "size_mm": [
+        25.0,
+        18.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_display_0p3",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 5015.08
+    },
+    {
+      "name": "print-volume:CAL_display_0p3",
+      "passed": true,
+      "size_mm": [
+        57.0,
+        51.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_screw_nut_0p3",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1910.66
+    },
+    {
+      "name": "print-volume:CAL_screw_nut_0p3",
+      "passed": true,
+      "size_mm": [
+        25.0,
+        16.0,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:CAL_board_rail_0p3",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2139.52
+    },
+    {
+      "name": "print-volume:CAL_board_rail_0p3",
+      "passed": true,
+      "size_mm": [
+        35.0,
+        20.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_shoulder_seat_0p3",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 844.46
+    },
+    {
+      "name": "print-volume:CAL_shoulder_seat_0p3",
+      "passed": true,
+      "size_mm": [
+        20.0,
+        20.0,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:CAL_button_0p3",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1361.52
+    },
+    {
+      "name": "print-volume:CAL_button_0p3",
+      "passed": true,
+      "size_mm": [
+        25.0,
+        18.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_display_0p4",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 4954.53
+    },
+    {
+      "name": "print-volume:CAL_display_0p4",
+      "passed": true,
+      "size_mm": [
+        57.0,
+        51.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_screw_nut_0p4",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1907.87
+    },
+    {
+      "name": "print-volume:CAL_screw_nut_0p4",
+      "passed": true,
+      "size_mm": [
+        25.0,
+        16.0,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:CAL_board_rail_0p4",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2118.88
+    },
+    {
+      "name": "print-volume:CAL_board_rail_0p4",
+      "passed": true,
+      "size_mm": [
+        35.0,
+        20.0,
+        4.0
+      ]
+    },
+    {
+      "name": "solid:CAL_shoulder_seat_0p4",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 822.94
+    },
+    {
+      "name": "print-volume:CAL_shoulder_seat_0p4",
+      "passed": true,
+      "size_mm": [
+        20.0,
+        20.0,
+        5.0
+      ]
+    },
+    {
+      "name": "solid:CAL_button_0p4",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1342.4
+    },
+    {
+      "name": "print-volume:CAL_button_0p4",
+      "passed": true,
+      "size_mm": [
+        25.0,
+        18.0,
+        4.0
+      ]
+    },
+    {
+      "name": "Component-envelope clearance",
+      "passed": false,
+      "conflicts": []
+    },
+    {
+      "name": "Arm mass L",
+      "passed": true,
+      "estimated_mass_g": 18.27,
+      "target_g": 25,
+      "density_g_cm3": 1.24
+    },
+    {
+      "name": "Arm mass R",
+      "passed": true,
+      "estimated_mass_g": 18.34,
+      "target_g": 25,
+      "density_g_cm3": 1.24
+    }
+  ],
+  "failures": [],
+  "provisional": [
+    "All electronic dimensions, mounting contacts and connector positions await samples",
+    "Bearing/horn/shaft fits, wire bend radii, acoustics, thermal and power validation",
+    "Mechanical carrier attachment/removal and joint sweep results must be reviewed; not a manufacturing release"
+  ],
+  "scale_search": [
+    {
+      "scale": 1,
+      "conflicts": [
+        "display_pocket",
+        "esp32_board",
+        "left_shoulder_servo",
+        "master_switch",
+        "power_distribution",
+        "right_shoulder_servo",
+        "talk_switch",
+        "usb_c_pd_board"
+      ]
+    },
+    {
+      "scale": 1.025,
+      "conflicts": [
+        "left_shoulder_servo",
+        "right_shoulder_servo",
+        "talk_switch",
+        "usb_c_pd_board"
+      ]
+    },
+    {
+      "scale": 1.05,
+      "conflicts": [
+        "left_shoulder_servo",
+        "right_shoulder_servo"
+      ]
+    },
+    {
+      "scale": 1.075,
+      "conflicts": []
+    }
+  ],
+  "undetermined_intersections": [
+    {
+      "component": "minus_switch",
+      "part": "Helmet_front",
+      "error": "Null shape"
+    }
+  ],
+  "envelope_collisions": [],
+  "parts": 92,
+  "scale": 1.075,
+  "units": "mm",
+  "hardware_envelopes": [
+    {
+      "id": "display_pocket",
+      "center_mm": [
+        0.0,
+        -16.662499999999998,
+        166.0875
+      ],
+      "size_mm": [
+        52,
+        14,
+        46
+      ]
+    },
+    {
+      "id": "camera_board",
+      "center_mm": [
+        0.0,
+        5.375,
+        179.525
+      ],
+      "size_mm": [
+        30.0,
+        16.0,
+        44.0
+      ]
+    },
+    {
+      "id": "minus_switch",
+      "center_mm": [
+        -44.074999999999996,
+        0.0,
+        168.775
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "id": "plus_switch",
+      "center_mm": [
+        44.074999999999996,
+        0.0,
+        168.775
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "id": "neck_servo",
+      "center_mm": [
+        0.0,
+        -3.2249999999999996,
+        90.83749999999999
+      ],
+      "size_mm": [
+        34.0,
+        14.0,
+        34.0
+      ]
+    },
+    {
+      "id": "power_distribution",
+      "center_mm": [
+        0.0,
+        -24.724999999999998,
+        84.925
+      ],
+      "size_mm": [
+        28.0,
+        7.0,
+        18.0
+      ]
+    },
+    {
+      "id": "talk_switch",
+      "center_mm": [
+        0.0,
+        -19.349999999999998,
+        101.05
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "id": "esp32_board",
+      "center_mm": [
+        0.0,
+        13.975,
+        46.225
+      ],
+      "size_mm": [
+        58.0,
+        30.0,
+        12.0
+      ]
+    },
+    {
+      "id": "pca9685_driver",
+      "center_mm": [
+        0.0,
+        -17.2,
+        43.0
+      ],
+      "size_mm": [
+        64.0,
+        26.0,
+        14.0
+      ]
+    },
+    {
+      "id": "clock_board_and_cell",
+      "center_mm": [
+        0.0,
+        10.75,
+        24.724999999999998
+      ],
+      "size_mm": [
+        42.0,
+        26.0,
+        18.0
+      ]
+    },
+    {
+      "id": "amplifier",
+      "center_mm": [
+        -36.55,
+        -8.6,
+        27.95
+      ],
+      "size_mm": [
+        22.0,
+        21.0,
+        10.0
+      ]
+    },
+    {
+      "id": "microphone_board",
+      "center_mm": [
+        33.324999999999996,
+        -8.6,
+        26.875
+      ],
+      "size_mm": [
+        18.0,
+        15.0,
+        7.0
+      ]
+    },
+    {
+      "id": "speaker",
+      "center_mm": [
+        0.0,
+        -38.699999999999996,
+        32.25
+      ],
+      "size_mm": [
+        36,
+        13,
+        36
+      ]
+    },
+    {
+      "id": "servo_470uF_1",
+      "center_mm": [
+        -37.625,
+        12.899999999999999,
+        29.025
+      ],
+      "size_mm": [
+        10,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "servo_470uF_2",
+      "center_mm": [
+        -37.625,
+        25.799999999999997,
+        29.025
+      ],
+      "size_mm": [
+        10,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "audio_capacitor",
+      "center_mm": [
+        34.4,
+        18.275,
+        29.025
+      ],
+      "size_mm": [
+        10.0,
+        10.0,
+        14.0
+      ]
+    },
+    {
+      "id": "usb_c_pd_board",
+      "center_mm": [
+        0.0,
+        39.775,
+        30.099999999999998
+      ],
+      "size_mm": [
+        28.0,
+        26.0,
+        14.0
+      ]
+    },
+    {
+      "id": "left_shoulder_servo",
+      "center_mm": [
+        -38.699999999999996,
+        0.0,
+        101.05
+      ],
+      "size_mm": [
+        34.0,
+        34.0,
+        14.0
+      ]
+    },
+    {
+      "id": "right_shoulder_servo",
+      "center_mm": [
+        38.699999999999996,
+        0.0,
+        101.05
+      ],
+      "size_mm": [
+        34.0,
+        34.0,
+        14.0
+      ]
+    },
+    {
+      "id": "controller_100uF",
+      "center_mm": [
+        48.375,
+        10.75,
+        32.25
+      ],
+      "size_mm": [
+        7,
+        7,
+        12
+      ]
+    },
+    {
+      "id": "master_switch",
+      "center_mm": [
+        29.025,
+        32.25,
+        23.65
+      ],
+      "size_mm": [
+        14,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "decoupling_100nF_1",
+      "center_mm": [
+        -10.75,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "decoupling_100nF_2",
+      "center_mm": [
+        -6.449999999999999,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "decoupling_100nF_3",
+      "center_mm": [
+        -2.15,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "decoupling_100nF_4",
+      "center_mm": [
+        2.15,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "decoupling_100nF_5",
+      "center_mm": [
+        6.449999999999999,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "decoupling_100nF_6",
+      "center_mm": [
+        10.75,
+        -31.7125,
+        71.4875
+      ],
+      "size_mm": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "crown_left",
+      "center_mm": [
+        -10.75,
+        0.0,
+        210.00125
+      ],
+      "size_mm": [
+        18,
+        22,
+        0.1
+      ]
+    },
+    {
+      "id": "crown_right",
+      "center_mm": [
+        10.75,
+        0.0,
+        210.00125
+      ],
+      "size_mm": [
+        18,
+        22,
+        0.1
+      ]
+    },
+    {
+      "id": "camera_lens",
+      "center_mm": [
+        0.0,
+        -19.349999999999998,
+        195.65
+      ],
+      "size_mm": [
+        10,
+        10,
+        8
+      ]
+    },
+    {
+      "id": "camera_LED",
+      "center_mm": [
+        10.75,
+        -23.65,
+        195.65
+      ],
+      "size_mm": [
+        3,
+        5,
+        3
+      ]
+    }
+  ]
+}

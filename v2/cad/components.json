@@ -1,0 +1,381 @@
+{
+  "axis": "X forward, Y left, Z up. Millimetres.",
+  "status": "PROVISIONAL \u2014 component covers and pin headers need physical measurements",
+  "components": [
+    {
+      "id": "amoled_31261",
+      "size": [
+        9.5,
+        49,
+        49
+      ],
+      "center": [
+        23,
+        0,
+        164
+      ],
+      "mount": "LCD_cassette",
+      "remove": "+X after bezel"
+    },
+    {
+      "id": "voice_speaker",
+      "size": [
+        8,
+        26,
+        17
+      ],
+      "center": [
+        7,
+        0,
+        145
+      ],
+      "mount": "Voice_clip",
+      "remove": "-X after head rear"
+    },
+    {
+      "id": "yaw_sg90",
+      "size": [
+        23,
+        13,
+        25
+      ],
+      "center": [
+        0,
+        0,
+        118
+      ],
+      "mount": "Neck_yaw_cassette",
+      "remove": "-X after torso rear"
+    },
+    {
+      "id": "pitch_sg90",
+      "size": [
+        23,
+        13,
+        25
+      ],
+      "center": [
+        -4,
+        21,
+        143
+      ],
+      "mount": "Neck_pitch_cassette",
+      "remove": "-X after head rear"
+    },
+    {
+      "id": "left_arm_sg90",
+      "size": [
+        23,
+        13,
+        25
+      ],
+      "center": [
+        -1,
+        60,
+        110
+      ],
+      "mount": "Left_shoulder_cassette",
+      "remove": "+Y after shoulder cover"
+    },
+    {
+      "id": "right_arm_sg90",
+      "size": [
+        23,
+        13,
+        25
+      ],
+      "center": [
+        -1,
+        -60,
+        110
+      ],
+      "mount": "Right_shoulder_cassette",
+      "remove": "-Y after shoulder cover"
+    },
+    {
+      "id": "left_hip_mg90s",
+      "size": [
+        23,
+        13,
+        28.5
+      ],
+      "center": [
+        0,
+        43,
+        69
+      ],
+      "mount": "Left_thigh_cassette",
+      "remove": "-X"
+    },
+    {
+      "id": "right_hip_mg90s",
+      "size": [
+        23,
+        13,
+        28.5
+      ],
+      "center": [
+        0,
+        -43,
+        69
+      ],
+      "mount": "Right_thigh_cassette",
+      "remove": "-X"
+    },
+    {
+      "id": "left_ankle_mg90s",
+      "size": [
+        23,
+        13,
+        28.5
+      ],
+      "center": [
+        -3,
+        43,
+        32
+      ],
+      "mount": "Left_ankle_cassette",
+      "remove": "-X"
+    },
+    {
+      "id": "right_ankle_mg90s",
+      "size": [
+        23,
+        13,
+        28.5
+      ],
+      "center": [
+        -3,
+        -43,
+        32
+      ],
+      "mount": "Right_ankle_cassette",
+      "remove": "-X"
+    },
+    {
+      "id": "battery_pack_2s",
+      "size": [
+        39,
+        69,
+        21
+      ],
+      "center": [
+        -2,
+        0,
+        60
+      ],
+      "mount": "Battery_drawer",
+      "remove": "-X after battery door"
+    },
+    {
+      "id": "classic_esp32",
+      "size": [
+        9,
+        29,
+        54
+      ],
+      "center": [
+        -22,
+        0,
+        101
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "pca9685",
+      "size": [
+        8,
+        25,
+        28
+      ],
+      "center": [
+        -7,
+        -20,
+        99
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "mcp23017",
+      "size": [
+        6,
+        18,
+        22
+      ],
+      "center": [
+        3,
+        20,
+        96
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "bmi270",
+      "size": [
+        6,
+        14,
+        16
+      ],
+      "center": [
+        -13,
+        16,
+        119
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "ads1115",
+      "size": [
+        6,
+        16,
+        18
+      ],
+      "center": [
+        9,
+        18,
+        82
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "ds3231",
+      "size": [
+        8,
+        22,
+        23
+      ],
+      "center": [
+        -20,
+        -28,
+        105
+      ],
+      "mount": "RTC_clip",
+      "remove": "-X for cell replacement"
+    },
+    {
+      "id": "motor_buck",
+      "size": [
+        8,
+        16,
+        32
+      ],
+      "center": [
+        -8,
+        28,
+        94
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "logic_buck",
+      "size": [
+        6,
+        15,
+        24
+      ],
+      "center": [
+        4,
+        -23,
+        113
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "max98357a",
+      "size": [
+        6,
+        17,
+        20
+      ],
+      "center": [
+        10.5,
+        -24,
+        94
+      ],
+      "mount": "Backplane",
+      "remove": "-X"
+    },
+    {
+      "id": "chest_speaker",
+      "size": [
+        10,
+        29,
+        29
+      ],
+      "center": [
+        19,
+        0,
+        88
+      ],
+      "mount": "Music_clip",
+      "remove": "+X after grille"
+    },
+    {
+      "id": "talk_switch",
+      "size": [
+        8,
+        8,
+        8
+      ],
+      "center": [
+        29,
+        0,
+        110
+      ],
+      "mount": "Talk_guide",
+      "remove": "+X"
+    },
+    {
+      "id": "cut_and_arm_controls",
+      "size": [
+        11,
+        15,
+        25
+      ],
+      "center": [
+        -26,
+        24,
+        104
+      ],
+      "mount": "Rear_controls",
+      "remove": "-X"
+    },
+    {
+      "id": "left_sole_switch",
+      "size": [
+        7,
+        11,
+        5
+      ],
+      "center": [
+        21,
+        43,
+        6
+      ],
+      "mount": "Left_foot",
+      "remove": "-Z"
+    },
+    {
+      "id": "right_sole_switch",
+      "size": [
+        7,
+        11,
+        5
+      ],
+      "center": [
+        21,
+        -43,
+        6
+      ],
+      "mount": "Right_foot",
+      "remove": "-Z"
+    }
+  ]
+}

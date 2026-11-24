@@ -1,0 +1,33 @@
+{
+  "revision": "Seated Companion",
+  "checks": [
+    {
+      "name": "Circular screen and no resting button contacts",
+      "result": "PASS",
+      "pixels": [
+        240,
+        240
+      ],
+      "sensors": {
+        "pet_left": 0.0,
+        "pet_right": 0.0,
+        "talk": 0.0,
+        "volume_down": 0.0,
+        "volume_up": 0.0
+      }
+    },
+    {
+      "name": "live run",
+      "result": "FAIL",
+      "error": ""
+    }
+  ],
+  "hardware_dependent": [
+    "Measured PCB outlines, mounting posts, connector access and cable bends",
+    "Servo shaft coupling, load, stall current and mechanical stops",
+    "USB-C 5V/5A negotiation and temperature",
+    "Acoustics, electrode sensitivity and physical stability",
+    "ESP32 firmware, actual phone Bluetooth and real camera performance"
+  ],
+  "voice_scope": "Existing microphone pipeline retained; this revision tests typed Gemini arm control."
+}

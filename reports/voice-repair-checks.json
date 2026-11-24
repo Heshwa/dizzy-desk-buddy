@@ -1,0 +1,14 @@
+{
+  "source": "New user microphone recording through live service",
+  "phase": "done",
+  "transcription_nonempty": true,
+  "result": {
+    "ok": true,
+    "reply": "I was developed by Google.",
+    "spoken": true,
+    "transcript": "Who developed you?"
+  },
+  "quiet": false,
+  "provider": "gemini",
+  "automated_tests": 116
+}

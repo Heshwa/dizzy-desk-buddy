@@ -1,0 +1,535 @@
+{
+  "version": 1,
+  "author": "Dizzy V2",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "s3",
+      "top": -96,
+      "left": -180,
+      "attrs": {}
+    },
+    {
+      "type": "chip-pca9685",
+      "id": "pwm",
+      "top": -86,
+      "left": 110,
+      "attrs": {}
+    },
+    {
+      "type": "chip-ds3231",
+      "id": "rtc",
+      "top": 190,
+      "left": -155,
+      "attrs": {}
+    },
+    {
+      "type": "chip-body",
+      "id": "body",
+      "top": 175,
+      "left": 85,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": -212,
+      "left": -18,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo0",
+      "top": -167,
+      "left": 320,
+      "attrs": {
+        "label": "Yaw"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -100,
+      "left": 320,
+      "attrs": {
+        "label": "Pitch"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo2",
+      "top": -33,
+      "left": 320,
+      "attrs": {
+        "label": "Left arm"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo3",
+      "top": 34,
+      "left": 320,
+      "attrs": {
+        "label": "Right arm"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo4",
+      "top": 101,
+      "left": 320,
+      "attrs": {
+        "label": "Left hip"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo5",
+      "top": 168,
+      "left": 320,
+      "attrs": {
+        "label": "Right hip"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo6",
+      "top": 235,
+      "left": 320,
+      "attrs": {
+        "label": "Left ankle"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo7",
+      "top": 302,
+      "left": 320,
+      "attrs": {
+        "label": "Right ankle"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button0",
+      "top": 300,
+      "left": -190,
+      "attrs": {
+        "color": "blue",
+        "label": "TALK",
+        "key": "1"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button1",
+      "top": 300,
+      "left": -122,
+      "attrs": {
+        "color": "blue",
+        "label": "CROWN_L",
+        "key": "2"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button2",
+      "top": 300,
+      "left": -54,
+      "attrs": {
+        "color": "blue",
+        "label": "CROWN_R",
+        "key": "3"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button3",
+      "top": 300,
+      "left": 14,
+      "attrs": {
+        "color": "blue",
+        "label": "ARM",
+        "key": "4"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button4",
+      "top": 300,
+      "left": 82,
+      "attrs": {
+        "color": "red",
+        "label": "STOP",
+        "key": "5"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button5",
+      "top": 360,
+      "left": -190,
+      "attrs": {
+        "color": "red",
+        "label": "LOW_BAT",
+        "key": "6"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button6",
+      "top": 360,
+      "left": -122,
+      "attrs": {
+        "color": "red",
+        "label": "TILT",
+        "key": "7"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "s3:17",
+      "pwm:SDA",
+      "green",
+      []
+    ],
+    [
+      "s3:18",
+      "pwm:SCL",
+      "blue",
+      []
+    ],
+    [
+      "s3:3V3",
+      "pwm:VCC",
+      "red",
+      []
+    ],
+    [
+      "s3:GND.1",
+      "pwm:GND",
+      "black",
+      []
+    ],
+    [
+      "s3:17",
+      "body:SDA",
+      "green",
+      []
+    ],
+    [
+      "s3:18",
+      "body:SCL",
+      "blue",
+      []
+    ],
+    [
+      "s3:3V3",
+      "body:VCC",
+      "red",
+      []
+    ],
+    [
+      "s3:GND.1",
+      "body:GND",
+      "black",
+      []
+    ],
+    [
+      "s3:17",
+      "rtc:SDA",
+      "green",
+      []
+    ],
+    [
+      "s3:18",
+      "rtc:SCL",
+      "blue",
+      []
+    ],
+    [
+      "s3:3V3",
+      "rtc:VCC",
+      "red",
+      []
+    ],
+    [
+      "s3:GND.1",
+      "rtc:GND",
+      "black",
+      []
+    ],
+    [
+      "s3:16",
+      "pwm:OE",
+      "orange",
+      []
+    ],
+    [
+      "s3:5V",
+      "pwm:VPLUS",
+      "red",
+      []
+    ],
+    [
+      "s3:GND.1",
+      "logic:GND",
+      "black",
+      []
+    ],
+    [
+      "s3:16",
+      "logic:D0",
+      "orange",
+      []
+    ],
+    [
+      "servo0:PWM",
+      "pwm:PWM0",
+      "orange",
+      []
+    ],
+    [
+      "servo0:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo0:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo1:PWM",
+      "pwm:PWM1",
+      "orange",
+      []
+    ],
+    [
+      "servo1:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo1:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo2:PWM",
+      "pwm:PWM2",
+      "orange",
+      []
+    ],
+    [
+      "servo2:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo2:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo3:PWM",
+      "pwm:PWM3",
+      "orange",
+      []
+    ],
+    [
+      "servo3:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo3:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo4:PWM",
+      "pwm:PWM4",
+      "orange",
+      []
+    ],
+    [
+      "servo4:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo4:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo5:PWM",
+      "pwm:PWM5",
+      "orange",
+      []
+    ],
+    [
+      "servo5:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo5:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo6:PWM",
+      "pwm:PWM6",
+      "orange",
+      []
+    ],
+    [
+      "servo6:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo6:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "servo7:PWM",
+      "pwm:PWM7",
+      "orange",
+      []
+    ],
+    [
+      "servo7:V+",
+      "s3:5V",
+      "red",
+      []
+    ],
+    [
+      "servo7:GND",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:TALK",
+      "button0:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button0:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:CROWN_L",
+      "button1:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button1:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:CROWN_R",
+      "button2:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button2:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:ARM",
+      "button3:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button3:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:STOP",
+      "button4:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button4:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:LOW_BAT",
+      "button5:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button5:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "body:TILT",
+      "button6:1.l",
+      "purple",
+      []
+    ],
+    [
+      "button6:2.l",
+      "s3:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pwm:PWM0",
+      "logic:D1",
+      "orange",
+      []
+    ],
+    [
+      "pwm:PWM4",
+      "logic:D2",
+      "orange",
+      []
+    ],
+    [
+      "s3:17",
+      "logic:D3",
+      "green",
+      []
+    ]
+  ]
+}

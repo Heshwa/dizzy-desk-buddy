@@ -1,0 +1,279 @@
+Browser tab: 7, Title: "New ESP32 Project - Wokwi Simulator", URL: "https://wokwi.com/projects/new/esp32".
+1 AXWebArea New ESP32 Project - Wokwi Simulator, URL: wokwi.com/projects/new/esp32
+	2 container
+		3 container
+			4 link wokwi.com/
+			5 button
+			6 button
+			7 button toggle dark mode
+			8 button SIGN IN
+		9 tab group
+			10 tab (selected, settable, boolean) Simulation, Value: 1
+			11 tab (selectable, settable, boolean) Code, Value: 0
+		12 container
+			13 button Restart the simulation
+			78 button Stop the simulation
+			79 button Pause
+			93 text 06:19.778 99%
+			14 container
+				90 image
+					91 container
+						92 text HUSB238 contract-register model Breakout
+				18 image
+					19 container
+						20 text DS3231 time-register model Breakout
+				21 image
+					22 container
+						23 text PCA9685 PWM subset model Breakout
+				24 image
+					25 container
+						26 text GC9A01 240x240 model Breakout
+				27 image
+					28 container
+						29 text MAX98357A wiring only Breakout
+				30 image
+					31 container
+						32 text INMP441 wiring only Breakout
+				33 image
+					34 container
+						35 text ESP32-CAM Wi-Fi link (not emulated) Breakout
+				36 text Neck
+				37 text Left hand
+				38 text Right hand
+				39 container talk
+					40 button Talk blue pushbutton
+						41 image
+					42 text Talk
+				43 container down
+					44 button Vol − blue pushbutton
+						45 image
+					46 text Vol −
+				47 container up
+					48 button Vol + blue pushbutton
+						49 image
+					50 text Vol +
+				51 container petL
+					52 button Crown L* blue pushbutton
+						53 image
+					54 text Crown L*
+				55 container petR
+					56 button Crown R* blue pushbutton
+						57 image
+					58 text Crown R*
+				59 image logic
+					60 container
+						61 text D0 D1 D2 D3 D4 D5 D6 D7 GND
+					62 text LOGIC
+					81 text 603K samples
+				63 text DIZZY • ELECTRONICS BRING-UP / functional models
+				64 text Audio + camera: wiring only / no capture or sound
+				65 text * Digital stand-ins for touch electrodes. External 10k pull-ups.
+Red = supply, black = common ground. Not a breadboard assembly guide.
+				66 text USB-C: ideal 5V rail; slider changes reported contract.
+5A required for motors. Real PD/voltage/current tested separately.
+				67 text I²C: 0x08 PD / 0x68 clock / 0x40 PWM
+One effective pair of 4.7k pull-ups to 3.3V
+				68 image
+			82 container simple-tabpanel-0
+				83 text ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+DIZZY ELECTRONICS DEMO: digital/register models, not electrical qualification
+I2C 0x08 ACK
+I2C 0x40 ACK
+I2C 0x68 ACK
+POWER_OK: model reports 5V/5A; OE enabled
+READY: click the five buttons; use Serial commands for motor/alarm tests
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+VOLUME=55 (audio path wiring only)
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=55 alarm=0
+ALARM_TEST: five seconds
+STATUS power=1 OE=0 neck=45 left=104 right=104 volume=55 alarm=0
+STATUS power=1 OE=0 neck=45 left=76 right=76 volume=55 alarm=0
+ALARM_RINGING: visual only; touch snoozes
+STATUS power=1 OE=0 neck=45 left=16 right=16 volume=55 alarm=1
+STATUS power=1 OE=0 neck=45 left=0 right=0 volume=55 alarm=1
+STATUS power=1 OE=0 neck=45 left=0 right=0 volume=55 alarm=1
+STATUS power=1 OE=0 neck=45 left=0 right=0 volume=55 alarm=1
+VOLUME=50 (audio path wiring only)
+GOODNIGHT: network delivery remains in Webots/Mac
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=1
+ALARM_SNOOZED: 5 minutes
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+PTT_START: microphone/LLM uses the Mac service
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+PET_TAP: happy blink (local)
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+POWER_BLOCKED: outputs disabled (OE HIGH)
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=0 OE=1 neck=0 left=0 right=0 volume=50 alarm=0
+POWER_OK: model reports 5V/5A; OE enabled
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+PTT_STOP
+STATUS power=1 OE=0 neck=0 left=2 right=2 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=118 right=118 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=118 right=118 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=112 right=112 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+STATUS power=1 OE=0 neck=0 left=0 right=0 volume=50 alarm=0
+
+				84 text field (settable)
+				85 button Serial plotter
+				86 button Auto scroll
+				87 button
+				88 button Collapse
+
+The focused UI element is 84 text field (settable)

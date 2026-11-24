@@ -1,0 +1,191 @@
+{
+  "state": {
+    "id": "dizzy-a",
+    "clock": "2026-11-18T07:07:37.158814+05:30",
+    "expression": "sleepy",
+    "head_degrees": 0.0,
+    "target_degrees": 0,
+    "tracking": false,
+    "quiet": false,
+    "volume": 0.5,
+    "phone_connected": true,
+    "playing": false,
+    "track": "Little orbit",
+    "track_index": 1,
+    "music_gain": 0,
+    "voice": "idle",
+    "ringing": null,
+    "alarms": [
+      {
+        "id": "85bd4c13",
+        "at": 1794965196.117346,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "853cbeb2",
+        "at": 1794965496.353892,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f24601dc",
+        "at": 1794965553.862132,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "e480433f",
+        "at": 1794965581.558946,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "fbf6d414",
+        "at": 1794965625.476079,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f4c2f507",
+        "at": 1794965639.398075,
+        "label": "Restart test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f376c6a2",
+        "at": 1794965661.335538,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "fb1c05ff",
+        "at": 1794965698.314502,
+        "label": "Voice outage test",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "486491c2",
+        "at": 1794965739.336102,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      },
+      {
+        "id": "f954f78e",
+        "at": 1794966039.5910559,
+        "label": "Acceptance alarm",
+        "enabled": false,
+        "weekdays": []
+      }
+    ],
+    "timer_remaining": null,
+    "partner_online": true,
+    "delivery": "delivered",
+    "measured_head_degrees": 0.0,
+    "camera_objects": 1,
+    "alarm_audio_active": false,
+    "camera_active": false
+  },
+  "events": [
+    {
+      "event": "action",
+      "device": "dizzy-b",
+      "action": "head_turn",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-b",
+      "action": "voice_state",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "expression_set",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-b",
+      "action": "expression_set",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "screenshot",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "touch",
+      "ok": true
+    },
+    {
+      "event": "device_event",
+      "device": "dizzy-a",
+      "details": {
+        "type": "event",
+        "event": "chirp"
+      }
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "voice_state",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "voice_state",
+      "ok": true
+    },
+    {
+      "event": "transcript",
+      "device": "dizzy-a",
+      "text": "Look left."
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "voice_state",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "head_turn",
+      "ok": true
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "voice_state",
+      "ok": true
+    },
+    {
+      "event": "reply",
+      "device": "dizzy-a",
+      "text": "Look left.",
+      "reply": "Done!"
+    },
+    {
+      "event": "action",
+      "device": "dizzy-a",
+      "action": "voice_state",
+      "ok": true
+    }
+  ]
+}

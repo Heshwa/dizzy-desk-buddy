@@ -1,0 +1,10 @@
+assembly,items,estimate_inr,status,listing
+Face,1 Waveshare ESP32-S3-Touch-AMOLED-1.75 SKU 31261 and kit speaker,3439,Previous in-stock quote verify at checkout,https://hubtronics.in/esp32-s3-touch-amoled-1.75
+Music,1 Classic ESP32-WROOM-32 dev board + MAX98357A + 4 ohm 3 W chest speaker,650,Combined part allowance,https://techtonics.in/product/esp-wroom-32-mcu-development-module-38-pin/
+Motion,4 positional MG90S @155 + 4 positional SG90 @89,976,Servo supply lot needs torque and pulse qualification,https://www.kitkraft.in/collections/motors-and-drivers/products/towerpro-mg90-mini-servo-180-degree-rotation-standard-quality
+Body logic,PCA9685 + 7Semi BMI270 + ADS1115 + DS3231,1144,Combined allowance,https://evelta.com/7semi-bmi270-nano-6-axis-imu-sensor-board-qwiic/
+Battery,Protected Pro-Range 2S pack with Nylon-T and charge jack + compatible 8.4V 1A charger,1288,Confirm pack-specific charge and discharge ratings and connectors,https://robu.in/product/18650-li-ion-2500mah-7-4v-2s1p-protected-battery-pack-3c-2/
+Power,5V 5A motor UBEC + SmartElex AP63357 regulated 5V electronics supply,755,Qualify thermals and low-input behavior on actual modules,https://xbotics.in/product/ubec-5v-5a-hv-switch-mode-bec-module/
+Assembly,MCP23017 + touch and mechanical switches + fuse + motor cut-off + wiring + fasteners + pads,500,Combined allowance verify when placing order,
+Print,Single-colour PETG first pass,700,Quote after slicing,
+Delivery,Delivery allowance,300,Quote needed,
