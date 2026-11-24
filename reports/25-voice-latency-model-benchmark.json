@@ -1,0 +1,36 @@
+[
+  {
+    "model": "gemini-3.1-flash-lite",
+    "tuned": false,
+    "seconds": 1.29,
+    "ok": true,
+    "text": "I was developed by <creator> for <companion>.",
+    "calls": 0
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "tuned": true,
+    "seconds": 2.74,
+    "ok": false,
+    "error_type": "ServerError",
+    "code": 503,
+    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "tuned": true,
+    "seconds": 7.86,
+    "ok": true,
+    "text": "I was developed by <creator> for <companion>!",
+    "calls": 0
+  },
+  {
+    "model": "gemini-2.5-flash-lite",
+    "tuned": true,
+    "seconds": 0.35,
+    "ok": false,
+    "error_type": "ClientError",
+    "code": 404,
+    "error": "404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and impr"
+  }
+]
